@@ -7,7 +7,7 @@
 
 ### Deployment
 - <a href="https://pythonhosted.org/Frozen-Flask/" target="_blank">Frozen flask</a>  
-  - Build command: `python freeze.py`  
-  - Publish directory: `build`  
-  - Copy over the newly built static index.html: `cp build/index.html .`  
-  - Update git  
+  - Edit index.html template rendered through myapp.py: `vi templates/index.html`  
+  - Build static version of myapp.py: `python freeze.py`  
+  - Copy over the newly built static index.html to home: `cp build/index.html .`  
+  - Update git repository  
