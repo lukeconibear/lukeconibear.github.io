@@ -1,11 +1,11 @@
-## [Personal website](https://lukeconibear.github.io/)
+## <a href="https://lukeconibear.github.io/" target="_blank">Personal website</a>
 ### Development
-- [Python](https://www.python.org/)  
-- [Flask](https://palletsprojects.com/p/flask/)  
+- <a href="https://www.python.org/" target="_blank">Python</a>  
+- <a href="https://palletsprojects.com/p/flask/" target="_blank">Flask</a>  
 - If you install new packages, then update `requirements.txt` using `pip freeze > requirements.txt`  
 
 ### Deployment
-- [Frozen flask](https://pythonhosted.org/Frozen-Flask/)  
-- [Netlify](https://www.netlify.com/)   
+- <a href="https://pythonhosted.org/Frozen-Flask/" target="_blank">Frozen flask</a>  
+- <a href="https://www.netlify.com/" target="_blank">Netlify</a>  
   - Build command: `python freeze.py`  
   - Publish directory: `build`  
