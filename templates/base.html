@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luke Conibear">
+    <meta name="description" content="Luke Conibear's website">
+    <title>Luke Conibear>/title>
+</head>
+
+<body>
+    <h1><a href="{{ url_for("index") }}">Luke Conibear</a></h1>
+
+    <div>
+        {% block content %}
+        <p>Default Content</p>
+        {% endblock content %}
+    </div>
+</body>
+</html>
