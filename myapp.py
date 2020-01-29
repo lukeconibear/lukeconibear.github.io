@@ -16,9 +16,16 @@ def index():
 
 @app.route("/<path:path>/")
 def page(path):
-#    return pages.get_or_404(path).html
     page = pages.get_or_404(path)
     return render_template("page.html", page=page)
+
+@app.route("/software/")
+def software():
+    return render_template('software.html')
+
+@app.route("/airpollution/")
+def airpollution():
+    return render_template('airpollution.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
