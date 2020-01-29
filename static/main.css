@@ -43,6 +43,10 @@ ul {
   color: #fff;
 }
 
+ul li{
+ font-size:22px;
+}
+
 li {
   padding-left: 1em; 
   text-indent: -.7em;
