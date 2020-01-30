@@ -21,7 +21,7 @@ def page(path):
 
 @app.route("/software/")
 def software():
-    return render_template('software.html')
+    return render_template('software.html', pages=pages)
 
 @app.route("/airpollution/")
 def airpollution():
