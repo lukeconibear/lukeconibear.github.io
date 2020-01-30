@@ -9,6 +9,7 @@ FLATPAGES_EXTENSION = '.md'
 app = Flask(__name__)
 app.config.from_object(__name__)
 pages = FlatPages(app)
+app.url_map.strict_slashes = False
 
 @app.route("/")
 def index():
@@ -19,11 +20,11 @@ def page(path):
     page = pages.get_or_404(path)
     return render_template("page.html", page=page)
 
-@app.route("/software/")
+@app.route("/software.html")
 def software():
     return render_template('software.html')
 
-@app.route("/airpollution/")
+@app.route("/airpollution.html")
 def airpollution():
     return render_template('airpollution.html')
 
