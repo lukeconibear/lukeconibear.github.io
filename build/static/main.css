@@ -2,8 +2,6 @@ body {
   color: #505250;
   background-color: #fff;
   margin-top: 100px;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 div.page {
@@ -119,10 +117,15 @@ a:focus {
   display: inline;
 }
 
+img {
+  width: 1000px;
+  height: auto;
+  align: left;
+}
+
 figcaption {
   font-family: Averta, sans-serif;
   color: #505250;
   font-size: 12px;
-  caption-side: top;
 }
 
