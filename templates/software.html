@@ -2,6 +2,8 @@
 
 {% block content %}
 
+    <figure><img src="{{url_for('static', filename='model_crop.png')}}" style="width:100%; height:100%;"><figcaption><a href="https://www.nasa.gov/content/a-portrait-of-global-winds" target="_blank">Image from William Putman/NASA Goddard Space Flight Center</a></figcaption></figure></p>
+
     <h3>WRF-Chem</h3>
 
     <div style="clear:left;">
@@ -11,5 +13,15 @@
             <li>More details can be found on the WRF-Chem at the University of Leeds <a href="https://github.com/wrfchem-leeds" target="_blank">GitHub</a>.</li>
         </ul>
     </div>
+
+    <h3>Python</h3>
+
+    <div style="clear:left;">
+        <ul>
+            <li>I use Python to analyse the large amounts of data produced by these complex models (<a href="https://github.com/wrfchem-leeds/python-scripts" target="_blank">GitHub</a>).</li>
+            <li>I developed this website using Python with Flask.</li>
+        </ul>
+    </div>
+
 
 {% endblock content %}
