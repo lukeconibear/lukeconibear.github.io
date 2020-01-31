@@ -1,7 +1,7 @@
 body {
   color: #505250;
   background-color: #fff;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 div.page {
@@ -11,8 +11,7 @@ div.page {
 }
 
 h1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-family: Averta, sans-serif;
   color: #337a56;
   font-size: 28px;
