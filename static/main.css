@@ -11,7 +11,7 @@ h1 {
   margin-bottom: 30px;
   font-family: Averta, sans-serif;
   color: #fff;
-  font-size: 32px;
+  font-size: 42px;
   line-height: 44px;
   font-weight: 700;
 }
@@ -32,15 +32,23 @@ p {
   margin-bottom: 20px;
   font-family: Averta, sans-serif;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
+}
+
+ul li{
+ font-size:14px;
+}
+
+ol li{
+ font-size:14px;
 }
 
 hr { 
   display: block; 
   height: 1px;
   border: 0; 
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #fff;
   margin: 1em 0;
   padding: 0;
   border-color: #fff;
