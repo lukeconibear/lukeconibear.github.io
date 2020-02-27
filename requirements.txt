@@ -16,7 +16,6 @@ Flask-Compress==1.4.0
 Flask-FlatPages==0.6
 Frozen-Flask==0.15
 future==0.18.2
-GDAL==3.0.4
 geopandas==0.6.3
 itsdangerous==1.1.0
 Jinja2==2.11.1
@@ -27,7 +26,6 @@ numpy==1.18.1
 pandas==1.0.1
 pathlib==1.0.1
 plotly==4.5.0
-plotly-flask-tutorial==0.0.1
 pyproj==2.4.2.post1
 python-dateutil==2.8.1
 pytz==2019.3

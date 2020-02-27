@@ -1,9 +1,7 @@
-import sys, os
-from flask import Flask, render_template
-from flask_flatpages import FlatPages
+import os
 import dash
-import dash_html_components as html
 import dash_core_components as dcc
+import dash_html_components as html
 import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.graph_objs as go
@@ -12,31 +10,6 @@ from shapely.geometry import LineString, MultiLineString
 import numpy as np
 from shapefile_to_geojson import shapefile_to_geojson
 
-server = Flask(__name__)
-server.config.from_object(__name__)
-pages = FlatPages(server)
-FLATPAGES_EXTENSION = '.md'
-server.url_map.strict_slashes = False
-
-@server.route("/")
-def index():
-    return render_template('index.html', pages=pages)
-
-@server.route("/<path:path>/")
-def page(path):
-    page = pages.get_or_404(path)
-    return render_template("page.html", page=page)
-
-@server.route("/software")
-def software():
-    return render_template('software.html')
-
-@server.route("/airpollution")
-def airpollution():
-    return render_template('airpollution.html')
-
-
-# dash app
 mapboxt = open("/nfs/see-fs-02_users/earlacoa/.mapbox_token").read().rstrip()
 
 level = 1
@@ -77,12 +50,7 @@ for scenario in scenarios:
 df_merged = pd.concat(appended_df, sort=False)
 format_df_merged = pd.concat(appended_format_df, sort=False)
 
-app = dash.Dash(
-    __name__,
-    server=server,
-    routes_pathname_prefix='/dash/',
-    external_stylesheets=[dbc.themes.BOOTSTRAP]
-)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 body = dbc.Container(
     [
@@ -95,9 +63,10 @@ body = dbc.Container(
                             """\
 An interactive plot to visualise how various transitions to 
 clean household energy in India impact air pollution and 
-public health.
-For more information, see Conibear, L., 
-et al. (2020). !LINK! """
+public health. For more information, see Conibear, L., 
+et al. (2020). A complete transition to clean household energy 
+can save one-quarter of the healthy life lost to particulate
+matter pollution exposure in India. Environmental Research Letters."""
                         ),
                         html.H5("Scenario"),
                         html.Div(
@@ -171,4 +140,5 @@ def update_graph(scenario, variable):
     return {'data':[trace], 'layout':layout}
 
 if __name__ == '__main__':
-    server.run(debug=True)
+    app.run_server(debug=True)
+
