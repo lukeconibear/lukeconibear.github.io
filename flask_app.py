@@ -20,5 +20,13 @@ def software():
 def airpollution():
     return render_template('airpollution.html')
 
+@server.route("/publications.html")
+def publications():
+    return render_template('publications.html')
+
+@server.route("/news.html")
+def news():
+    return render_template('news.html')
+
 if __name__ == '__main__':
     server.run()
