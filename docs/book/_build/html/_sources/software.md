@@ -17,6 +17,8 @@ I used machine learning models to predict optimum emission reduction strategies 
 
 I quantified how clean household energy can improve air quality and public health in India ([interactive map](https://bag.leeds.ac.uk/projects/air-quality-in-asia/household-energy-and-air-quality-in-india/), [code](https://github.com/lukeconibear/Conibear_et-al_2020_ERL_dash-app) using Plot.ly Dash).  
 
+([interactive map](/plot_india_solid_fuel)
+
 ## WRFChem
 
 I taught and provided support for a [complex air quality model](https://wrfchem-leeds.github.io/WRFotron/) (Bash and Fortran).  
