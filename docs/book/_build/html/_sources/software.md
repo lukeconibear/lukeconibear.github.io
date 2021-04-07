@@ -15,9 +15,7 @@ I taught and provided support for [epidemiological models](https://github.com/lu
 
 I used machine learning models to predict optimum emission reduction strategies to improve air quality and public health in China ([code](https://github.com/lukeconibear/emulator) using scitkit-learn and TPOT, [academic paper](https://doi.org/10.1029/2021GH000391)).  
 
-I quantified how clean household energy can improve air quality and public health in India ([interactive map](https://bag.leeds.ac.uk/projects/air-quality-in-asia/household-energy-and-air-quality-in-india/), [code](https://github.com/lukeconibear/Conibear_et-al_2020_ERL_dash-app) using Plot.ly Dash).  
-
-([interactive map](/plot_india_solid_fuel)).  
+I quantified how clean household energy can improve air quality and public health in India ([interactive map](/plot_india_solid_fuel)).  
 
 ## WRFChem
 
