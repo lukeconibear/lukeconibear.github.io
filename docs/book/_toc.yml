@@ -1,5 +1,7 @@
 - file: index
 - file: airpollution
 - file: software
+  sections:
+  - file: plot_india_solid_fuel
 - file: publications
 - file: news
