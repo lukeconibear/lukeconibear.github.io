@@ -2,7 +2,7 @@
 
 ## 2021
 
-**17\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth (in peer review), [DOI](https://doi.org/10.1029/2021GH000391).  
+**17\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000391).  
 
 **16\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Regional policies targeting residential solid fuel and agricultural emissions can improve air quality and public health in the Greater Bay Area and across China, GeoHealth, [DOI](https://doi.org/10.1029/2020GH000341).  
 
