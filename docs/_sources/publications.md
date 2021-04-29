@@ -2,9 +2,9 @@
 
 ## 2021
 
-**17\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000391).  
+**17\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000391), [WRFChem code](https://github.com/lukeconibear/papers_wrfotron/tree/master/WRFotron2.0_Conibear_2021_Geohealth_emulator), [Interactive plot](https://www.lukeconibear.com/plot_emulator.html).    
 
-**16\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Regional policies targeting residential solid fuel and agricultural emissions can improve air quality and public health in the Greater Bay Area and across China, GeoHealth, [DOI](https://doi.org/10.1029/2020GH000341).  
+**16\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Regional policies targeting residential solid fuel and agricultural emissions can improve air quality and public health in the Greater Bay Area and across China, GeoHealth, [DOI](https://doi.org/10.1029/2020GH000341), [WRFChem code](https://github.com/lukeconibear/papers_wrfotron/tree/master/WRFotron2.0_Conibear_2021_Geohealth_policies).    
 
 ## 2020
 
@@ -14,7 +14,7 @@
 
 **13\.** Butt, E. W., **Conibear, L.**, Reddington, C. L., Darbyshire, E., Morgan, W. T., Coe, H., Artaxo, P., Brito, J., Knote, C. and Spracklen, D. V. (2020). Large air quality and human health impacts due to Amazon forest and vegetation fires. Environmental Research Communications. [DOI](https://doi.org/10.1088/2515-7620/abb0db).  
 
-**12\.** **Conibear, L.**, Butt, E. W., Knote, C., Lam, N. L., Arnold, S. R., Tiberwal, T., Venkataraman, C., Spracklen, D. V., Bond, T. C. (2020). A complete transition to clean household energy can save onequarter of the healthy life lost to particulate matter pollution exposure in India. 15, 094096. Environmental Research Letters. [DOI](https://doi.org/10.1088/1748-9326/ab8e8a), [WRFChem code](https://github.com/lukeconibear/papers_wrfotron/tree/master/WRFotron2.0_Conibear_2020_EnvironmentalResearchLetters), [Interactive plot](https://bag.leeds.ac.uk/projects/air-quality-in-asia/household-energy-and-air-quality-in-india/).  
+**12\.** **Conibear, L.**, Butt, E. W., Knote, C., Lam, N. L., Arnold, S. R., Tiberwal, T., Venkataraman, C., Spracklen, D. V., Bond, T. C. (2020). A complete transition to clean household energy can save onequarter of the healthy life lost to particulate matter pollution exposure in India. 15, 094096. Environmental Research Letters. [DOI](https://doi.org/10.1088/1748-9326/ab8e8a), [WRFChem code](https://github.com/lukeconibear/papers_wrfotron/tree/master/WRFotron2.0_Conibear_2020_EnvironmentalResearchLetters), [Interactive plot](https://www.lukeconibear.com/plot_india_solid_fuel.html).  
 
 **11\.** Graham, A.M., Pope, R.J., Pringle, K.J., Arnold, S.R., Chipperfield, M., **Conibear, L.**, Butt, E.W., Kiely, L., Knote, C., McQuaid, J.B. (2020). Impact on air quality and health due to the Saddleworth Moor Fire in Northern England. Environmental Research Letters. [DOI](https://doi.org/10.1088/1748-9326/ab8496).  
 
