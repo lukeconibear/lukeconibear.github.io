@@ -3,6 +3,6 @@
 - file: software
   sections:
   - file: plot_india_solid_fuel
-  #- file: plot_emulator
+  - file: plot_emulator
 - file: publications
 - file: news

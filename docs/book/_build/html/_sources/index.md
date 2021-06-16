@@ -16,7 +16,7 @@ I've authored [academic papers](/publications), some of which have been in the [
 :align: right
 ```
 
-Email: L.A.Conibear (at) Leeds.ac.uk  
+Email: laconibear (at) gmail.com  
 GitHub: [lukeconibear](https://github.com/lukeconibear)  
 Twitter: [@lukeconibear](https://twitter.com/lukeconibear)  
 LinkedIn: [lukeconibear](https://www.linkedin.com/in/lukeconibear/)  
