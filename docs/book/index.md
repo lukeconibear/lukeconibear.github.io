@@ -5,7 +5,7 @@
 
 I'm a research fellow in [air quality](/airpollution) at the University of Leeds.  
 
-I use [Python](/software) to analyse complex air quality models.  
+I use data science tools in [Python](/software) to analyse complex air quality models.  
 
 I've authored [academic papers](/publications), some of which have been in the [news](/news).  
 
