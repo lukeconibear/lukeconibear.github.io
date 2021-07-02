@@ -19,3 +19,8 @@ I completed a PhD in [Ambient air quality and human health in India](https://eth
 ## Teaching
 
 I gave lectures on air pollution and human health ([slides](https://www.lukeconibear.com/air_pollution_human_health/#/), [code](https://github.com/lukeconibear/air_pollution_human_health)).  
+
+## Awards
+
+- Winner, Postgraduate Researcher Publication Prize, School of Earth and Environment, University of Leeds, UK, 2019.  
+- Runner–up, Most significant scientific advance or discovery by a PhD student, Institute for Climate and Atmospheric Science, University of Leeds, UK, 2017.  
