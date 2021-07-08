@@ -2,9 +2,11 @@
 
 ## 2021
 
-**17\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000391), [WRFChem code](https://github.com/lukeconibear/papers_wrfotron/tree/master/WRFotron2.0_Conibear_2021_Geohealth_emulator).    
+**18\.** Butt, E., W., **Conibear, L.** Knote, C., Spracklen, D. V. (2021). Large air quality and public health impacts due to Amazonian deforestation fires in 2019, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000429).  
 
-**16\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Regional policies targeting residential solid fuel and agricultural emissions can improve air quality and public health in the Greater Bay Area and across China, GeoHealth, [DOI](https://doi.org/10.1029/2020GH000341), [WRFChem code](https://github.com/lukeconibear/papers_wrfotron/tree/master/WRFotron2.0_Conibear_2021_Geohealth_policies).    
+**17\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000391), [WRFChem code](https://github.com/lukeconibear/papers_wrfotron/tree/master/WRFotron2.0_Conibear_2021_Geohealth_emulator).  
+
+**16\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Regional policies targeting residential solid fuel and agricultural emissions can improve air quality and public health in the Greater Bay Area and across China, GeoHealth, [DOI](https://doi.org/10.1029/2020GH000341), [WRFChem code](https://github.com/lukeconibear/papers_wrfotron/tree/master/WRFotron2.0_Conibear_2021_Geohealth_policies).  
 
 ## 2020
 
