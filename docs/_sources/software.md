@@ -15,7 +15,7 @@ I taught and provided support for [epidemiological models](https://github.com/lu
 
 I used machine learning models (Gaussian process emulation trained from ~20 TB of simulated data) to predict optimum emission reduction strategies to improve air quality and public health in China ([code](https://github.com/lukeconibear/emulator) using scitkit-learn and TPOT, [academic paper](https://doi.org/10.1029/2021GH000391)).  
 
-[Here](https://www.kaggle.com/lukeconibear/house-prices-simple-guide) is a simple guide to Kaggle's House Price competition.  
+[Here](https://www.kaggle.com/lukeconibear/house-prices-simple-guide) is a simple getting started guide to Kaggle's House Price competition.  
 
 I quantified how clean household energy can improve air quality and public health in India ([interactive map](/plot_india_solid_fuel)).  
 

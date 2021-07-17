@@ -1,7 +1,9 @@
 # Luke Conibear
 
-```{image} images/font.jpg
+```{image} images/bubble_nebula_crop.jpg
 ```
+[*Image of the Bubble Nebula from NASA Hubble Site*](https://hubblesite.org/contents/media/images/2016/13/3725-Image.html)  
+
 
 I'm a research fellow in [air quality](/airpollution) at the University of Leeds.  
 
