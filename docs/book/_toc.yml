@@ -2,6 +2,7 @@
 - file: airpollution
 - file: software
   sections:
+  - file: useful_learning_resources
   - file: plot_india_solid_fuel
 - file: publications
 - file: news
