@@ -11,6 +11,8 @@ I'm a research fellow in air quality at the University of Leeds, UK.
 
 I use complex air quality models to understand how policies can improve air quality and reduce the impact on human health in India, China, Indonesia, and South America.  
 
+I quantified how clean household energy can improve air quality and public health in India ([interactive map](/plot_india_solid_fuel)).  
+
 I completed a PhD in [Ambient air quality and human health in India](https://etheses.whiterose.ac.uk/22488/) from the University of Leeds.
 - I quantified the key sources of air pollution exposure in India, the impact of air pollution exposure on human health, and how might this change in the future.  
 - Overall, the disease burden associated with air pollution exposure in India is large, increasing, and dominated by solid fuel use (especially in homes).  
@@ -19,6 +21,8 @@ I completed a PhD in [Ambient air quality and human health in India](https://eth
 ## Teaching
 
 I gave lectures on air pollution and human health ([slides](https://www.lukeconibear.com/air_pollution_human_health/#/), [code](https://github.com/lukeconibear/air_pollution_human_health)).  
+
+I taught and provided support for [epidemiological models](https://github.com/lukeconibear/health_impact_assessment).  
 
 ## Awards
 

@@ -17,34 +17,41 @@ Another approach is to use emulators. Emulators are machine learning models that
 1. Simulation  
    a. Select inputs  
    b. Select outputs    
-   c. Design the simulation structures to fill the parameter space  
-   d. Evaluate the simulator  
+   c. Design the parameter space  
+   d. Run  
+   e. Evaluate  
 2. Emulation  
    a. Design  
    b. Train  
    c. Test  
-   d. Evaluate the emulators  
 3. Prediction  
 
 
 
 ### Application
-We developed emulators to predict air quality and public health in China. The details of our approach are:
+We developed emulators to predict air quality and public health in China. The summary of our approach is:
 1. We simulated air quality using [WRFChem](https://wrfchem-leeds.github.io/WRFotron/).  
    a. Our inputs were 5 anthropogenic emission sectors (residential, industrial, land transport, agriculture, and power generation).  
    b. Our outputs were fine particulate matter (PM$_{2.5}$) and ozone (O$_3$) concentrations.  
    c. We used a maxi−min [Latin hypercube](https://en.wikipedia.org/wiki/Latin_hypercube_sampling) space–filling design to select the scalings to apply to the inputs ([pyDOE](https://pythonhosted.org/pyDOE/randomized.html)).  
-   d. We performed a control run of the simulator and evaluated it against measurements to ensure it accurately predicted our outputs.  
+   d. There were 50 years of training simulations and 5 separate years of test simulations  (independent Latin hypercube designs).  
+      - This step takes a while, even on a [high-performance computer](https://arcdocs.leeds.ac.uk/welcome.html).  
+
+
+   e. We performed a control run of the simulator and evaluated it against measurements to ensure it accurately predicted our outputs.  
 2. We emulated air quality using Gaussian process regressors ([scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html?highlight=gaussian%20process#sklearn.gaussian_process.GaussianProcessRegressor)).  
    a. Our design included:  
       - Preprocessing the inputs with a power transform (Yeo-Johnson) to make them more Gaussian-like ([scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PowerTransformer.html)).  
       - We used a Matern kernel.  
       - We optimised the hyperparameters of the model using genetic programming ([TPOT](http://epistasislab.github.io/tpot/)).  
-      - 1 emulator per grid cell from the simulator (30,556 in total).  
-   b. The emulators were trained on 50 years of simulator data.  
-      - It's unavoidable that this step takes a while to run, even on a [high-performance computer](https://arcdocs.leeds.ac.uk/welcome.html).  
-   c. The emulators were tested on a separate 5 years of simulator data (independent Latin hypercube design).  
-   d. The emulators predicted the unseen test data well and evaluated to a R$^2$ of 0.999 for both outputs.  
+      - We developed 1 emulator per grid cell from the simulator (30,556 in total).  
+
+
+   b. The emulators were trained on the 50 years of simulator data.  
+      - This work was also done in parallel on a high-performance computer, using [Dask](https://dask.org/) ([instructions from Pangeo](https://pangeo.io/setup_guides/hpc.html)).  
+
+
+   c. The emulators evaluated to a R$^2$ of 0.999 for both outputs on the unseen test data.  
 3. Prediction  
    a. The emulators were used to predict a wide range of possible emission scenarios (32,768 in total).  
    b. I'll add the results here soon.

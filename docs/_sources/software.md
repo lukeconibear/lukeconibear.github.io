@@ -11,10 +11,6 @@ I mainly use Python (primary libraries: Numpy, xarray, Pandas, Matplotlib, Jupyt
 
 I provided training for scientific computing (Python, Linux, and GitHub). For example, [explaining](https://www.lukeconibear.com/introduction_to_scientific_computing/tips_to_speed_up_python.html) how to speed up Python code.  
 
-I taught and provided support for [epidemiological models](https://github.com/lukeconibear/health_impact_assessment).  
-
-I quantified how clean household energy can improve air quality and public health in India ([interactive map](/plot_india_solid_fuel)).  
-
 ## Complex air quality model
 
 I taught and provided support for a complex air quality model, [WRFChem](https://wrfchem-leeds.github.io/WRFotron/) (Bash and Fortran).  
