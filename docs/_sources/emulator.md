@@ -1,0 +1,61 @@
+# Emulation of complex air quality model (Gaussian process)
+## Problem
+Numerical atmospheric models are useful to simulate air quality, weather, and climate. However, these models are slow and have high computational costs. Some compromises to meet these constraints are to:
+- Reduce the model accuracy.  
+  - By reducing the model complexity e.g., use simpler representations of mechanisms, decrease the (space/time) resolutions, replace analytical solutions with parameterisations.
+  - By reducing the number of experiments.  
+- Reduce the model precision.    
+  - By using [reduced precision computer chips](https://www.nature.com/articles/526032a).  
+- Use a bigger computer.  
+
+Though, these compromises are not ideal (or sometimes even possible).
+
+## Alternative approach
+Another approach is to use emulators. Emulators are machine learning models that act as proxies of these numerical atmospheric models. They are trained on data from model simulations and learn statistical associations between inputs and outputs. They are much cheaper to run, enabling many more experiments to be undertaken. These emulators are often designed using Gaussian process regressors, due to their high prediction accuracy on test data. [Rasmussen & Williams (2006)](http://www.gaussianprocess.org/gpml/chapters/RW.pdf) do a great job of explaining them. They've been used in the atmospheric sciences to explore uncertainties, sensitivities, and for prediction problems.
+
+### Outline
+1. Simulation  
+   a. Select inputs  
+   b. Select outputs    
+   c. Design the simulation structures to fill the parameter space  
+   d. Evaluate the simulator  
+2. Emulation  
+   a. Design  
+   b. Train  
+   c. Test  
+   d. Evaluate the emulators  
+3. Prediction  
+
+
+
+### Application
+We developed emulators to predict air quality and public health in China. The details of our approach are:
+1. We simulated air quality using [WRFChem](https://wrfchem-leeds.github.io/WRFotron/).  
+   a. Our inputs were 5 anthropogenic emission sectors (residential, industrial, land transport, agriculture, and power generation).  
+   b. Our outputs were fine particulate matter (PM$_{2.5}$) and ozone (O$_3$) concentrations.  
+   c. We used a maxi−min [Latin hypercube](https://en.wikipedia.org/wiki/Latin_hypercube_sampling) space–filling design to select the scalings to apply to the inputs ([pyDOE](https://pythonhosted.org/pyDOE/randomized.html)).  
+   d. We performed a control run of the simulator and evaluated it against measurements to ensure it accurately predicted our outputs.  
+2. We emulated air quality using Gaussian process regressors ([scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html?highlight=gaussian%20process#sklearn.gaussian_process.GaussianProcessRegressor)).  
+   a. Our design included:  
+      - Preprocessing the inputs with a power transform (Yeo-Johnson) to make them more Gaussian-like ([scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PowerTransformer.html)).  
+      - We used a Matern kernel.  
+      - We optimised the hyperparameters of the model using genetic programming ([TPOT](http://epistasislab.github.io/tpot/)).  
+      - 1 emulator per grid cell from the simulator (30,556 in total).  
+   b. The emulators were trained on 50 years of simulator data.  
+      - It's unavoidable that this step takes a while to run, even on a [high-performance computer](https://arcdocs.leeds.ac.uk/welcome.html).  
+   c. The emulators were tested on a separate 5 years of simulator data (independent Latin hypercube design).  
+   d. The emulators predicted the unseen test data well and evaluated to a R$^2$ of 0.999 for both outputs.  
+3. Prediction  
+   a. The emulators were used to predict a wide range of possible emission scenarios (32,768 in total).  
+   b. I'll add the results here soon.
+
+### Further information
+- Short-term air quality prediction.  
+  - [Code](https://github.com/lukeconibear/emulator).  
+  - [Paper](https://doi.org/10.1029/2021GH000391).  
+    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth.
+- Long-term air quality and public health prediction
+  - [Code](https://github.com/lukeconibear/emulator_annual).  
+  - Paper, in preparation.
+    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). The impacts of sectoral emission changes on air quality and public health in China from 2010−2020 using statistical emulation.
+  - Interactive plot, in preparation.  

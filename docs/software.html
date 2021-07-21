@@ -47,6 +47,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -56,7 +58,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Useful learning resources" href="useful_learning_resources.html" />
+    <link rel="next" title="Emulation of complex air quality model (Gaussian process)" href="emulator.html" />
     <link rel="prev" title="Air Pollution" href="airpollution.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -104,8 +106,13 @@
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
+    <a class="reference internal" href="emulator.html">
+     Emulation of complex air quality model (Gaussian process)
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="useful_learning_resources.html">
-     Useful learning resources
+     Useful learning resources for software engineering and data science
     </a>
    </li>
    <li class="toctree-l2">
@@ -204,8 +211,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#wrfchem">
-   WRFChem
+  <a class="reference internal nav-link" href="#complex-air-quality-model">
+   Complex air quality model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#emulation-of-complex-air-quality-model">
+   Emulation of complex air quality model
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -234,12 +246,15 @@
 <p>I mainly use Python (primary libraries: Numpy, xarray, Pandas, Matplotlib, Jupyter, Dask) to analyse the large amounts of data produced by complex air quality models.</p>
 <p>I provided training for scientific computing (Python, Linux, and GitHub). For example, <a class="reference external" href="https://www.lukeconibear.com/introduction_to_scientific_computing/tips_to_speed_up_python.html">explaining</a> how to speed up Python code.</p>
 <p>I taught and provided support for <a class="reference external" href="https://github.com/lukeconibear/health_impact_assessment">epidemiological models</a>.</p>
-<p>I used machine learning models (Gaussian process emulation trained from ~20 TB of simulated data) to predict optimum emission reduction strategies to improve air quality and public health in China (<a class="reference external" href="https://github.com/lukeconibear/emulator">code</a> using scitkit-learn and TPOT, <a class="reference external" href="https://doi.org/10.1029/2021GH000391">academic paper</a>).</p>
 <p>I quantified how clean household energy can improve air quality and public health in India (<a class="reference internal" href="plot_india_solid_fuel.html"><span class="doc std std-doc">interactive map</span></a>).</p>
 </div>
-<div class="section" id="wrfchem">
-<h2>WRFChem<a class="headerlink" href="#wrfchem" title="Permalink to this headline">¶</a></h2>
-<p>I taught and provided support for a <a class="reference external" href="https://wrfchem-leeds.github.io/WRFotron/">complex air quality model</a> (Bash and Fortran).</p>
+<div class="section" id="complex-air-quality-model">
+<h2>Complex air quality model<a class="headerlink" href="#complex-air-quality-model" title="Permalink to this headline">¶</a></h2>
+<p>I taught and provided support for a complex air quality model, <a class="reference external" href="https://wrfchem-leeds.github.io/WRFotron/">WRFChem</a> (Bash and Fortran).</p>
+</div>
+<div class="section" id="emulation-of-complex-air-quality-model">
+<h2>Emulation of complex air quality model<a class="headerlink" href="#emulation-of-complex-air-quality-model" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="emulator.html"><span class="doc std std-doc">Here</span></a> I used machine learning models (Gaussian process emulation trained from ~20 TB of simulated data) to predict optimum emission reduction strategies to improve air quality and public health in China.</p>
 </div>
 <div class="section" id="useful-learning-resources">
 <h2>Useful learning resources<a class="headerlink" href="#useful-learning-resources" title="Permalink to this headline">¶</a></h2>
@@ -275,7 +290,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="airpollution.html" title="previous page">Air Pollution</a>
-    <a class='right-next' id="next-link" href="useful_learning_resources.html" title="next page">Useful learning resources</a>
+    <a class='right-next' id="next-link" href="emulator.html" title="next page">Emulation of complex air quality model (Gaussian process)</a>
 
         </div>
         

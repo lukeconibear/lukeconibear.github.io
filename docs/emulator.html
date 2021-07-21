@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emulation of complex air quality model (Gaussian process)</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Useful learning resources for software engineering and data science" href="useful_learning_resources.html" />
+    <link rel="prev" title="Software" href="software.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/bubble_nebula_crop.jpg" class="logo" alt="logo">
+  
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Luke Conibear
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="airpollution.html">
+   Air Pollution
+  </a>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="software.html">
+   Software
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Emulation of complex air quality model (Gaussian process)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="useful_learning_resources.html">
+     Useful learning resources for software engineering and data science
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="plot_india_solid_fuel.html">
+     Public health benefits of clean household energy in India
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="publications.html">
+   Publications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="news.html">
+   News
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/emulator.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem">
+   Problem
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alternative-approach">
+   Alternative approach
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#outline">
+     Outline
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#application">
+     Application
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#further-information">
+     Further information
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="emulation-of-complex-air-quality-model-gaussian-process">
+<h1>Emulation of complex air quality model (Gaussian process)<a class="headerlink" href="#emulation-of-complex-air-quality-model-gaussian-process" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="problem">
+<h2>Problem<a class="headerlink" href="#problem" title="Permalink to this headline">¶</a></h2>
+<p>Numerical atmospheric models are useful to simulate air quality, weather, and climate. However, these models are slow and have high computational costs. Some compromises to meet these constraints are to:</p>
+<ul class="simple">
+<li><p>Reduce the model accuracy.</p>
+<ul>
+<li><p>By reducing the model complexity e.g., use simpler representations of mechanisms, decrease the (space/time) resolutions, replace analytical solutions with parameterisations.</p></li>
+<li><p>By reducing the number of experiments.</p></li>
+</ul>
+</li>
+<li><p>Reduce the model precision.</p>
+<ul>
+<li><p>By using <a class="reference external" href="https://www.nature.com/articles/526032a">reduced precision computer chips</a>.</p></li>
+</ul>
+</li>
+<li><p>Use a bigger computer.</p></li>
+</ul>
+<p>Though, these compromises are not ideal (or sometimes even possible).</p>
+</div>
+<div class="section" id="alternative-approach">
+<h2>Alternative approach<a class="headerlink" href="#alternative-approach" title="Permalink to this headline">¶</a></h2>
+<p>Another approach is to use emulators. Emulators are machine learning models that act as proxies of these numerical atmospheric models. They are trained on data from model simulations and learn statistical associations between inputs and outputs. They are much cheaper to run, enabling many more experiments to be undertaken. These emulators are often designed using Gaussian process regressors, due to their high prediction accuracy on test data. <a class="reference external" href="http://www.gaussianprocess.org/gpml/chapters/RW.pdf">Rasmussen &amp; Williams (2006)</a> do a great job of explaining them. They’ve been used in the atmospheric sciences to explore uncertainties, sensitivities, and for prediction problems.</p>
+<div class="section" id="outline">
+<h3>Outline<a class="headerlink" href="#outline" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Simulation<br />
+a. Select inputs<br />
+b. Select outputs<br />
+c. Design the simulation structures to fill the parameter space<br />
+d. Evaluate the simulator</p></li>
+<li><p>Emulation<br />
+a. Design<br />
+b. Train<br />
+c. Test<br />
+d. Evaluate the emulators</p></li>
+<li><p>Prediction</p></li>
+</ol>
+</div>
+<div class="section" id="application">
+<h3>Application<a class="headerlink" href="#application" title="Permalink to this headline">¶</a></h3>
+<p>We developed emulators to predict air quality and public health in China. The details of our approach are:</p>
+<ol class="simple">
+<li><p>We simulated air quality using <a class="reference external" href="https://wrfchem-leeds.github.io/WRFotron/">WRFChem</a>.<br />
+a. Our inputs were 5 anthropogenic emission sectors (residential, industrial, land transport, agriculture, and power generation).<br />
+b. Our outputs were fine particulate matter (PM<span class="math notranslate nohighlight">\(_{2.5}\)</span>) and ozone (O<span class="math notranslate nohighlight">\(_3\)</span>) concentrations.<br />
+c. We used a maxi−min <a class="reference external" href="https://en.wikipedia.org/wiki/Latin_hypercube_sampling">Latin hypercube</a> space–filling design to select the scalings to apply to the inputs (<a class="reference external" href="https://pythonhosted.org/pyDOE/randomized.html">pyDOE</a>).<br />
+d. We performed a control run of the simulator and evaluated it against measurements to ensure it accurately predicted our outputs.</p></li>
+<li><p>We emulated air quality using Gaussian process regressors (<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html?highlight=gaussian%20process#sklearn.gaussian_process.GaussianProcessRegressor">scikit-learn</a>).<br />
+a. Our design included:</p>
+<ul class="simple">
+<li><p>Preprocessing the inputs with a power transform (Yeo-Johnson) to make them more Gaussian-like (<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PowerTransformer.html">scikit-learn</a>).</p></li>
+<li><p>We used a Matern kernel.</p></li>
+<li><p>We optimised the hyperparameters of the model using genetic programming (<a class="reference external" href="http://epistasislab.github.io/tpot/">TPOT</a>).</p></li>
+<li><p>1 emulator per grid cell from the simulator (30,556 in total).<br />
+b. The emulators were trained on 50 years of simulator data.</p></li>
+<li><p>It’s unavoidable that this step takes a while to run, even on a <a class="reference external" href="https://arcdocs.leeds.ac.uk/welcome.html">high-performance computer</a>.<br />
+c. The emulators were tested on a separate 5 years of simulator data (independent Latin hypercube design).<br />
+d. The emulators predicted the unseen test data well and evaluated to a R<span class="math notranslate nohighlight">\(^2\)</span> of 0.999 for both outputs.</p></li>
+</ul>
+</li>
+<li><p>Prediction<br />
+a. The emulators were used to predict a wide range of possible emission scenarios (32,768 in total).<br />
+b. I’ll add the results here soon.</p></li>
+</ol>
+</div>
+<div class="section" id="further-information">
+<h3>Further information<a class="headerlink" href="#further-information" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Short-term air quality prediction.</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/lukeconibear/emulator">Code</a>.</p></li>
+<li><p><a class="reference external" href="https://doi.org/10.1029/2021GH000391">Paper</a>.</p>
+<ul>
+<li><p><strong>Conibear, L.</strong> Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Long-term air quality and public health prediction</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/lukeconibear/emulator_annual">Code</a>.</p></li>
+<li><p>Paper, in preparation.</p>
+<ul>
+<li><p><strong>Conibear, L.</strong> Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). The impacts of sectoral emission changes on air quality and public health in China from 2010−2020 using statistical emulation.</p></li>
+</ul>
+</li>
+<li><p>Interactive plot, in preparation.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="software.html" title="previous page">Software</a>
+    <a class='right-next' id="next-link" href="useful_learning_resources.html" title="next page">Useful learning resources for software engineering and data science</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Luke Conibear<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

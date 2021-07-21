@@ -1,4 +1,4 @@
-# Useful learning resources
+# Useful learning resources for software engineering and data science
 These are some great learning resources for topics in data science, software engineering, and machine learning that I've found helpful.  
 
 ## Data Science  

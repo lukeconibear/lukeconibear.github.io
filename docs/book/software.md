@@ -13,13 +13,14 @@ I provided training for scientific computing (Python, Linux, and GitHub). For ex
 
 I taught and provided support for [epidemiological models](https://github.com/lukeconibear/health_impact_assessment).  
 
-I used machine learning models (Gaussian process emulation trained from ~20 TB of simulated data) to predict optimum emission reduction strategies to improve air quality and public health in China ([code](https://github.com/lukeconibear/emulator) using scitkit-learn and TPOT, [academic paper](https://doi.org/10.1029/2021GH000391)).  
-
 I quantified how clean household energy can improve air quality and public health in India ([interactive map](/plot_india_solid_fuel)).  
 
-## WRFChem
+## Complex air quality model
 
-I taught and provided support for a [complex air quality model](https://wrfchem-leeds.github.io/WRFotron/) (Bash and Fortran).  
+I taught and provided support for a complex air quality model, [WRFChem](https://wrfchem-leeds.github.io/WRFotron/) (Bash and Fortran).  
+
+## Emulation of complex air quality model
+[Here](/emulator) I used machine learning models (Gaussian process emulation trained from ~20 TB of simulated data) to predict optimum emission reduction strategies to improve air quality and public health in China.  
 
 ## Useful learning resources
 [Here](/useful_learning_resources) are some great learning resources for topics in data science, software engineering, and machine learning that I've found helpful.  
