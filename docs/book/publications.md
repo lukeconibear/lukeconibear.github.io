@@ -2,6 +2,8 @@
 
 ## 2021
 
+**19\.** Reddington, C. L., **Conibear, L.** Robinson, S., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Impact of forest and vegetation fires on air quality and public health in Southeast Asia, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000418).  
+
 **18\.** Butt, E., W., **Conibear, L.** Knote, C., Spracklen, D. V. (2021). Large air quality and public health impacts due to Amazonian deforestation fires in 2019, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000429).  
 
 **17\.** **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000391), [WRFChem code](https://github.com/lukeconibear/papers_wrfotron/tree/master/WRFotron2.0_Conibear_2021_Geohealth_emulator).  
