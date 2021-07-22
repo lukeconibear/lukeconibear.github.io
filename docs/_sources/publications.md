@@ -2,7 +2,7 @@
 
 ## 2021
 
-**19\.** Reddington, C. L., **Conibear, L.** Robinson, S., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Impact of forest and vegetation fires on air quality and public health in Southeast Asia, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000418).  
+**19\.** Reddington, C. L., **Conibear, L.** Robinson, S., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Air Pollution from Forest and Vegetation Fires in Southeast Asia Disproportionately Impacts the Poor, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000418).  
 
 **18\.** Butt, E., W., **Conibear, L.** Knote, C., Spracklen, D. V. (2021). Large air quality and public health impacts due to Amazonian deforestation fires in 2019, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000429).  
 
