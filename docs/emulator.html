@@ -220,11 +220,6 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#outline">
-     Outline
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#application">
      Application
     </a>
@@ -257,7 +252,6 @@
 <li><p>Reduce the model accuracy.</p>
 <ul>
 <li><p>By reducing the model complexity e.g., use simpler representations of mechanisms, decrease the (space/time) resolutions, replace analytical solutions with parameterisations.</p></li>
-<li><p>By reducing the number of experiments.</p></li>
 </ul>
 </li>
 <li><p>Reduce the model precision.</p>
@@ -265,6 +259,7 @@
 <li><p>By using <a class="reference external" href="https://www.nature.com/articles/526032a">reduced precision computer chips</a>.</p></li>
 </ul>
 </li>
+<li><p>Reduce the number of experiments.</p></li>
 <li><p>Use a bigger computer.</p></li>
 </ul>
 <p>Though, these compromises are not ideal (or sometimes even possible).</p>
@@ -272,22 +267,7 @@
 <div class="section" id="alternative-approach">
 <h2>Alternative approach<a class="headerlink" href="#alternative-approach" title="Permalink to this headline">¶</a></h2>
 <p>Another approach is to use emulators. Emulators are machine learning models that act as proxies of these numerical atmospheric models. They are trained on data from model simulations and learn statistical associations between inputs and outputs. They are much cheaper to run, enabling many more experiments to be undertaken. These emulators are often designed using Gaussian process regressors, due to their high prediction accuracy on test data. <a class="reference external" href="http://www.gaussianprocess.org/gpml/chapters/RW.pdf">Rasmussen &amp; Williams (2006)</a> do a great job of explaining them. They’ve been used in the atmospheric sciences to explore uncertainties, sensitivities, and for prediction problems.</p>
-<div class="section" id="outline">
-<h3>Outline<a class="headerlink" href="#outline" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p>Simulation<br />
-a. Select inputs<br />
-b. Select outputs<br />
-c. Design the parameter space<br />
-d. Run<br />
-e. Evaluate</p></li>
-<li><p>Emulation<br />
-a. Design<br />
-b. Train<br />
-c. Test</p></li>
-<li><p>Prediction</p></li>
-</ol>
-</div>
+<p>The general approach is split into simulation and emulation. First, the inputs and outputs of the prediction problem are determined. Then simulations are designed, executed, and evaluated. Then emulators are designed, optimised, evaluated, and used for prediction.</p>
 <div class="section" id="application">
 <h3>Application<a class="headerlink" href="#application" title="Permalink to this headline">¶</a></h3>
 <p>We developed emulators to predict air quality and public health in China. The summary of our approach is:</p>

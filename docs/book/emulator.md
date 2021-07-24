@@ -3,29 +3,17 @@
 Numerical atmospheric models are useful to simulate air quality, weather, and climate. However, these models are slow and have high computational costs. Some compromises to meet these constraints are to:
 - Reduce the model accuracy.  
   - By reducing the model complexity e.g., use simpler representations of mechanisms, decrease the (space/time) resolutions, replace analytical solutions with parameterisations.
-  - By reducing the number of experiments.  
 - Reduce the model precision.    
   - By using [reduced precision computer chips](https://www.nature.com/articles/526032a).  
+- Reduce the number of experiments.  
 - Use a bigger computer.  
 
 Though, these compromises are not ideal (or sometimes even possible).
 
 ## Alternative approach
-Another approach is to use emulators. Emulators are machine learning models that act as proxies of these numerical atmospheric models. They are trained on data from model simulations and learn statistical associations between inputs and outputs. They are much cheaper to run, enabling many more experiments to be undertaken. These emulators are often designed using Gaussian process regressors, due to their high prediction accuracy on test data. [Rasmussen & Williams (2006)](http://www.gaussianprocess.org/gpml/chapters/RW.pdf) do a great job of explaining them. They've been used in the atmospheric sciences to explore uncertainties, sensitivities, and for prediction problems.
+Another approach is to use emulators. Emulators are machine learning models that act as proxies of these numerical atmospheric models. They are trained on data from model simulations and learn statistical associations between inputs and outputs. They are much cheaper to run, enabling many more experiments to be undertaken. These emulators are often designed using Gaussian process regressors, due to their high prediction accuracy on test data. [Rasmussen & Williams (2006)](http://www.gaussianprocess.org/gpml/chapters/RW.pdf) do a great job of explaining them. They've been used in the atmospheric sciences to explore uncertainties, sensitivities, and for prediction problems.  
 
-### Outline
-1. Simulation  
-   a. Select inputs  
-   b. Select outputs    
-   c. Design the parameter space  
-   d. Run  
-   e. Evaluate  
-2. Emulation  
-   a. Design  
-   b. Train  
-   c. Test  
-3. Prediction  
-
+The general approach is split into simulation and emulation. First, the inputs and outputs of the prediction problem are determined. Then simulations are designed, executed, and evaluated. Then emulators are designed, optimised, evaluated, and used for prediction.
 
 
 ### Application
