@@ -1,4 +1,10 @@
 # Emulation of complex air quality model (Gaussian process)
+
+```{image} images/emulator_github_repo.png
+:name: Emulator
+```
+*Image sources [1](https://www.nasa.gov/content/a-portrait-of-global-winds/), [2](https://www.aidanscannell.com/post/gaussian-process-regression/), and [3](http://6degreesoffreedom.co/circle-random-sampling/).*  
+
 ## Problem
 Numerical atmospheric models are useful to simulate air quality, weather, and climate. However, these models are slow and have high computational costs. Some compromises to meet these constraints are to:
 - Reduce the model accuracy.  
