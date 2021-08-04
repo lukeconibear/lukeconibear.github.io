@@ -58,5 +58,5 @@ We developed emulators to predict air quality and public health in China. The su
 - Long-term air quality and public health prediction
   - [Code](https://github.com/lukeconibear/emulator_annual).  
   - Paper, in preparation.
-    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). The impacts of sectoral emission changes on air quality and public health in China from 2010−2020 using statistical emulation.
+    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Emulating the Sector Contributions to Air Quality and Public Health in China from 2010−2020.
   - Interactive plot, in preparation.  

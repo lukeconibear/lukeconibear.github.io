@@ -39,9 +39,8 @@ These are some great learning resources for topics in data science, software eng
 - If you're interested in jobs in this area, I highly recommend [Workera](https://workera.ai/) to help figure out what the roles are, what you're suited to, what you need to improve on, and personalised plans to make this progress.  
 - Machine learning, CS229, Standford University, Andrew Ng.  
   - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU).  
-- Deep learning, CS230, Stanford University, Andrew Ng.  
-  - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb).  
+- [Deep learning]((https://www.coursera.org/specializations/deep-learning)), Coursera, Andrew Ng.  
+  - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb), CS230, Stanford University.  
   - [Syllabus](http://cs230.stanford.edu/syllabus/).  
-  - [Specialisation - Coursera](https://www.coursera.org/specializations/deep-learning).  
 - [Deep Learning with Python](https://www.amazon.co.uk/Deep-Learning-Python-Francois-Chollet/dp/1617294438), Francois Chollet, 2018.  
 - [Kaggle competitions](https://www.kaggle.com/competitions).  
