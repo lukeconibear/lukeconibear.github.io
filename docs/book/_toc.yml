@@ -2,7 +2,7 @@
 - file: airpollution
   sections:
   - file: plot_india_solid_fuel
-- file: software
+- file: technical
   sections:
   - file: emulator
   - file: useful_learning_resources
