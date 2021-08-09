@@ -1,11 +1,11 @@
-# Useful learning resources (ML/DL, DS, and SE)
-These are some great learning resources for topics in  for machine/deep learning, data science, and software engineering that I've found helpful.  
+# Useful learning resources (machine learning, data science, and software engineering)
+Here are some great learning resources that I've found helpful.  
 
 ## Machine Learning  
 - If you're interested in jobs in this area, I highly recommend [Workera](https://workera.ai/) to help figure out what the roles are, what you're suited to, what you need to improve on, and personalised plans to make this progress.  
-- Machine learning, CS229, Standford University, Andrew Ng.  
-  - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU).  
-- [Deep learning]((https://www.coursera.org/specializations/deep-learning)), Coursera, DeepLearning.AI.  
+- [Machine learning](https://www.coursera.org/learn/machine-learning), Coursera, Andrew Ng.  
+  - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU), CS229, Standford University.  
+- [Deep learning](https://www.coursera.org/specializations/deep-learning), Coursera, DeepLearning.AI.  
   - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb), CS230, Stanford University.  
   - [Syllabus](http://cs230.stanford.edu/syllabus/), CS230, Stanford University.  
 - [Deep Learning with Python](https://www.amazon.co.uk/Deep-Learning-Python-Francois-Chollet/dp/1617294438), Francois Chollet, 2018.  
