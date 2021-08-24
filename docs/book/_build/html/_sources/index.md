@@ -14,7 +14,7 @@ I've authored [academic papers](/publications), some of which have been in the [
 ## Contact
 
 ```{image} images/LukeConibear.jpg
-:width: 110px
+:width: 130px
 :align: right
 ```
 
