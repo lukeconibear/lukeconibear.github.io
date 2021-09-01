@@ -8,8 +8,6 @@ Here are some great learning resources that I've found helpful.
 - [Deep learning](https://www.coursera.org/specializations/deep-learning), Coursera, DeepLearning.AI.  
   - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb), CS230, Stanford University.  
   - [Syllabus](http://cs230.stanford.edu/syllabus/), CS230, Stanford University.  
-- [Deep Learning with Python](https://www.amazon.co.uk/Deep-Learning-Python-Francois-Chollet/dp/1617294438), Francois Chollet, 2018.  
-- [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems](https://www.amazon.co.uk/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646), Aurelien Geron, 2019.  
 - [Kaggle competitions](https://www.kaggle.com/competitions).  
 
 ## Data Science  
@@ -26,8 +24,6 @@ Here are some great learning resources that I've found helpful.
   - [The Book of Why: The New Science of Cause and Effect](https://www.amazon.co.uk/Book-Why-Science-Cause-Effect/dp/0141982411/ref=asc_df_0141982411/?tag=googshopuk-21&linkCode=df0&hvadid=280101927806&hvpos=&hvnetw=g&hvrand=1515808143887519158&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9046357&hvtargid=pla-555411478238&psc=1&th=1&psc=1), Judea Pearl & Dana Nackenzie, 2019.  
   - [Introduction to Causal Inference](https://www.bradyneal.com/causal-inference-course), Brady Neal.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLoazKTcS0RzZ1SUgeOgc6SWt51gfT80N0).  
-  - [Explanation in Causal Inference: Methods for Mediation and Interaction](https://www.amazon.co.uk/Explanation-Causal-Inference-Mediation-Interaction/dp/0199325871), Tyler Vanderweele, 2015, OUP.  
-    - [Video lectures](https://www.youtube.com/channel/UCQu03AdpGNsY3Ez_8QiJDYg/videos).  
 
 ## Software Engineering  
 - If you're interested in jobs in this area, I highly recommend [Teach Yourself Computer Science](https://teachyourselfcs.com/) by Oz Nova and Myles Byrne. This will help navigate the key topics and best resources. Many of the resources below are directly taken from this great guide.   
