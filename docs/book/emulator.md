@@ -46,9 +46,10 @@ We developed emulators to predict air quality and public health in China. The su
 
 
    c. The emulators evaluated to a R$^2$ of 0.999 for both outputs on the unseen test data.  
-3. Prediction  
-   a. The emulators were used to predict a wide range of possible emission scenarios (32,768 in total).  
-   b. See the results [here](https://www.lukeconibear.com/plot_emulator.html).  
+
+### Results  
+The emulators were used to predict a wide range of possible emission scenarios (32,768 in total).  
+See the results [here](https://www.lukeconibear.com/plot_emulator.html).   
 
 ### Further information
 - Short-term air quality prediction.  
