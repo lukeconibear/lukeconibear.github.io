@@ -1,4 +1,4 @@
-# Emulation of complex air quality model (Gaussian process)
+# Emulation of complex air quality models - Methods
 
 ```{image} images/emulator_github_repo.png
 :name: Emulator
