@@ -1,4 +1,4 @@
-# Emulation of complex air quality model (Gaussian process)
+# Emulation of complex air quality models - Methods
 
 ```{image} images/emulator_github_repo.png
 :name: Emulator
@@ -48,7 +48,7 @@ We developed emulators to predict air quality and public health in China. The su
    c. The emulators evaluated to a R$^2$ of 0.999 for both outputs on the unseen test data.  
 3. Prediction  
    a. The emulators were used to predict a wide range of possible emission scenarios (32,768 in total).  
-   b. I'll add the results here soon.
+   b. See the results [here](https://www.lukeconibear.com/plot_emulator.html).  
 
 ### Further information
 - Short-term air quality prediction.  
@@ -57,6 +57,10 @@ We developed emulators to predict air quality and public health in China. The su
     - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth.
 - Long-term air quality and public health prediction
   - [Code](https://github.com/lukeconibear/emulator_annual).  
-  - Paper, in preparation.
-    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Emulating the Sector Contributions to Air Quality and Public Health in China from 2010−2020.
-  - Interactive plot, in preparation.  
+  - Paper - Emulator development, in preparation.
+    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Machine Learning Emulation of Long−Term Air Pollution Exposure and Disease Burden from Emission Changes in China.  
+  - Paper - Emulator application to future climate scenarios, in preparation.  
+    - **Conibear, L.** Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S. T., Klimont, Z., Spracklen, D. V. (2021). The Contribution of Air Pollution Sources to the Future Disease Burden in China.  
+  - Paper - Emulator application to recent trends, in preparation.  
+    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Emission Sector Contributions to Air Quality and Public Health in China from 2010−2020.  
+
