@@ -5,7 +5,7 @@
 - file: technical
   sections:
   - file: emulator
-  #- file: plot_emulator
+  # - file: plot_emulator
   - file: useful_learning_resources
 - file: publications
 - file: news
