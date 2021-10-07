@@ -9,6 +9,8 @@ Here are some great learning resources that I've found helpful.
   - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb), CS230, Stanford University.  
   - [Syllabus](http://cs230.stanford.edu/syllabus/), CS230, Stanford University.  
 - [Kaggle competitions](https://www.kaggle.com/competitions).  
+- [MLExpert](https://www.algoexpert.io/content#mle).  
+- [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), Aurélien Géron, 2019, O'Reilly Media, Inc.  
 
 ## Data Science  
 - [Computational and Inferential Thinking: The Foundations of Data Science](https://inferentialthinking.com/chapters/intro.html), Ani Adhikari and John DeNero, Data 8: Foundations of Data Science course, UC Berkeley.  
