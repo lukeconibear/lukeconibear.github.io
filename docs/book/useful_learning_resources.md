@@ -3,14 +3,23 @@ Here are some great learning resources that I've found helpful.
 
 ## Machine Learning  
 - If you're interested in jobs in this area, I highly recommend [Workera](https://workera.ai/) to help figure out what the roles are, what you're suited to, what you need to improve on, and personalised plans to make this progress.  
-- [Machine learning](https://www.coursera.org/learn/machine-learning), Coursera, Andrew Ng.  
-  - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU), CS229, Standford University.  
-- [Deep learning](https://www.coursera.org/specializations/deep-learning), Coursera, DeepLearning.AI.  
-  - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb), CS230, Stanford University.  
-  - [Syllabus](http://cs230.stanford.edu/syllabus/), CS230, Stanford University.  
-- [Kaggle competitions](https://www.kaggle.com/competitions).  
-- [MLExpert](https://www.algoexpert.io/content#mle).  
-- [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), Aurélien Géron, 2019, O'Reilly Media, Inc.  
+- Machine learning:  
+  - [Machine learning](https://www.coursera.org/learn/machine-learning), Coursera, Andrew Ng.  
+    - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU), CS229, Standford University.  
+  - [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops?utm_source=deeplearning-ai&utm_medium=institutions&utm_campaign=20210423-mlep-1-deeplearning-ai-institutions-dlai-website), Coursera, DeepLearning.AI.  
+- Deep learning:
+  - [Deep learning](https://www.coursera.org/specializations/deep-learning), Coursera, DeepLearning.AI.  
+    - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb), CS230, Stanford University.  
+    - [Syllabus](http://cs230.stanford.edu/syllabus/), CS230, Stanford University.  
+  - [NYU Deep Learning](https://atcold.github.io/NYU-DLSP21/), Yann LeCun and Alfredo Canziani, NYU, 2021.  
+    - [Video lectures](https://www.youtube.com/playlist?list=PLLHTzKZzVU9e6xUfG10TkTWApKSZCzuBI).  
+- Maths:
+  - [Linear Algebra](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8), Gilbert Strang, MIT 18.06, 2005.  
+  - [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k), Gilbert Strang, MIT 18.065, 2018.  
+- Misc:
+  - [Kaggle competitions](https://www.kaggle.com/competitions).  
+  - [MLExpert](https://www.algoexpert.io/content#mle).  
+  - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), Aurélien Géron, 2019, O'Reilly Media, Inc.  
 
 ## Data Science  
 - [Computational and Inferential Thinking: The Foundations of Data Science](https://inferentialthinking.com/chapters/intro.html), Ani Adhikari and John DeNero, Data 8: Foundations of Data Science course, UC Berkeley.  
@@ -34,13 +43,13 @@ Here are some great learning resources that I've found helpful.
     - [Video lectures](https://www.youtube.com/c/JohnDeNero/playlists).  
   - [Practical Python Programming](https://github.com/dabeaz-course/practical-python), David Beazley.  
 - Algorithms and Data Structures:
-  - [Introduction to Algorithms](https://youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb), MIT.  
+  - [Introduction to Algorithms](https://youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb), Srini Devadas and Erik Demaine, MIT 6.006, 2011.  
   - [AlgoExpert](https://www.algoexpert.io/).  
 - Computer Architecture:
-  - [Great Ideas in Computer Architecture](https://inst.eecs.berkeley.edu//~cs61c/sp15/) (Machine Structures). CS61C, Spring 2015, UC Berkeley.  
+  - [Great Ideas in Computer Architecture](https://inst.eecs.berkeley.edu//~cs61c/sp15/) (Machine Structures). Krste Asanović and Vladimir Stojanovic, UC Berkeley CS61C, 2015.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk).  
 - Misc:
-  - [Python Packages](https://py-pkgs.org/), Tomas Beuzen & Tiffany Timbers.  
+  - [Python Packages](https://py-pkgs.org/), Tomas Beuzen & Tiffany Timbers, 2021.  
   - [Modern Python Developer's Toolkit](https://youtu.be/WkUBx3g2QfQ), Sebastian Witowski, PyCon US 2020.  
   - [Introduction to Discrete Mathematics for Computer Science Specialization](https://www.coursera.org/specializations/discrete-mathematics), University of California San Diego HSE University, Coursera.  
   

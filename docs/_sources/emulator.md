@@ -61,7 +61,7 @@ See the results [here](https://www.lukeconibear.com/plot_emulator.html).
   - Paper - Emulator development, in preparation.
     - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Machine Learning Emulation of Long−Term Air Pollution Exposure and Disease Burden from Emission Changes in China.  
   - Paper - Emulator application to future climate scenarios, in preparation.  
-    - **Conibear, L.** Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S. T., Klimont, Z., Spracklen, D. V. (2021). The Contribution of Air Pollution Sources to the Future Disease Burden in China.  
+    - **Conibear, L.** Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S. T., Klimont, Z., Spracklen, D. V. (2021). The Contribution of Emission Sources to the Future Air Pollution Disease Burden in China.  
   - Paper - Emulator application to recent trends, in preparation.  
     - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Emission Sector Contributions to Air Quality and Public Health in China from 2010−2020.  
 
