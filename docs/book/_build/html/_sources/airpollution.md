@@ -16,7 +16,7 @@ I quantified how clean household energy can improve air quality and public healt
 I completed a PhD in [Ambient air quality and human health in India](https://etheses.whiterose.ac.uk/22488/) from the University of Leeds.
 - I quantified the key sources of air pollution exposure in India, the impact of air pollution exposure on human health, and how might this change in the future.  
 - Overall, the disease burden associated with air pollution exposure in India is large, increasing, and dominated by solid fuel use (especially in homes).  
-- I was inspired by [Kirk R. Smith](https://www.kirkrsmith.org/) and [Hans Rosling](https://www.gapminder.org/videos/hans-rosling-and-the-magic-washing-machine/).  
+- I was inspired by [Kirk R. Smith](https://youtu.be/tsQfeVkx6Fw) and [Hans Rosling](https://www.gapminder.org/videos/hans-rosling-and-the-magic-washing-machine/).  
 
 ## Teaching
 

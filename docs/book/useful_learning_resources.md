@@ -13,6 +13,9 @@ Here are some great learning resources that I've found helpful.
     - [Syllabus](http://cs230.stanford.edu/syllabus/), CS230, Stanford University.  
   - [NYU Deep Learning](https://atcold.github.io/NYU-DLSP21/), Yann LeCun and Alfredo Canziani, NYU, 2021.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLLHTzKZzVU9e6xUfG10TkTWApKSZCzuBI).  
+- Reinforcement learning:
+  - [RL Lecture Series](https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm0), DeepMind and UCL, 2021.  
+  - [Reinforcement learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u), Emma Brunskill, Stanford University CS234, 2019.  
 - Maths:
   - [Linear Algebra](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8), Gilbert Strang, MIT 18.06, 2005.  
   - [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k), Gilbert Strang, MIT 18.065, 2018.  
