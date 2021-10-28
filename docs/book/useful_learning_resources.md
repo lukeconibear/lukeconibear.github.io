@@ -7,12 +7,18 @@ Here are some great learning resources that I've found helpful.
   - [Machine learning](https://www.coursera.org/learn/machine-learning), Coursera, Andrew Ng.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU), CS229, Standford University.  
   - [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops?utm_source=deeplearning-ai&utm_medium=institutions&utm_campaign=20210423-mlep-1-deeplearning-ai-institutions-dlai-website), Coursera, DeepLearning.AI.  
+  - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), Aurélien Géron, 2019, O'Reilly Media, Inc.  
+    - [Jupyter Notebooks](https://github.com/ageron/handson-ml2)  
+  - [Artificial Intelligence: A Modern Approach, 4th edition](http://aima.cs.berkeley.edu/), Stuart Russell and Peter Norvig, 2021, Pearson.  
 - Deep learning:
-  - [Deep learning](https://www.coursera.org/specializations/deep-learning), Coursera, DeepLearning.AI.  
+  - [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning), Coursera, DeepLearning.AI.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb), CS230, Stanford University.  
     - [Syllabus](http://cs230.stanford.edu/syllabus/), CS230, Stanford University.  
   - [NYU Deep Learning](https://atcold.github.io/NYU-DLSP21/), Yann LeCun and Alfredo Canziani, NYU, 2021.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLLHTzKZzVU9e6xUfG10TkTWApKSZCzuBI).  
+  - [Deep Learning with Python, 2nd Edition](https://www.manning.com/books/deep-learning-with-python-second-edition?a_aid=keras&a_bid=76564dff), François Chollet, 2021, Manning.  
+    - [Jupyter Notebooks](https://github.com/fchollet/deep-learning-with-python-notebooks)  
+  - [Neural Networks for Machine Learning](https://www.youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv), Geoffrey Hinton.  
 - Reinforcement learning:
   - [RL Lecture Series](https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm0), DeepMind and UCL, 2021.  
   - [Reinforcement learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u), Emma Brunskill, Stanford University CS234, 2019.  
@@ -22,11 +28,14 @@ Here are some great learning resources that I've found helpful.
 - Misc:
   - [Kaggle competitions](https://www.kaggle.com/competitions).  
   - [MLExpert](https://www.algoexpert.io/content#mle).  
-  - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), Aurélien Géron, 2019, O'Reilly Media, Inc.  
+  
 
 ## Data Science  
-- [Computational and Inferential Thinking: The Foundations of Data Science](https://inferentialthinking.com/chapters/intro.html), Ani Adhikari and John DeNero, Data 8: Foundations of Data Science course, UC Berkeley.  
-  - [Video lectures](https://www.youtube.com/playlist?list=PL3juAj0fqNsI4HLvMJFnZDDabxAExG0wv).  
+- Foundations
+  - [Computational and Inferential Thinking: The Foundations of Data Science](https://inferentialthinking.com/chapters/intro.html), Ani Adhikari and John DeNero, Data 8: Foundations of Data Science course, UC Berkeley.  
+    - [Video lectures](https://www.youtube.com/playlist?list=PL3juAj0fqNsI4HLvMJFnZDDabxAExG0wv).  
+  - [Data Science](https://www.youtube.com/playlist?list=PLOtl7M3yp-DVODzTKX8JtXkm1EG3u2BsD), Steven Skiena, CSE 519, Stony Brook University, 2020.  
+  - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/), Jake VanderPlas, 2016.  
 - Databases:
   - [Intro to SQL](https://www.kaggle.com/learn/intro-to-sql), Kaggle.  
   - [Advanced SQL](https://www.kaggle.com/learn/advanced-sql), Kaggle.  
@@ -45,12 +54,17 @@ Here are some great learning resources that I've found helpful.
   - [Composing Programs](https://composingprograms.com/), John DeNero, 61A course, UC Berkeley.  
     - [Video lectures](https://www.youtube.com/c/JohnDeNero/playlists).  
   - [Practical Python Programming](https://github.com/dabeaz-course/practical-python), David Beazley.  
+  - [Python Distilled](http://www.dabeaz.com/python-distilled/), David Beazley, 2021.  
+  - [The Pragmatic Programmer](https://www.amazon.co.uk/Pragmatic-Programmer-journey-mastery-Anniversary-dp-0135957052/dp/0135957052/ref=dp_ob_title_bk), David Thomas and Andrew Hunt, 2019.  
 - Algorithms and Data Structures:
   - [Introduction to Algorithms](https://youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb), Srini Devadas and Erik Demaine, MIT 6.006, 2011.  
   - [AlgoExpert](https://www.algoexpert.io/).  
+  - [Analysis of Algorithms](https://www.youtube.com/playlist?list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx), Steven Skiena, CSE 373, Stony Brook University, 2020.  
 - Computer Architecture:
   - [Great Ideas in Computer Architecture](https://inst.eecs.berkeley.edu//~cs61c/sp15/) (Machine Structures). Krste Asanović and Vladimir Stojanovic, UC Berkeley CS61C, 2015.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk).  
+- Databases:
+  - [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/), Martin Kleppmann, O'Reilly Media, Inc., 2017.  
 - Misc:
   - [Python Packages](https://py-pkgs.org/), Tomas Beuzen & Tiffany Timbers, 2021.  
   - [Modern Python Developer's Toolkit](https://youtu.be/WkUBx3g2QfQ), Sebastian Witowski, PyCon US 2020.  
