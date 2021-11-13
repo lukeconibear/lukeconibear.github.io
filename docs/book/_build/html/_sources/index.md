@@ -7,7 +7,7 @@
 
 I'm a Research Software Engineer (Machine Learning) at the University of Leeds.  
 
-I used to research [air pollution](/airpollution) using [complex numerical models](/software).
+I used to research [air pollution](/airpollution) using [complex numerical models](/technical).
 
 I've authored [academic papers](/publications), some of which have been in the [news](/news).  
 
