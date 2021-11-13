@@ -65,6 +65,8 @@ Here are some great learning resources that I've found helpful.
     - [Video lectures](https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk).  
 - Databases:
   - [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/), Martin Kleppmann, O'Reilly Media, Inc., 2017.  
+- Cloud Computing:
+  - [AWS Cloud Technical Essentials](https://www.coursera.org/learn/aws-cloud-technical-essentials), AWS, Coursera.  
 - Misc:
   - [Python Packages](https://py-pkgs.org/), Tomas Beuzen & Tiffany Timbers, 2021.  
   - [Modern Python Developer's Toolkit](https://youtu.be/WkUBx3g2QfQ), Sebastian Witowski, PyCon US 2020.  

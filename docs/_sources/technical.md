@@ -7,7 +7,7 @@
 
 ## Python
 
-I mainly use Python (primary libraries: Numpy, xarray, Pandas, Matplotlib, Jupyter, Dask) to analyse the large amounts of data produced by complex air quality models.  
+I mainly use Python with the scientific stack of libraries (e.g., Numpy, xarray, Pandas, Matplotlib, Jupyter, Dask).  
 
 I provided training for scientific computing (Python, Linux, and GitHub). For example, [explaining](https://www.lukeconibear.com/introduction_to_scientific_computing/tips_to_speed_up_python.html) how to speed up Python code.  
 

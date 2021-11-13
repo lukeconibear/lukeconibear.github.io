@@ -7,9 +7,7 @@
 
 ## Research
 
-I'm a research fellow in air quality at the University of Leeds, UK.  
-
-I use complex air quality models to understand how policies can improve air quality and reduce the impact on human health in India, China, Indonesia, and South America.  
+I used complex numerical models to understand how to improve air quality and public health in India, China, Indonesia, and South America.  
 
 I quantified how clean household energy can improve air quality and public health in India ([interactive map](/plot_india_solid_fuel)).  
 

@@ -5,9 +5,9 @@
 [*Image of the Bubble Nebula from NASA Hubble Site*](https://hubblesite.org/contents/media/images/2016/13/3725-Image.html)  
 
 
-I'm a research fellow in [air quality](/airpollution) at the University of Leeds.  
+I'm a Research Software Engineer (Machine Learning) at the University of Leeds.  
 
-I use data science tools in [Python](/software) to analyse complex air quality models.  
+I used to research [air pollution](/airpollution) using [complex numerical models](/software).
 
 I've authored [academic papers](/publications), some of which have been in the [news](/news).  
 
