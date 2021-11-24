@@ -1,6 +1,0 @@
-docs/book/_build/.doctrees/plot_emulator.doctree filter=lfs diff=lfs merge=lfs -text
-docs/book/_build/html/plot_emulator.html filter=lfs diff=lfs merge=lfs -text
-docs/book/_build/html/_sources/plot_emulator.ipynb filter=lfs diff=lfs merge=lfs -text
-docs/book/plot_emulator.ipynb filter=lfs diff=lfs merge=lfs -text
-docs/_sources/plot_emulator.ipynb filter=lfs diff=lfs merge=lfs -text
-docs/plot_emulator.html filter=lfs diff=lfs merge=lfs -text
