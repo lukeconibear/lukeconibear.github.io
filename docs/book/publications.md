@@ -2,6 +2,8 @@
 
 ## 2021
 
+**21\.** Kiely, L., Spracklen, D. V., Arnold, S. R., Papargyropoulou, E., **Conibear, L.**, Wiedinmyer, C., Knote, C., Adrianto, H., A. (2021). Assessing costs of Indonesian fires and the benefits of restoring peatland, Nature Communications, [DOI](https://doi.org/10.1038/s41467-021-27353-x).  
+
 **20\.** Graham, A. M., Pope, R. J., Pringle, K. P., Arnold, S. R., **Conibear, L.**, Burns, H., Rigby, R., Borchers-Arriagada, N., Butt, E. W., Kiely, L., Reddington, C. L., Spracklen, D. V., Woodhouse, M., Knote, C., McQuaid, J. B. (2021). Impact of the 2019/2020 Australian megafires on Air Quality and Health, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000454).  
 
 **19\.** Reddington, C. L., **Conibear, L.**, Robinson, S., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Air Pollution from Forest and Vegetation Fires in Southeast Asia Disproportionately Impacts the Poor, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000418).  
