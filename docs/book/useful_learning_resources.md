@@ -27,6 +27,8 @@ Here are some great learning resources that I've found helpful.
 - Maths:
   - [Linear Algebra](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8), Gilbert Strang, MIT 18.06, 2005.  
   - [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k), Gilbert Strang, MIT 18.065, 2018.  
+  - [Mathematics for Machine Learning - Linear Algebra](https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPrShrMrBLo5P3), Imperial College London, 2017.  
+  - [Mathematics for Machine Learning - Multivariate Calculus](https://www.youtube.com/playlist?list=PLiiljHvN6z193BBzS0Ln8NnqQmzimTW23), Imperial College London, 2017.  
 - Misc:
   - [Kaggle competitions](https://www.kaggle.com/competitions).  
   - [MLExpert](https://www.algoexpert.io/content#mle).  
