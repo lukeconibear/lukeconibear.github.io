@@ -25,10 +25,14 @@ Here are some great learning resources that I've found helpful.
   - [RL Lecture Series](https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm0), DeepMind and UCL, 2021.  
   - [Reinforcement learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u), Emma Brunskill, Stanford University CS234, 2019.  
 - Maths:
-  - [Linear Algebra](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8), Gilbert Strang, MIT 18.06, 2005.  
+  - Linear algebra
+    - [Linear Algebra](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8), Gilbert Strang, MIT 18.06, 2005.  
+    - [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), 3Blue1Brown.  
+    - [Linear Algebra](https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPrShrMrBLo5P3), Mathematics for Machine Learning, Imperial College London, 2017.  
+  - Calculus
+    - [Essence of calculus](https://www.youtube.com/channel/CSANnvayOd8Ay2scpk91AtpA16FvVqEg_zCZL32hs), 3Blue1Brown.  
+    - [Multivariate Calculus](https://www.youtube.com/playlist?list=PLiiljHvN6z193BBzS0Ln8NnqQmzimTW23), Mathematics for Machine Learning, Imperial College London, 2017.  
   - [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k), Gilbert Strang, MIT 18.065, 2018.  
-  - [Mathematics for Machine Learning - Linear Algebra](https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPrShrMrBLo5P3), Imperial College London, 2017.  
-  - [Mathematics for Machine Learning - Multivariate Calculus](https://www.youtube.com/playlist?list=PLiiljHvN6z193BBzS0Ln8NnqQmzimTW23), Imperial College London, 2017.  
 - Misc:
   - [Kaggle competitions](https://www.kaggle.com/competitions).  
   - [MLExpert](https://www.algoexpert.io/content#mle).  
@@ -40,6 +44,7 @@ Here are some great learning resources that I've found helpful.
     - [Video lectures](https://www.youtube.com/playlist?list=PL3juAj0fqNsI4HLvMJFnZDDabxAExG0wv).  
   - [Data Science](https://www.youtube.com/playlist?list=PLOtl7M3yp-DVODzTKX8JtXkm1EG3u2BsD), Steven Skiena, CSE 519, Stony Brook University, 2020.  
   - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/), Jake VanderPlas, 2016.  
+  - [Computational Thinking](https://www.youtube.com/playlist?list=PLP8iPy9hna6T56GkMHEdSrjCCheNuEwI0), MIT, 18.S191/6.S083, Spring 2021.  
 - Databases:
   - [Intro to SQL](https://www.kaggle.com/learn/intro-to-sql), Kaggle.  
   - [Advanced SQL](https://www.kaggle.com/learn/advanced-sql), Kaggle.  
@@ -76,3 +81,7 @@ Here are some great learning resources that I've found helpful.
   - [Modern Python Developer's Toolkit](https://youtu.be/WkUBx3g2QfQ), Sebastian Witowski, PyCon US 2020.  
   - [Introduction to Discrete Mathematics for Computer Science Specialization](https://www.coursera.org/specializations/discrete-mathematics), University of California San Diego HSE University, Coursera.  
   
+## Numerical atmospheric modelling
+- [Engineering Mathematics (ME564 and ME565)](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR2W2sPWsYxfrxcASrUt_9j), Steve Brunton, University of Washington.  
+- [Modelling Summer School (MACC-II)](https://www.youtube.com/playlist?list=PLnStrtza9ShXI_b21RxeT6KcdewY1iLuF), Atmosphere Copernicus  
+- [Numerical methods for atmospheric models](https://youtube.com/playlist?list=PLEG35I51CH7W6bOW3UbkjHRSQfdSk3TRh), Hilary Weller.
