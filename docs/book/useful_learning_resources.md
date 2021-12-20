@@ -82,6 +82,7 @@ Here are some great learning resources that I've found helpful.
   - [Introduction to Discrete Mathematics for Computer Science Specialization](https://www.coursera.org/specializations/discrete-mathematics), University of California San Diego HSE University, Coursera.  
   
 ## Numerical atmospheric modelling
+- [Art of Climate Modeling](https://www.youtube.com/playlist?list=PL_cuIb7hx5lihu3Wq605u6kVGltXgEfDt), Paul Ullrich, UC Davis.  
 - [Overview of air pollution and climate change](https://www.youtube.com/playlist?list=PLMYqWZV8pP3GJaH3AM4VTC61aR1st6HSg)
 - [Engineering Mathematics (ME564 and ME565)](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR2W2sPWsYxfrxcASrUt_9j), Steve Brunton, University of Washington.  
 - [Numerical methods for atmospheric models](https://youtube.com/playlist?list=PLEG35I51CH7W6bOW3UbkjHRSQfdSk3TRh), Hilary Weller.
