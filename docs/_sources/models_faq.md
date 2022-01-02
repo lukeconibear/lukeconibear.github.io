@@ -2,6 +2,10 @@
 
 Here, I'm mainly referring to numerical atmospheric models that are used for simulating air quality, weather, and climate.
 
+## What inside climate models?
+
+Paul Ullrich explains climate models [here](https://youtube.com/playlist?list=PL_cuIb7hx5lihu3Wq605u6kVGltXgEfDt). Guy Brasseur gives an overview of atmospheric chemistry modelling [here](https://youtu.be/t-6ntWF3B8c) and [here](https://youtu.be/tc7vGe1efrA). Tim Palmer explains how to deal with uncertainty [here](https://youtu.be/ed4p7JYMYKs).  
+
 ## Are any models (and their output) openly available?
 
 Yes.
