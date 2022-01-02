@@ -5,6 +5,7 @@
   - file: key_problems
 - file: technical
   sections:
+  - file: models_faq
   - file: emulator
   - file: plot_emulator
   - file: useful_learning_resources
