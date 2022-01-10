@@ -56,6 +56,9 @@ Here are some great learning resources that I've found helpful.
   - [The Book of Why: The New Science of Cause and Effect](https://www.amazon.co.uk/Book-Why-Science-Cause-Effect/dp/0141982411/ref=asc_df_0141982411/?tag=googshopuk-21&linkCode=df0&hvadid=280101927806&hvpos=&hvnetw=g&hvrand=1515808143887519158&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9046357&hvtargid=pla-555411478238&psc=1&th=1&psc=1), Judea Pearl & Dana Nackenzie, 2019.  
   - [Introduction to Causal Inference](https://www.bradyneal.com/causal-inference-course), Brady Neal.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLoazKTcS0RzZ1SUgeOgc6SWt51gfT80N0).  
+- Misc:
+  - [The Turing Way handbook of data science](https://the-turing-way.netlify.app/welcome.html)  
+
 
 ## Software Engineering  
 - If you're interested in jobs in this area, I highly recommend [Teach Yourself Computer Science](https://teachyourselfcs.com/) by Oz Nova and Myles Byrne. This will help navigate the key topics and best resources. Many of the resources below are directly taken from this great guide.   
@@ -76,6 +79,8 @@ Here are some great learning resources that I've found helpful.
   - [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/), Martin Kleppmann, O'Reilly Media, Inc., 2017.  
 - Cloud Computing:
   - [AWS Cloud Technical Essentials](https://www.coursera.org/learn/aws-cloud-technical-essentials), AWS, Coursera.  
+- Testing:
+  - [Software Testing Fundamentals](https://softwaretestingfundamentals.com/)
 - Misc:
   - [Python Packages](https://py-pkgs.org/), Tomas Beuzen & Tiffany Timbers, 2021.  
   - [Modern Python Developer's Toolkit](https://youtu.be/WkUBx3g2QfQ), Sebastian Witowski, PyCon US 2020.  
