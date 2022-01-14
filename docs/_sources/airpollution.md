@@ -3,6 +3,7 @@
 ```{image} images/solidfuels.jpg
 :name: Solid Fuel Use
 ```
+
 [*Image from Clean Cooking Alliance*](https://www.flickr.com/photos/cleancookstoves/7366237044/in/album-72157630051742097/)  
 
 ## Research
@@ -12,6 +13,7 @@ I used complex numerical models to understand how to improve air quality and pub
 I quantified how clean household energy can improve air quality and public health in India ([interactive map](/plot_india_solid_fuel)).  
 
 I completed a PhD in [Ambient air quality and human health in India](https://etheses.whiterose.ac.uk/22488/) from the University of Leeds.
+
 - I quantified the key sources of air pollution exposure in India, the impact of air pollution exposure on human health, and how might this change in the future.  
 - Overall, the disease burden associated with air pollution exposure in India is large, increasing, and dominated by solid fuel use (especially in homes).  
 - I was inspired by [Kirk R. Smith](https://youtu.be/tsQfeVkx6Fw) and [Hans Rosling](https://www.gapminder.org/videos/hans-rosling-and-the-magic-washing-machine/).  

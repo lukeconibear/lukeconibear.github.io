@@ -1,7 +1,9 @@
 # Useful learning resources (machine learning, data science, and software engineering)
+
 Here are some great learning resources that I've found helpful.  
 
 ## Machine Learning  
+
 - If you're interested in jobs in this area, I highly recommend [Workera](https://workera.ai/) to help figure out what the roles are, what you're suited to, what you need to improve on, and personalised plans to make this progress.  
 - Machine learning:  
   - [Machine learning](https://www.coursera.org/learn/machine-learning), Coursera, Andrew Ng.  
@@ -37,8 +39,8 @@ Here are some great learning resources that I've found helpful.
   - [Kaggle competitions](https://www.kaggle.com/competitions).  
   - [MLExpert](https://www.algoexpert.io/content#mle).  
   
-
 ## Data Science  
+
 - Foundations
   - [Computational and Inferential Thinking: The Foundations of Data Science](https://inferentialthinking.com/chapters/intro.html), Ani Adhikari and John DeNero, Data 8: Foundations of Data Science course, UC Berkeley.  
     - [Video lectures](https://www.youtube.com/playlist?list=PL3juAj0fqNsI4HLvMJFnZDDabxAExG0wv).  
@@ -49,7 +51,7 @@ Here are some great learning resources that I've found helpful.
   - [Intro to SQL](https://www.kaggle.com/learn/intro-to-sql), Kaggle.  
   - [Advanced SQL](https://www.kaggle.com/learn/advanced-sql), Kaggle.  
 - Experiments:
-  - [Trustworthy Online Controlled Experiments : A Practical Guide to A/B Testing](https://experimentguide.com/), Ron Kohavi, Diane Tang, and Ya Xu.   
+  - [Trustworthy Online Controlled Experiments : A Practical Guide to A/B Testing](https://experimentguide.com/), Ron Kohavi, Diane Tang, and Ya Xu.
 - Causal Inference:
   - [Causal Diagrams: Draw Your Assumptions Before Your Conclusions](https://www.edx.org/course/causal-diagrams-draw-your-assumptions-before-your), Miguel Hernan, Harvard University.  
   - [Causal Inference Book](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/), Hernán MA, Robins JM (2020). Causal Inference: What If. Boca Raton: Chapman & Hall/CRC.  
@@ -59,9 +61,9 @@ Here are some great learning resources that I've found helpful.
 - Misc:
   - [The Turing Way handbook of data science](https://the-turing-way.netlify.app/welcome.html)  
 
-
 ## Software Engineering  
-- If you're interested in jobs in this area, I highly recommend [Teach Yourself Computer Science](https://teachyourselfcs.com/) by Oz Nova and Myles Byrne. This will help navigate the key topics and best resources. Many of the resources below are directly taken from this great guide.   
+
+- If you're interested in jobs in this area, I highly recommend [Teach Yourself Computer Science](https://teachyourselfcs.com/) by Oz Nova and Myles Byrne. This will help navigate the key topics and best resources. Many of the resources below are directly taken from this great guide.
 - Programming:  
   - [Composing Programs](https://composingprograms.com/), John DeNero, 61A course, UC Berkeley.  
     - [Video lectures](https://www.youtube.com/c/JohnDeNero/playlists).  
@@ -91,6 +93,7 @@ Here are some great learning resources that I've found helpful.
   - [Introduction to Discrete Mathematics for Computer Science Specialization](https://www.coursera.org/specializations/discrete-mathematics), University of California San Diego HSE University, Coursera.  
   
 ## Numerical atmospheric modelling
+
 - [Art of Climate Modeling](https://www.youtube.com/playlist?list=PL_cuIb7hx5lihu3Wq605u6kVGltXgEfDt), Paul Ullrich, UC Davis.  
 - [Overview of air pollution and climate change](https://www.youtube.com/playlist?list=PLMYqWZV8pP3GJaH3AM4VTC61aR1st6HSg)
 - [Engineering Mathematics (ME564 and ME565)](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR2W2sPWsYxfrxcASrUt_9j), Steve Brunton, University of Washington.  

@@ -11,12 +11,14 @@ Paul Ullrich explains climate models [here](https://youtube.com/playlist?list=PL
 Yes.
 
 Some examples of models:
+
 - [Weather Research and Forecasting (WRF) model](https://github.com/wrf-model/WRF)  
 - [Goddard Earth Observing System (GEOS) Chem model](https://github.com/geoschem/geos-chem)  
 - [Community Earth System Model (CESM)](https://github.com/ESCOMP/CESM)  
 - [Energy Exascale Earth System model](https://github.com/E3SM-Project/E3SM)  
 
 And some output data:
+
 - [Model output](https://esgf-data.dkrz.de/search/cmip6-dkrz/) from all the Coupled Model Intercomparison Project (CMIP) 6 models used in the IPCC 6th Assessment Report  
 - [NASA Earth Data](https://search.earthdata.nasa.gov/search)  
 

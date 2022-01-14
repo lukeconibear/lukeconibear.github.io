@@ -173,3 +173,12 @@ cython_debug/
 # Sphinx documentation
 docs/_build/
 docs/book/_build/
+
+# specific to this repo
+*Zone.Identifier*
+docs/jupyter_execute
+*plot_emulator_january*
+*plot_india_solid_fuel_alternate*
+*flask_app*
+n.db
+docs/book/templates
