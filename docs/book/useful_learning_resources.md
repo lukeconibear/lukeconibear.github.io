@@ -85,8 +85,6 @@ Here are some great learning resources that I've found helpful.
   - [Software Testing Fundamentals](https://softwaretestingfundamentals.com/)
 - Research Software Engineering:
   - [Research Software Engineering with Python](https://alan-turing-institute.github.io/rse-course/html/index.html), The Alan Turing Institute.  
-  - [Research Software Engineering with Python](http://github-pages.ucl.ac.uk/rsd-engineeringcourse/), UCL.  
-  - [Research Software Engineering with Python](https://merely-useful.tech/py-rse/), Merely Useful (Damien Irving, Kate Hertweck, Luke Johnston, Joel Ostblom, Charlotte Wickham, and Greg Wilson).  
 - Misc:
   - [Python Packages](https://py-pkgs.org/), Tomas Beuzen & Tiffany Timbers, 2021.  
   - [Modern Python Developer's Toolkit](https://youtu.be/WkUBx3g2QfQ), Sebastian Witowski, PyCon US 2020.  
