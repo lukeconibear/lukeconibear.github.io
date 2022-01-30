@@ -8,7 +8,6 @@ Here are some great learning resources that I've found helpful.
 - Machine learning:  
   - [Machine learning](https://www.coursera.org/learn/machine-learning), Coursera, Andrew Ng.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU), CS229, Standford University.  
-  - [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops?utm_source=deeplearning-ai&utm_medium=institutions&utm_campaign=20210423-mlep-1-deeplearning-ai-institutions-dlai-website), Coursera, DeepLearning.AI.  
   - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), Aurélien Géron, 2019, O'Reilly Media, Inc.  
     - [Jupyter Notebooks](https://github.com/ageron/handson-ml2)  
   - [Artificial Intelligence: A Modern Approach, 4th edition](http://aima.cs.berkeley.edu/), Stuart Russell and Peter Norvig, 2021, Pearson.  
@@ -22,7 +21,7 @@ Here are some great learning resources that I've found helpful.
     - [Jupyter Notebooks](https://github.com/fchollet/deep-learning-with-python-notebooks)  
   - [Neural Networks for Machine Learning](https://www.youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv), Geoffrey Hinton.  
 - Artificial Intelligence:
-  - [Stanford : Artificial Intelligence: Principles and Techniques](https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX), Percy Liang and Dorsa Sadigh, CS221, Standord, 2019.  
+  - [Artificial Intelligence: Principles and Techniques](https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX), Percy Liang and Dorsa Sadigh, CS221, Standord, 2019.  
 - Reinforcement learning:
   - [RL Lecture Series](https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm0), DeepMind and UCL, 2021.  
   - [Reinforcement learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u), Emma Brunskill, Stanford University CS234, 2019.  
@@ -35,6 +34,10 @@ Here are some great learning resources that I've found helpful.
     - [Essence of calculus](https://www.youtube.com/channel/CSANnvayOd8Ay2scpk91AtpA16FvVqEg_zCZL32hs), 3Blue1Brown.  
     - [Multivariate Calculus](https://www.youtube.com/playlist?list=PLiiljHvN6z193BBzS0Ln8NnqQmzimTW23), Mathematics for Machine Learning, Imperial College London, 2017.  
   - [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k), Gilbert Strang, MIT 18.065, 2018.  
+- MLOps:
+  - [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops?utm_source=deeplearning-ai&utm_medium=institutions&utm_campaign=20210423-mlep-1-deeplearning-ai-institutions-dlai-website), Coursera, DeepLearning.AI.  
+- Applications:
+  - [Machine Learning for Healthcare](https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j), MIT 6.S897, David Sontag and Peter Szolovits, 2019.  
 - Misc:
   - [Kaggle competitions](https://www.kaggle.com/competitions).  
   - [MLExpert](https://www.algoexpert.io/content#mle).  
@@ -77,8 +80,11 @@ Here are some great learning resources that I've found helpful.
 - Computer Architecture:
   - [Great Ideas in Computer Architecture](https://inst.eecs.berkeley.edu//~cs61c/sp15/) (Machine Structures). Krste Asanović and Vladimir Stojanovic, UC Berkeley CS61C, 2015.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk).  
-- Databases:
+- Distributed systems:
   - [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/), Martin Kleppmann, O'Reilly Media, Inc., 2017.  
+  - [Distributed Systems](https://www.youtube.com/playlist?list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB), MIT 6.824, Robert Morris, 2020.  
+- High Performance Computing:
+  - [High Performance Computing Course - Advanced Scientific Computing](https://www.youtube.com/playlist?list=PLmJwSK7qduwVnlrIPjrfSn7QRcv3wIQj5), Prof Ing Morris Riedel, University of Iceland.  
 - Cloud Computing:
   - [AWS Cloud Technical Essentials](https://www.coursera.org/learn/aws-cloud-technical-essentials), AWS, Coursera.  
 - Testing:
