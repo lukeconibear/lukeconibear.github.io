@@ -20,7 +20,8 @@ I taught and provided support for a complex air quality model, [WRFChem](https:/
 
 [Here](/emulator) I used machine learning models (Gaussian process emulation trained from ~20 TB of simulated data from numerical atmospheric models) to predict optimum emission reduction strategies to improve air quality and public health in China.  
 
-I provided training for these emulators [here](https://colab.research.google.com/github/lukeconibear/emulator_training/blob/main/emulator_training.ipynb) ([slides](https://github.com/lukeconibear/emulator_training/blob/main/AGU2021_Luke-Conibear_Presentation.pdf) and [GitHub](https://github.com/lukeconibear/emulator_training)).
+I provided training for these emulators
+[video](https://youtu.be/zbt7aa2QIAA) ([Colab](https://colab.research.google.com/github/lukeconibear/emulator_training/blob/main/emulator_training.ipynb), [slides](https://github.com/lukeconibear/emulator_training/blob/main/AGU2021_Luke-Conibear_Presentation.pdf), and [GitHub](https://github.com/lukeconibear/emulator_training)).
 
 ## Useful learning resources
 
