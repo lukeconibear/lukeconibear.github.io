@@ -87,6 +87,7 @@ Here are some great learning resources that I've found helpful.
   - [High Performance Computing Course - Advanced Scientific Computing](https://www.youtube.com/playlist?list=PLmJwSK7qduwVnlrIPjrfSn7QRcv3wIQj5), Prof Ing Morris Riedel, University of Iceland.  
 - Cloud Computing:
   - [AWS Cloud Technical Essentials](https://www.coursera.org/learn/aws-cloud-technical-essentials), AWS, Coursera.  
+  - [Microsoft Azure Fundamentals (AZ-900)](https://www.youtube.com/playlist?list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM), Adam Marczak.  
 - Testing:
   - [Software Testing Fundamentals](https://softwaretestingfundamentals.com/)
 - Research Software Engineering:
