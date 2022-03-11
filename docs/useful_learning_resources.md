@@ -8,6 +8,9 @@ Here are some great learning resources that I've found helpful.
 - Machine learning:  
   - [Machine learning](https://www.coursera.org/learn/machine-learning), Coursera, Andrew Ng.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU), CS229, Standford University.  
+  - [Machine learning in Python with scikit-learn](https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/), scikit-learn developers, 2022.
+      - [Course materials](https://inria.github.io/scikit-learn-mooc/)
+      - [Jupyter Notebooks](https://github.com/INRIA/scikit-learn-mooc/) 
   - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), Aurélien Géron, 2019, O'Reilly Media, Inc.  
     - [Jupyter Notebooks](https://github.com/ageron/handson-ml2)  
   - [Artificial Intelligence: A Modern Approach, 4th edition](http://aima.cs.berkeley.edu/), Stuart Russell and Peter Norvig, 2021, Pearson.  
