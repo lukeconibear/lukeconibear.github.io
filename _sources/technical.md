@@ -10,7 +10,7 @@
 
 I mainly use Python with the scientific stack of libraries (e.g., Numpy, xarray, Pandas, Matplotlib, Jupyter, Dask).  
 
-I provided training for scientific computing (Python, Linux, and GitHub). For example, [explaining](https://www.lukeconibear.com/introduction_to_scientific_computing/tips_to_speed_up_python.html) how to speed up Python code.  
+I provided training for scientific computing (Python, Linux, and GitHub). For example, here is a course I created on [High Performance Python](https://arctraining.github.io/swd6_hpp/).
 
 ## Complex air quality model
 
