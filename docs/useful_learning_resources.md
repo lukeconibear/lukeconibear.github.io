@@ -25,7 +25,6 @@ Here are some great learning resources that I've found helpful.
   - [Deep Learning with Python, 2nd Edition](https://www.manning.com/books/deep-learning-with-python-second-edition?a_aid=keras&a_bid=76564dff), François Chollet, 2021, Manning.  
     - [Jupyter Notebooks](https://github.com/fchollet/deep-learning-with-python-notebooks)  
   - [Neural Networks for Machine Learning](https://www.youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv), Geoffrey Hinton.  
-  - [Practical Deep Learning for Coders](https://course.fast.ai/), Jeremy Howard and Sylvain Gugger, 2020, [Video lectures](https://youtube.com/playlist?list=PLfYUBJiXbdtRL3FMB3GoWHRI8ieU6FhfM)
 - Artificial Intelligence:
   - [Artificial Intelligence: Principles and Techniques](https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX), Percy Liang and Dorsa Sadigh, CS221, Standord, 2019.  
 - Reinforcement learning:
