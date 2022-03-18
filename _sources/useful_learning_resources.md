@@ -8,18 +8,18 @@ Here are some great learning resources that I've found helpful.
 - Machine learning:  
   - [Machine learning](https://www.coursera.org/learn/machine-learning), Coursera, Andrew Ng.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU), CS229, Standford University.  
-  - [Machine Learning for Intelligent Systems](http://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/), Kilian Weinberger, 2018.  
+  - [Machine Learning for Intelligent Systems](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/), Kilian Weinberger, 2018.  
     - CS4780, Cornell: [Video lectures](https://youtube.com/playlist?list=PLl8OlHZGYOQ7bkVbuRthEsaLr7bONzbXS). 
   - [Machine learning in Python with scikit-learn](https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/), scikit-learn developers, 2022.
       - [Course materials](https://inria.github.io/scikit-learn-mooc/)
       - [Jupyter Notebooks](https://github.com/INRIA/scikit-learn-mooc/) 
   - [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), Aurélien Géron, 2019, O'Reilly Media, Inc.  
     - [Jupyter Notebooks](https://github.com/ageron/handson-ml2)  
-  - [Artificial Intelligence: A Modern Approach, 4th edition](http://aima.cs.berkeley.edu/), Stuart Russell and Peter Norvig, 2021, Pearson.  
+  - [Artificial Intelligence: A Modern Approach, 4th edition](https://aima.cs.berkeley.edu/), Stuart Russell and Peter Norvig, 2021, Pearson.  
 - Deep learning:
   - [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning), Coursera, DeepLearning.AI.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb), CS230, Stanford University.  
-    - [Syllabus](http://cs230.stanford.edu/syllabus/), CS230, Stanford University.  
+    - [Syllabus](https://cs230.stanford.edu/syllabus/), CS230, Stanford University.  
   - [NYU Deep Learning](https://atcold.github.io/NYU-DLSP21/), Yann LeCun and Alfredo Canziani, NYU, 2021.  
     - [Video lectures](https://www.youtube.com/playlist?list=PLLHTzKZzVU9e6xUfG10TkTWApKSZCzuBI).  
   - [Deep Learning with Python, 2nd Edition](https://www.manning.com/books/deep-learning-with-python-second-edition?a_aid=keras&a_bid=76564dff), François Chollet, 2021, Manning.  
@@ -36,7 +36,7 @@ Here are some great learning resources that I've found helpful.
     - [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), 3Blue1Brown.  
     - [Linear Algebra](https://www.youtube.com/playlist?list=PLiiljHvN6z1_o1ztXTKWPrShrMrBLo5P3), Mathematics for Machine Learning, Imperial College London, 2017.  
   - Calculus
-    - [Essence of calculus](https://www.youtube.com/channel/CSANnvayOd8Ay2scpk91AtpA16FvVqEg_zCZL32hs), 3Blue1Brown.  
+    - [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr), 3Blue1Brown.  
     - [Multivariate Calculus](https://www.youtube.com/playlist?list=PLiiljHvN6z193BBzS0Ln8NnqQmzimTW23), Mathematics for Machine Learning, Imperial College London, 2017.  
   - [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k), Gilbert Strang, MIT 18.065, 2018.  
 - MLOps:
@@ -76,7 +76,7 @@ Here are some great learning resources that I've found helpful.
   - [Composing Programs](https://composingprograms.com/), John DeNero, 61A course, UC Berkeley.  
     - [Video lectures](https://www.youtube.com/c/JohnDeNero/playlists).  
   - [Practical Python Programming](https://github.com/dabeaz-course/practical-python), David Beazley.  
-  - [Python Distilled](http://www.dabeaz.com/python-distilled/), David Beazley, 2021.  
+  - [Python Distilled](https://www.dabeaz.com/python-distilled/), David Beazley, 2021.  
   - [The Pragmatic Programmer](https://www.amazon.co.uk/Pragmatic-Programmer-journey-mastery-Anniversary-dp-0135957052/dp/0135957052/ref=dp_ob_title_bk), David Thomas and Andrew Hunt, 2019.  
 - Algorithms and Data Structures:
   - [Introduction to Algorithms](https://youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb), Srini Devadas and Erik Demaine, MIT 6.006, 2011.  
