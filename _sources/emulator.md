@@ -62,9 +62,9 @@ See the results [here](https://www.lukeconibear.com/plot_emulator.html).
     - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth.
 - Long-term air quality and public health prediction
   - [Code](https://github.com/lukeconibear/emulator_annual).  
-  - Paper - Emulator development, in preparation.
-    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Machine Learning Emulation of Long−Term Air Pollution Exposure and Disease Burden from Emission Changes in China.  
-  - Paper - Emulator application to future climate scenarios, in preparation.  
-    - **Conibear, L.** Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S. T., Klimont, Z., Spracklen, D. V. (2021). The Contribution of Emission Sources to the Future Air Pollution Disease Burden in China.  
-  - Paper - Emulator application to recent trends, in preparation.  
-    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Emission Sector Impacts on Air Quality and Public Health in China from 2010−2020.  
+  - Paper - Emulator development
+    - **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2022). Sensitivity of Air Pollution Exposure and Disease Burden to Emission Changes in China using Machine Learning Emulation, GeoHealth (in peer review), [DOI](https://doi.org/10.1029/2021GH000570), [GitHub](https://github.com/lukeconibear/emulator_annual).  
+  - Paper - Emulator application to recent trends
+    - **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Arnold, S. R., Spracklen, D. V. (2022). Emission Sector Impacts on Air Quality and Public Health in China from 2010−2020, GeoHealth (accepted), [DOI](https://doi.org/10.1029/2021GH000567).  
+  - Paper - Emulator application to future climate scenarios
+    - **Conibear, L.**, Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S., T., Klimont, Z., Spracklen, D. V. (2022). The Contribution of Emission Sources to the Future Air Pollution Disease Burden in China, Environmental Research Letters (in peer review), DOI.  
