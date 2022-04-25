@@ -25,6 +25,7 @@ Here are some great learning resources that I've found helpful.
   - [Deep Learning with Python, 2nd Edition](https://www.manning.com/books/deep-learning-with-python-second-edition?a_aid=keras&a_bid=76564dff), François Chollet, 2021, Manning.  
     - [Jupyter Notebooks](https://github.com/fchollet/deep-learning-with-python-notebooks)  
   - [Neural Networks for Machine Learning](https://www.youtube.com/playlist?list=PLLssT5z_DsK_gyrQ_biidwvPYCRNGI3iv), Geoffrey Hinton.  
+  - [Physics-based Deep Learning](https://physicsbaseddeeplearning.org), Nils Thuerey and Philipp Holl and Maximilian Mueller and Patrick Schnell and Felix Trost and Kiwon Um, 2021.   
 - Artificial Intelligence:
   - [Artificial Intelligence: Principles and Techniques](https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX), Percy Liang and Dorsa Sadigh, CS221, Standord, 2019.  
 - Reinforcement learning:
@@ -43,6 +44,7 @@ Here are some great learning resources that I've found helpful.
   - [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops?utm_source=deeplearning-ai&utm_medium=institutions&utm_campaign=20210423-mlep-1-deeplearning-ai-institutions-dlai-website), Coursera, DeepLearning.AI.  
   - [Production Machine Learning Systems](https://www.coursera.org/learn/gcp-production-ml-systems?specialization=advanced-machine-learning-tensorflow-gcp), Google Cloud, Coursera.  
 - Applications:
+  - [Artificial Intelligence (AI) for Earth Monitoring](https://www.futurelearn.com/courses/artificial-intelligence-for-earth-monitoring), EUMETSAT, ECMWF, MOi, EEA, Copernicus.  
   - [Machine Learning for Healthcare](https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j), MIT 6.S897, David Sontag and Peter Szolovits, 2019.  
 - Misc:
   - [Kaggle competitions](https://www.kaggle.com/competitions).  
