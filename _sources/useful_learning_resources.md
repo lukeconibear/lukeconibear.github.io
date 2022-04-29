@@ -45,6 +45,7 @@ Here are some great learning resources that I've found helpful.
   - [Production Machine Learning Systems](https://www.coursera.org/learn/gcp-production-ml-systems?specialization=advanced-machine-learning-tensorflow-gcp), Google Cloud, Coursera.  
 - Applications:
   - [Artificial Intelligence (AI) for Earth Monitoring](https://www.futurelearn.com/courses/artificial-intelligence-for-earth-monitoring), EUMETSAT, ECMWF, MOi, EEA, Copernicus.  
+  - [Artificial Intelligence for Earth System Science (AI4ESS) Summer School](https://www.youtube.com/playlist?list=PLbelYhZAAHEIr4iC1FNcPXUUYXI0zg_96), 2020, National Center for Atmospheric Research.  
   - [Machine Learning for Healthcare](https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j), MIT 6.S897, David Sontag and Peter Szolovits, 2019.  
 - Misc:
   - [Kaggle competitions](https://www.kaggle.com/competitions).  
