@@ -1,6 +1,25 @@
-# Useful learning resources (machine learning, data science, and software engineering)
+# Useful learning resources
 
 Here are some great learning resources that I've found helpful.  
+
+- [Atmospheric Science and Numerical Modelling](#atmospheric-science-and-numerical-modelling)
+- [Machine Learning](#machine-learning)
+- [Data Science](#data-science)
+- [Software Engineering](#software-engineering)
+
+## Atmospheric Science and Numerical Modelling
+
+- Atmospheric science:
+  - [Overview of air pollution and climate change](https://www.youtube.com/playlist?list=PLMYqWZV8pP3GJaH3AM4VTC61aR1st6HSg)
+  - [Introduction to Atmospheric Dynamics](https://youtube.com/playlist?list=PL_cuIb7hx5lg_zHfUVsUrw6I66U4jq8Dq), Paul Ullrich, UC Davis.  
+  - [Climate dynamics](https://youtube.com/playlist?list=PL_cuIb7hx5lhtp6l6VAXIlBR6BbXkOqz5), Paul Ullrich, UC Davis.  
+- Numerical modelling:
+  - [Art of Climate Modeling](https://www.youtube.com/playlist?list=PL_cuIb7hx5lihu3Wq605u6kVGltXgEfDt), Paul Ullrich, UC Davis.  
+  - [Engineering Mathematics (ME564 and ME565)](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR2W2sPWsYxfrxcASrUt_9j), Steve Brunton, University of Washington.  
+  - [Numerical methods for atmospheric models](https://youtube.com/playlist?list=PLEG35I51CH7W6bOW3UbkjHRSQfdSk3TRh), Hilary Weller.
+- Machine learning:
+  - [Artificial Intelligence for Earth System Science (AI4ESS) Summer School](https://www.youtube.com/playlist?list=PLbelYhZAAHEIr4iC1FNcPXUUYXI0zg_96), 2020, National Center for Atmospheric Research.  
+  - [Artificial Intelligence (AI) for Earth Monitoring](https://www.futurelearn.com/courses/artificial-intelligence-for-earth-monitoring), EUMETSAT, ECMWF, MOi, EEA, Copernicus.
 
 ## Machine Learning  
 
@@ -29,7 +48,7 @@ Here are some great learning resources that I've found helpful.
 - Artificial Intelligence:
   - [Artificial Intelligence: Principles and Techniques](https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX), Percy Liang and Dorsa Sadigh, CS221, Standord, 2019.  
 - Reinforcement learning:
-  - [RL Lecture Series](https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm0), DeepMind and UCL, 2021.  
+  - [RL Lecture Series](https://youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm), DeepMind and UCL, 2021.  
   - [Reinforcement learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u), Emma Brunskill, Stanford University CS234, 2019.  
 - Maths:
   - Linear algebra
@@ -44,8 +63,6 @@ Here are some great learning resources that I've found helpful.
   - [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops?utm_source=deeplearning-ai&utm_medium=institutions&utm_campaign=20210423-mlep-1-deeplearning-ai-institutions-dlai-website), Coursera, DeepLearning.AI.  
   - [Production Machine Learning Systems](https://www.coursera.org/learn/gcp-production-ml-systems?specialization=advanced-machine-learning-tensorflow-gcp), Google Cloud, Coursera.  
 - Applications:
-  - [Artificial Intelligence (AI) for Earth Monitoring](https://www.futurelearn.com/courses/artificial-intelligence-for-earth-monitoring), EUMETSAT, ECMWF, MOi, EEA, Copernicus.  
-  - [Artificial Intelligence for Earth System Science (AI4ESS) Summer School](https://www.youtube.com/playlist?list=PLbelYhZAAHEIr4iC1FNcPXUUYXI0zg_96), 2020, National Center for Atmospheric Research.  
   - [Machine Learning for Healthcare](https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j), MIT 6.S897, David Sontag and Peter Szolovits, 2019.  
 - Misc:
   - [Kaggle competitions](https://www.kaggle.com/competitions).  
@@ -86,9 +103,6 @@ Here are some great learning resources that I've found helpful.
   - [Introduction to Algorithms](https://youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb), Srini Devadas and Erik Demaine, MIT 6.006, 2011.  
   - [AlgoExpert](https://www.algoexpert.io/).  
   - [Analysis of Algorithms](https://www.youtube.com/playlist?list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx), Steven Skiena, CSE 373, Stony Brook University, 2020.  
-- Computer Architecture:
-  - [Great Ideas in Computer Architecture](https://inst.eecs.berkeley.edu//~cs61c/sp15/) (Machine Structures). Krste Asanović and Vladimir Stojanovic, UC Berkeley CS61C, 2015.  
-    - [Video lectures](https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk).  
 - Distributed systems:
   - [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/), Martin Kleppmann, O'Reilly Media, Inc., 2017.  
   - [Distributed Systems](https://www.youtube.com/playlist?list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB), MIT 6.824, Robert Morris, 2020.  
@@ -106,9 +120,3 @@ Here are some great learning resources that I've found helpful.
   - [Modern Python Developer's Toolkit](https://youtu.be/WkUBx3g2QfQ), Sebastian Witowski, PyCon US 2020.  
   - [Introduction to Discrete Mathematics for Computer Science Specialization](https://www.coursera.org/specializations/discrete-mathematics), University of California San Diego HSE University, Coursera.  
   
-## Numerical atmospheric modelling
-
-- [Art of Climate Modeling](https://www.youtube.com/playlist?list=PL_cuIb7hx5lihu3Wq605u6kVGltXgEfDt), Paul Ullrich, UC Davis.  
-- [Overview of air pollution and climate change](https://www.youtube.com/playlist?list=PLMYqWZV8pP3GJaH3AM4VTC61aR1st6HSg)
-- [Engineering Mathematics (ME564 and ME565)](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR2W2sPWsYxfrxcASrUt_9j), Steve Brunton, University of Washington.  
-- [Numerical methods for atmospheric models](https://youtube.com/playlist?list=PLEG35I51CH7W6bOW3UbkjHRSQfdSk3TRh), Hilary Weller.
