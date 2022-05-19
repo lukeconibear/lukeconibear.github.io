@@ -9,14 +9,15 @@ Here are some great learning resources that I've found helpful.
 - [Data Science](#data-science)
 - [Software Engineering](#software-engineering)
 
-## Atmospheric Science
+## Atmospheric Science and Numerical Modelling
 
 - Atmospheric science:
   - [Overview of air pollution and climate change](https://www.youtube.com/playlist?list=PLMYqWZV8pP3GJaH3AM4VTC61aR1st6HSg)
   - **[Art of Climate Modeling](https://www.youtube.com/playlist?list=PL_cuIb7hx5lihu3Wq605u6kVGltXgEfDt), Paul Ullrich, UC Davis.**  
-- Machine learning:
   - **[Artificial Intelligence for Earth System Science (AI4ESS) Summer School](https://www.youtube.com/playlist?list=PLbelYhZAAHEIr4iC1FNcPXUUYXI0zg_96), 2020, National Center for Atmospheric Research.**  
   - [Artificial Intelligence (AI) for Earth Monitoring](https://www.futurelearn.com/courses/artificial-intelligence-for-earth-monitoring), EUMETSAT, ECMWF, MOi, EEA, Copernicus.
+- Numerical modelling:
+  - [Engineering Mathematics](https://youtube.com/playlist?list=PLMrJAkhIeNNR2W2sPWsYxfrxcASrUt_9j), University of Washignton, Mechanical Engineering 564 and 565.  
 
 ## Machine Learning  
 
