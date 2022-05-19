@@ -2,11 +2,11 @@
 
 ## 2022
 
-**24\.** **Conibear, L.**, Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S., T., Klimont, Z., Spracklen, D. V. (2022). The Contribution of Emission Sources to the Future Air Pollution Disease Burden in China, Environmental Research Letters (in peer review), DOI.  
+**24\.** **Conibear, L.**, Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S., T., Klimont, Z., Spracklen, D. V. (2022). The Contribution of Emission Sources to the Future Air Pollution Disease Burden in China, Environmental Research Letters, [DOI](https://doi.org/10.1088/1748-9326/ac6f6f).  
 
-**23\.** **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Arnold, S. R., Spracklen, D. V. (2022). Emission Sector Impacts on Air Quality and Public Health in China from 2010−2020, GeoHealth (accepted), [DOI](https://doi.org/10.1029/2021GH000567).  
+**23\.** **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Arnold, S. R., Spracklen, D. V. (2022). Emission Sector Impacts on Air Quality and Public Health in China from 2010−2020, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000567).  
 
-**22\.** **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2022). Sensitivity of Air Pollution Exposure and Disease Burden to Emission Changes in China using Machine Learning Emulation, GeoHealth (in peer review), [DOI](https://doi.org/10.1029/2021GH000570), [GitHub](https://github.com/lukeconibear/emulator_annual).  
+**22\.** **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2022). Sensitivity of Air Pollution Exposure and Disease Burden to Emission Changes in China using Machine Learning Emulation, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000570), [GitHub](https://github.com/lukeconibear/emulator_annual).  
 
 ## 2021
 
