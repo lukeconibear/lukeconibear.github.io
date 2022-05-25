@@ -67,4 +67,4 @@ See the results [here](https://www.lukeconibear.com/plot_emulator.html).
   - Paper - Emulator application to recent trends
     - **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Arnold, S. R., Spracklen, D. V. (2022). Emission Sector Impacts on Air Quality and Public Health in China from 2010−2020, GeoHealth (accepted), [DOI](https://doi.org/10.1029/2021GH000567).  
   - Paper - Emulator application to future climate scenarios
-    - **Conibear, L.**, Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S., T., Klimont, Z., Spracklen, D. V. (2022). The Contribution of Emission Sources to the Future Air Pollution Disease Burden in China, Environmental Research Letters (in peer review), DOI.  
+    - **Conibear, L.**, Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S., T., Klimont, Z., Spracklen, D. V. (2022). The Contribution of Emission Sources to the Future Air Pollution Disease Burden in China, Environmental Research Letters, [DOI](https://doi.org/10.1088/1748-9326/ac6f6f). 
