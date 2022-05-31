@@ -58,13 +58,13 @@ See the results [here](https://www.lukeconibear.com/plot_emulator.html).
 
 - Short-term air quality prediction.  
   - [Code](https://github.com/lukeconibear/emulator).  
-  - [Paper](https://doi.org/10.1029/2021GH000391).  
-    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth.
+  - Paper - Emulator development  
+    - **Conibear, L.** Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000391)
 - Long-term air quality and public health prediction
   - [Code](https://github.com/lukeconibear/emulator_annual).  
   - Paper - Emulator development
-    - **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2022). Sensitivity of Air Pollution Exposure and Disease Burden to Emission Changes in China using Machine Learning Emulation, GeoHealth (in peer review), [DOI](https://doi.org/10.1029/2021GH000570), [GitHub](https://github.com/lukeconibear/emulator_annual).  
+    - **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2022). Sensitivity of Air Pollution Exposure and Disease Burden to Emission Changes in China using Machine Learning Emulation, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000570), [GitHub](https://github.com/lukeconibear/emulator_annual).  
   - Paper - Emulator application to recent trends
-    - **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Arnold, S. R., Spracklen, D. V. (2022). Emission Sector Impacts on Air Quality and Public Health in China from 2010−2020, GeoHealth (accepted), [DOI](https://doi.org/10.1029/2021GH000567).  
+    - **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Arnold, S. R., Spracklen, D. V. (2022). Emission Sector Impacts on Air Quality and Public Health in China from 2010−2020, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000567).  
   - Paper - Emulator application to future climate scenarios
     - **Conibear, L.**, Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S., T., Klimont, Z., Spracklen, D. V. (2022). The Contribution of Emission Sources to the Future Air Pollution Disease Burden in China, Environmental Research Letters, [DOI](https://doi.org/10.1088/1748-9326/ac6f6f). 
