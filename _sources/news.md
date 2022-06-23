@@ -1,5 +1,7 @@
 # News
 
+American Geophysical Union, EOS: Earth and Space Science News. Sidik, S. (2022), [Despite Improvements, China’s Air Remains Unsafe](https://eos.org/research-spotlights/despite-improvements-chinas-air-remains-unsafe), 103. Published on 23 June 2022.
+
 American Geophysical Union, EOS: Earth and Space Science News. Stanley, S. (2021), [Improving air quality in China’s Greater Bay Area](https://doi.org/10.1029/2021EO156439), 102. Published on 28 April 2021.
 
 National Institute of Environmental Health Sciences of the United States Government. Global Environmental Health Newsletter, February 2019. Failey, T. (2019), [Ozone Pollution Likely to Increase Disease Burden in India](https://www.niehs.nih.gov/research/programs/geh/geh_newsletter/2019/2/spotlight/ozone_pollution_likely_to_increase_disease_burden_in_india.cfm).  
