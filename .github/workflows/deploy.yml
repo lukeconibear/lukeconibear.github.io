@@ -17,13 +17,11 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install Conda environment
-        uses: conda-incubator/setup-miniconda@v2
+        uses: mamba-org/provision-with-micromamba@main
         with:
-          activate-environment: website
           environment-file: environment.yml
-          python-version: 3.9
-          auto-activate-base: false
-          auto-update-conda: false
+          extra-specs: |
+            python=3.9
 
       - name: Create Jupyter kernelspec
         run: |
