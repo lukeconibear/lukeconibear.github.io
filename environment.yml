@@ -1,4 +1,4 @@
-name: website3
+name: website
 channels:
   - conda-forge
   - defaults
