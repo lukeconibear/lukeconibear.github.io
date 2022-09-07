@@ -44,13 +44,15 @@ Here are some great learning resources that I've found helpful.
   - [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), 3Blue1Brown.  
   - [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr), 3Blue1Brown.  
   - [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k), Gilbert Strang, MIT 18.065, 2018.  
-- MLOps:
+- MLOps / ML Engineering:
   - [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops?utm_source=deeplearning-ai&utm_medium=institutions&utm_campaign=20210423-mlep-1-deeplearning-ai-institutions-dlai-website), Coursera, DeepLearning.AI.  
   - [Production Machine Learning Systems](https://www.coursera.org/learn/gcp-production-ml-systems?specialization=advanced-machine-learning-tensorflow-gcp), Google Cloud, Coursera.  
+  - [Full Stack Data Science](https://fullstackdeeplearning.com).
 - Applications:
   - [Machine Learning for Healthcare](https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j), MIT 6.S897, David Sontag and Peter Szolovits, 2019.  
 - Misc:
   - [MLExpert](https://www.algoexpert.io/content#mle).  
+  - [Machine Learning Yearning](https://www.mlyearning.org/), Andrew Ng.
   
 ## Data Science  
 
@@ -89,6 +91,9 @@ Here are some great learning resources that I've found helpful.
   - [Software Testing Fundamentals](https://softwaretestingfundamentals.com/)
 - Research Software Engineering:
   - [Research Software Engineering with Python](https://alan-turing-institute.github.io/rse-course/html/index.html), The Alan Turing Institute.  
+- Containers:
+  - [Python on Docker Production Handbook](https://pythonspeed.com/products/productionhandbook/?mtm_campaign=products), Itamar Turner-Trauring.  
+  - [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/).
 - Misc:
   - [Python Packages](https://py-pkgs.org/), Tomas Beuzen & Tiffany Timbers, 2021.  
   - [Modern Python Developer's Toolkit](https://youtu.be/WkUBx3g2QfQ), Sebastian Witowski, PyCon US 2020.  
