@@ -57,12 +57,14 @@ If you're interested in jobs in this area, I highly recommend **[Workera](https:
 
 - [Machine Learning Engineering for Production (MLOps) Specialization](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops?utm_source=deeplearning-ai&utm_medium=institutions&utm_campaign=20210423-mlep-1-deeplearning-ai-institutions-dlai-website), Coursera, DeepLearning.AI.  
 - [Production Machine Learning Systems](https://www.coursera.org/learn/gcp-production-ml-systems?specialization=advanced-machine-learning-tensorflow-gcp), Google Cloud, Coursera.  
-- [Full Stack Data Science](https://fullstackdeeplearning.com).
+- [Full Stack Data Science](https://fullstackdeeplearning.com).  
+- [Designing Machine Learning Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/), Chip Huyen, 2022.  
+- [Effective Data Science Infrastructure](https://www.manning.com/books/effective-data-science-infrastructure), Ville Tuulos, 2022.  
 
 #### Applications
 
 - [Machine Learning for Healthcare](https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j), MIT 6.S897, David Sontag and Peter Szolovits, 2019.
-- **[Artificial Intelligence for Earth System Science (AI4ESS) Summer School](https://www.youtube.com/playlist?list=PLbelYhZAAHEIr4iC1FNcPXUUYXI0zg_96), 2020, National Center for Atmospheric Research.**  
+- [Artificial Intelligence for Earth System Science (AI4ESS) Summer School](https://www.youtube.com/playlist?list=PLbelYhZAAHEIr4iC1FNcPXUUYXI0zg_96), 2020, National Center for Atmospheric Research.  
 - [Artificial Intelligence (AI) for Earth Monitoring](https://www.futurelearn.com/courses/artificial-intelligence-for-earth-monitoring), EUMETSAT, ECMWF, MOi, EEA, Copernicus.
 
 #### Misc.
@@ -81,7 +83,7 @@ If you're interested in jobs in this area, I highly recommend **[Workera](https:
 - [Engineering Mathematics](https://youtube.com/playlist?list=PLMrJAkhIeNNR2W2sPWsYxfrxcASrUt_9j), University of Washignton, Mechanical Engineering 564 and 565.
 - Atmospheric science:
   - [Overview of air pollution and climate change](https://www.youtube.com/playlist?list=PLMYqWZV8pP3GJaH3AM4VTC61aR1st6HSg)
-  - **[Art of Climate Modeling](https://www.youtube.com/playlist?list=PL_cuIb7hx5lihu3Wq605u6kVGltXgEfDt), Paul Ullrich, UC Davis.**  
+  - [Art of Climate Modeling](https://www.youtube.com/playlist?list=PL_cuIb7hx5lihu3Wq605u6kVGltXgEfDt), Paul Ullrich, UC Davis.  
   
 ## Software Engineering  
 
@@ -119,6 +121,7 @@ If you're interested in jobs in this area, I highly recommend **[Teach Yourself 
 ### Testing
 
 - [Software Testing Fundamentals](https://softwaretestingfundamentals.com/)
+- [Unit Testing Principles, Practices, and Patterns](https://www.manning.com/books/unit-testing), Vladimir Khorikov, 2020.  
 
 ### Containers
 
