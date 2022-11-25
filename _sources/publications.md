@@ -2,6 +2,10 @@
 
 ## 2022
 
+**26\.** Tian, X., Steward, J., L., **Conibear, L.**. (2022). A neural-network based MPAS - Shallow Water model and its 4D-Var data assimilation system.  
+
+**25\.** Butt, E., **Conibear, L.**, Smith, C., Baker, J., Rigby, R., Knote, C., Spracklen, D. V. (2022). Achieving Brazil’s deforestation target will reduce fire and deliver air quality and public health benefits, Earth's Future, [DOI](https://doi.org/10.1029/2022EF003048).  
+
 **24\.** **Conibear, L.**, Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S., T., Klimont, Z., Spracklen, D. V. (2022). The Contribution of Emission Sources to the Future Air Pollution Disease Burden in China, Environmental Research Letters, [DOI](https://doi.org/10.1088/1748-9326/ac6f6f).  
 
 **23\.** **Conibear, L.**, Reddington, C. L., Silver, B. J., Chen, Y., Arnold, S. R., Spracklen, D. V. (2022). Emission Sector Impacts on Air Quality and Public Health in China from 2010−2020, GeoHealth, [DOI](https://doi.org/10.1029/2021GH000567).  
