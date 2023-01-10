@@ -2,7 +2,7 @@
 
 ## 2022
 
-**26\.** Tian, X., Steward, J., L., **Conibear, L.**. (2022). A neural-network based MPAS - Shallow Water model and its 4D-Var data assimilation system.  
+**26\.** Tian, X., Steward, J., L., **Conibear, L.**. (2022). A neural-network based MPAS - Shallow Water model and its 4D-Var data assimilation system. Atmosphere, [DOI](https://www.mdpi.com/2073-4433/14/1/157).  
 
 **25\.** Butt, E., **Conibear, L.**, Smith, C., Baker, J., Rigby, R., Knote, C., Spracklen, D. V. (2022). Achieving Brazil’s deforestation target will reduce fire and deliver air quality and public health benefits, Earth's Future, [DOI](https://doi.org/10.1029/2022EF003048).  
 
