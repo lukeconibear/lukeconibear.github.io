@@ -7,7 +7,7 @@
 
 I'm an Atmospheric Engineer at [Tomorrow.io](https://www.tomorrow.io/).  
 
-I'm interested in solving problems, particularly involving [air pollution](/airpollution), [Python](https://www.lukeconibear.com/swd6_hpp/), [numerical atmospheric models](https://wrfchem-leeds.github.io/WRFotron/), and [machine learning](https://www.lukeconibear.com/intro_ml/).
+I'm interested in solving problems, involving [software engineering](/software), [machine learning](https://www.lukeconibear.com/intro_ml/), and [atmospheric science](/airpollution).
 
 ## Contact
 
@@ -20,4 +20,3 @@ Email: laconibear (at) gmail.com
 [GitHub](https://github.com/lukeconibear)  
 [Twitter](https://twitter.com/lukeconibear)  
 [LinkedIn](https://www.linkedin.com/in/lukeconibear/)  
-[Google Scholar](https://scholar.google.com/citations?hl=en&user=hPSGIOMAAAAJ)  

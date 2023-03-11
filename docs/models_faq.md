@@ -1,4 +1,4 @@
-# Models FAQ
+# Numerical Atmospheric Models FAQ
 
 Here, I'm mainly referring to numerical atmospheric models that are used for simulating air quality, weather, and climate.
 
