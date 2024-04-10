@@ -5,7 +5,7 @@
 
 [*Image of the Bubble Nebula from NASA Hubble Site*](https://hubblesite.org/contents/media/images/2016/13/3725-Image.html)  
 
-I'm a Senior Machine Learning Engineer at [Tomorrow.io](https://www.tomorrow.io/).  
+I'm a Senior Software Engineer at [Tomorrow.io](https://www.tomorrow.io/).  
 
 I'm interested in solving problems, involving [software engineering](/software), [machine learning](https://www.lukeconibear.com/intro_ml/), and [atmospheric science](/airpollution).
 
