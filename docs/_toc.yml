@@ -1,15 +1,19 @@
 format: jb-article
 root: index
 sections:
-- file: software
+- file: software/index.md
   sections:
-  - file: models_faq
-  - file: emulator
-  - file: plot_emulator
-  - file: useful_learning_resources
-- file: airpollution
+  - file: software/data_science.md
+  - file: software/software_engineering.md
+  - file: software/python.md
+  - file: software/rust.md
+  - file: software/go.md
+- file: atmospheric_science/index.md
   sections:
-  - file: plot_india_solid_fuel
-  - file: key_problems
-- file: publications
-- file: news
+  - file: atmospheric_science/models_faq.md
+  - file: atmospheric_science/key_problems.md
+  - file: atmospheric_science/emulator.md
+  - file: atmospheric_science/plot_emulator.ipynb
+  - file: atmospheric_science/plot_india_solid_fuel.ipynb
+  - file: atmospheric_science/publications.md
+  - file: atmospheric_science/news.md

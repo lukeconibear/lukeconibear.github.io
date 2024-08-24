@@ -1,6 +1,6 @@
 # Emulation of complex air quality models - Methods
 
-```{image} images/emulator_github_repo.png
+```{image} ../images/emulator_github_repo.png
 :name: Emulator
 ```
 

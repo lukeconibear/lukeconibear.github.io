@@ -21,7 +21,7 @@ jobs:
         with:
           environment-file: environment.yml
           extra-specs: |
-            python=3.9
+            python=3.11
 
       - name: Create Jupyter kernelspec
         run: |
