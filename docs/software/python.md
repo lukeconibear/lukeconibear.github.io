@@ -3,7 +3,7 @@
 ## Projects
 
 - I mainly use Python with the scientific stack of libraries.
-- I created an online course on [High Performance Python](https://arctraining.github.io/swd6_hpp/).
+- I created an online course on [High Performance Python](https://lukeconibear.com/swd6_hpp/).
   - It includes profiling, vectorisation with NumPy, compiling with Numba, parallelisation with Dask and Ray, and using GPUs with JAX and CUDA/Numba.  
 
 ## Resources

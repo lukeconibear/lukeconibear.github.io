@@ -6,7 +6,7 @@
   - These were Gaussian process emulators trained from ~20 TB of simulated data from numerical atmospheric models.  
   - I provided training for these emulators
 [video](https://youtu.be/zbt7aa2QIAA) ([Colab](https://colab.research.google.com/github/lukeconibear/emulator_training/blob/main/emulator_training.ipynb), [slides](https://github.com/lukeconibear/emulator_training/blob/main/AGU2021_Luke-Conibear_Presentation.pdf), and [GitHub](https://github.com/lukeconibear/emulator_training)).
-- I created an online course on [Introduction to Machine Learning](https://arctraining.github.io/swd8_intro_ml/).
+- I created an online course on [Introduction to Machine Learning](https://lukeconibear.com/intro_ml/).
   - It covers fundamentals, machine learning with scikit-learn, deep learning with TensorFlow / Keras and PyTorch / PyTorch Lightning, data pipelines, model tuning, transfer learning, and distributed training.  
 
 ## Resources
