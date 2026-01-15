@@ -35,6 +35,7 @@ jobs:
       - name: Build Jupyter Book
         run: |
           jupyter-book build docs
+          mkdir -p docs/_build/html
           cp CNAME docs/_build/html/CNAME
           cp docs/.nojekyll docs/_build/html/.nojekyll
       
