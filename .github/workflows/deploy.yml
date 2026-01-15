@@ -15,26 +15,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Conda environment
+      - name: Setup Python environment
         uses: mamba-org/setup-micromamba@v1
         with:
-          micromamba-version: 'latest'
           environment-file: environment.yml
           environment-name: website
           init-shell: bash
-          post-cleanup: 'all'
-          create-args: python=3.11
+          cache-environment: true
 
-      - name: Create Jupyter kernelspec
-        run: python -m ipykernel install --user --name website --display-name "website"
-      
-      - name: Build and prepare
+      - name: Build Jupyter Book
         run: |
+          python -m ipykernel install --user --name website
           jupyter-book build docs
           cp CNAME docs/_build/html/
           cp .nojekyll docs/_build/html/
           cp slides/* docs/_build/html/
-      
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4.0.0
         with:
