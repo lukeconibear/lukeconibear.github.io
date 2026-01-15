@@ -43,8 +43,8 @@ jobs:
         run: |
           echo "Checking build output..."
           ls -la docs/_build/html/
-          test -f docs/_build/html/index.html && echo "✓ index.html found" || (echo "✗ index.html missing" && exit 1)
-          test -f docs/_build/html/CNAME && echo "✓ CNAME found" || (echo "✗ CNAME missing" && exit 1)
+          test -f docs/_build/html/index.html && echo "✓ index.html found" || { echo "✗ index.html missing"; exit 1; }
+          test -f docs/_build/html/CNAME && echo "✓ CNAME found" || { echo "✗ CNAME missing"; exit 1; }
           echo "Build verification complete!"
       
       - name: Deploy the book's HTML to GitHub Pages action
