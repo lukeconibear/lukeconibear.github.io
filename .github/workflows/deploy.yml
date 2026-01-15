@@ -40,10 +40,11 @@ jobs:
           echo "Build completed, checking output directory..."
           ls -la docs/_build/
           ls -la docs/_build/html/ || echo "html directory not found"
-          echo "Copying CNAME and .nojekyll..."
+          echo "Copying CNAME, .nojekyll, and slides..."
           mkdir -p docs/_build/html
           cp CNAME docs/_build/html/CNAME
           cp docs/.nojekyll docs/_build/html/.nojekyll
+          cp docs/slides/* docs/_build/html/
           echo "Files copied successfully"
       
       - name: Verify build output
