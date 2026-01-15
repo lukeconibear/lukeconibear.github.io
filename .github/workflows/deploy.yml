@@ -39,9 +39,18 @@ jobs:
           cp CNAME docs/_build/html/CNAME
           cp docs/.nojekyll docs/_build/html/.nojekyll
       
+      - name: Verify build output
+        run: |
+          echo "Checking build output..."
+          ls -la docs/_build/html/
+          test -f docs/_build/html/index.html && echo "✓ index.html found" || (echo "✗ index.html missing" && exit 1)
+          test -f docs/_build/html/CNAME && echo "✓ CNAME found" || (echo "✗ CNAME missing" && exit 1)
+          echo "Build verification complete!"
+      
       - name: Deploy the book's HTML to GitHub Pages action
         uses: peaceiris/actions-gh-pages@v4.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/_build/html
+          force_orphan: true
           cname: www.lukeconibear.com
