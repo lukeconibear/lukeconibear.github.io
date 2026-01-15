@@ -44,7 +44,7 @@ jobs:
           mkdir -p docs/_build/html
           cp CNAME docs/_build/html/CNAME
           cp docs/.nojekyll docs/_build/html/.nojekyll
-          cp docs/slides/* docs/_build/html/
+          cp slides/* docs/_build/html/
           echo "Files copied successfully"
       
       - name: Verify build output
