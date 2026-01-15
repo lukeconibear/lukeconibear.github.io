@@ -4,6 +4,8 @@ author: Luke Conibear
 copyright: "2026"
 execute:
   execute_notebooks: "off"
+exclude_patterns:
+  - slides/**
 sphinx:
   config:
     html_js_files:
