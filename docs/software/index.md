@@ -8,6 +8,7 @@
 
 I create, operationalise, and maintain physics and machine learning weather models ([video](https://www.youtube.com/watch?v=eRYOcRVB004)).
 
+- [Cursor](./cursor.md) - How I use Cursor (slideshow)
 - [Data science](./data_science.md)
 - [Software engineering](./software_engineering.md)
 - [Python](./python.md)

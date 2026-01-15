@@ -3,6 +3,7 @@ root: index
 sections:
 - file: software/index.md
   sections:
+  - file: software/cursor.md
   - file: software/data_science.md
   - file: software/software_engineering.md
   - file: software/python.md
