@@ -9,7 +9,7 @@ dependencies:
   - pandas
   - pillow
   - geopandas
-  - jupyter-book
+  - jupyter-book>=1,<2
   - bokeh
   - jupyterlab
   - numpy
