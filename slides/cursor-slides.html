@@ -329,6 +329,29 @@
         if (e.key === 'ArrowRight' || e.key === ' ') showSlide(current + 1);
         if (e.key === 'ArrowLeft') showSlide(current - 1);
     });
+    
+    // Touch support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    document.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    document.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+    
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        if (touchEndX < touchStartX - swipeThreshold) {
+            showSlide(current + 1);
+        }
+        if (touchEndX > touchStartX + swipeThreshold) {
+            showSlide(current - 1);
+        }
+    }
 </script>
 
 </body>
