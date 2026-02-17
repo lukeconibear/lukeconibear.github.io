@@ -1,0 +1,99 @@
+---
+import { getCollection } from "astro:content";
+import "../styles/global.css";
+import SectionNav from "../components/SectionNav.astro";
+import { mapEntryToPage, normalizePath, sortPages, siteMeta } from "../lib/site";
+
+type Props = {
+  title?: string;
+  description?: string;
+  currentPath?: string;
+};
+
+const { title, description = siteMeta.description, currentPath = "/" } = Astro.props;
+const normalizedPath = normalizePath(currentPath);
+const pageEntries = await getCollection("pages");
+const pages = sortPages(pageEntries.map(mapEntryToPage));
+const pageByPath = new Map(pages.map((page) => [page.path, page]));
+const currentPage = pageByPath.get(normalizedPath);
+const softwarePage = pageByPath.get("/software/");
+const atmosphericSciencePage = pageByPath.get("/atmospheric_science/");
+const softwareTitle = softwarePage?.title ?? "Software";
+const atmosphericScienceTitle = atmosphericSciencePage?.title ?? "Atmospheric science";
+const currentSection = currentPage?.section;
+const sectionPages =
+  currentSection && currentSection !== "home"
+    ? pages.filter(
+        (page) =>
+          page.section === currentSection && page.path !== normalizePath(`/${currentSection}`)
+      )
+    : [];
+const hasSidebar = sectionPages.length > 0;
+const currentSectionTitle =
+  currentSection === "software"
+    ? softwareTitle
+    : currentSection === "atmospheric_science"
+      ? atmosphericScienceTitle
+      : "";
+const pageTitle = title ? `${title} | ${siteMeta.title}` : siteMeta.title;
+const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    {
+      plausibleDomain && (
+        <script
+          is:inline
+          defer
+          data-domain={plausibleDomain}
+          src="https://plausible.io/js/script.js"
+        ></script>
+      )
+    }
+  </head>
+  <body>
+    <div class="site-bg"></div>
+    <header class="site-header">
+      <div class="header-main">
+        <a class="brand" href="/">Luke Conibear</a>
+        <nav class="top-nav" aria-label="Primary">
+          <a
+            href="/software/"
+            class={normalizedPath.startsWith("/software/") ? "active" : ""}
+            aria-current={normalizedPath.startsWith("/software/") ? "page" : undefined}
+          >
+            {softwareTitle}
+          </a>
+          <a
+            href="/atmospheric_science/"
+            class={normalizedPath.startsWith("/atmospheric_science/") ? "active" : ""}
+            aria-current={normalizedPath.startsWith("/atmospheric_science/") ? "page" : undefined}
+          >
+            {atmosphericScienceTitle}
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class={hasSidebar ? "page-grid" : "page-grid no-sidebar"}>
+      {
+        hasSidebar && (
+          <SectionNav
+            title={currentSectionTitle}
+            currentPath={normalizedPath}
+            pages={sectionPages}
+          />
+        )
+      }
+      <section class="page-content">
+        <slot />
+      </section>
+    </main>
+  </body>
+</html>

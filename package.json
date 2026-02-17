@@ -1,0 +1,22 @@
+{
+  "name": "lukeconibear.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "generate-redirects": "node scripts/generate-redirects.mjs",
+    "prebuild": "npm run generate-redirects",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
+    "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "audit": "npm audit --omit=dev --audit-level=high",
+    "audit:full": "npm audit --audit-level=high"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.2",
+    "@astrojs/mdx": "4.3.13",
+    "astro": "5.16.16",
+    "typescript": "5.9.3"
+  }
+}

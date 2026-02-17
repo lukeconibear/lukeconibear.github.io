@@ -1,12 +1,29 @@
-clean-docs:
-	jupyter-book clean docs
+NOTEBOOK_NAMES := plot_emulator plot_india_solid_fuel
 
-build-docs:
-	jupyter-book build docs
-	cp CNAME docs/_build/html/CNAME
-	cp .nojekyll docs/_build/html/.nojekyll
-	cp slides/* docs/_build/html/
+.PHONY: install clean build dev check update-packages refresh-notebooks security-check
 
-all-docs:
-	make clean-docs;
-	make build-docs
+install:
+	npm ci
+
+clean:
+	rm -rf dist .astro
+
+build:
+	npm run build
+
+dev:
+	npm run dev
+
+check:
+	npm run check
+
+update-packages:
+	npm update
+
+refresh-notebooks:
+	@for notebook in $(NOTEBOOK_NAMES); do \
+		jupyter nbconvert --to html docs/atmospheric_science/$${notebook}.ipynb --TemplateExporter.exclude_input=True --output $${notebook}.html --output-dir public/notebooks; \
+	done
+
+security-check:
+	npm run audit

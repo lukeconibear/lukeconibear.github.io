@@ -1,0 +1,31 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { mapEntryToPage } from "../lib/site";
+
+type Props = {
+  entry: CollectionEntry<"pages">;
+};
+
+export async function getStaticPaths() {
+  const entries = await getCollection("pages");
+  const routableEntries = entries.filter(
+    (entry: CollectionEntry<"pages">) => entry.slug !== "index"
+  );
+
+  return routableEntries.map((entry: CollectionEntry<"pages">) => ({
+    params: { slug: entry.slug },
+    props: { entry }
+  }));
+}
+
+const { entry } = Astro.props as Props;
+const { Content } = await render(entry);
+const page = mapEntryToPage(entry);
+---
+
+<BaseLayout title={page.title} description={page.description} currentPath={page.path}>
+  <article class="content-shell">
+    <Content />
+  </article>
+</BaseLayout>

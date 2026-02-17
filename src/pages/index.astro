@@ -1,0 +1,20 @@
+---
+import { getEntry, render } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { mapEntryToPage } from "../lib/site";
+
+const entry = await getEntry("pages", "index");
+
+if (!entry) {
+  throw new Error("Missing pages/index content entry");
+}
+
+const { Content } = await render(entry);
+const page = mapEntryToPage(entry);
+---
+
+<BaseLayout description={page.description} currentPath={page.path}>
+  <article class="content-shell">
+    <Content />
+  </article>
+</BaseLayout>
