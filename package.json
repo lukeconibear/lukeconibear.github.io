@@ -18,5 +18,8 @@
     "@astrojs/mdx": "4.3.13",
     "astro": "5.16.16",
     "typescript": "5.9.3"
+  },
+    "overrides": {
+      "lodash": "4.17.23"
   }
 }

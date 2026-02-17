@@ -265,6 +265,10 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
+  .page-grid.no-sidebar {
+    grid-template-columns: 1fr;
+  }
+
   .page-grid.no-sidebar .page-content {
     grid-column: 1;
     max-width: 100%;
