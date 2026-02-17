@@ -1,0 +1,21 @@
+---
+type Props = {
+  src: string;
+  title: string;
+  linkLabel?: string;
+};
+
+const { src, title, linkLabel = "Open the full notebook page" } = Astro.props;
+---
+
+<a href={src}>{linkLabel}</a>
+
+<div class="notebook-frame">
+  <iframe
+    src={src}
+    title={title}
+    loading="lazy"
+    sandbox="allow-scripts allow-popups"
+    referrerpolicy="no-referrer"
+  ></iframe>
+</div>

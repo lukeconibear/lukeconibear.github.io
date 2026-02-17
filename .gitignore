@@ -182,3 +182,9 @@ docs/jupyter_execute
 *flask_app*
 n.db
 docs/book/templates
+
+# Node / Astro
+node_modules/
+dist/
+.astro/
+npm-debug.log*
