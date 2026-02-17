@@ -2,16 +2,14 @@
 import type { SitePage } from "../lib/site";
 
 type Props = {
-  title: string;
   currentPath: string;
   pages: SitePage[];
 };
 
-const { title, currentPath, pages } = Astro.props;
+const { currentPath, pages } = Astro.props;
 ---
 
 <aside class="section-nav" aria-label="Section pages">
-  <h2>{title}</h2>
   <ul>
     {
       pages.map((page) => (

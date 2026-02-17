@@ -29,12 +29,6 @@ const sectionPages =
       )
     : [];
 const hasSidebar = sectionPages.length > 0;
-const currentSectionTitle =
-  currentSection === "software"
-    ? softwareTitle
-    : currentSection === "atmospheric_science"
-      ? atmosphericScienceTitle
-      : "";
 const pageTitle = title ? `${title} | ${siteMeta.title}` : siteMeta.title;
 const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
 ---
@@ -46,6 +40,8 @@ const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     {
       plausibleDomain && (
         <script
@@ -58,7 +54,7 @@ const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
     }
   </head>
   <body>
-    <div class="site-bg"></div>
+    <a href="#content" class="skip-link">Skip to content</a>
     <header class="site-header">
       <div class="header-main">
         <a class="brand" href="/">Luke Conibear</a>
@@ -81,11 +77,10 @@ const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
       </div>
     </header>
 
-    <main class={hasSidebar ? "page-grid" : "page-grid no-sidebar"}>
+    <main id="content" class={hasSidebar ? "page-grid" : "page-grid no-sidebar"}>
       {
         hasSidebar && (
           <SectionNav
-            title={currentSectionTitle}
             currentPath={normalizedPath}
             pages={sectionPages}
           />
