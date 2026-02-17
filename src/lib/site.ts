@@ -1,4 +1,5 @@
 import type { CollectionEntry } from "astro:content";
+import { normalizePath as sharedNormalizePath } from "../shared/normalize-path.mjs";
 
 export type PageSection = "home" | "software" | "atmospheric_science";
 
@@ -24,11 +25,7 @@ const sectionSortOrder: Record<PageSection, number> = {
 };
 
 export function normalizePath(pathname: string): string {
-  if (!pathname || pathname === "/") {
-    return "/";
-  }
-
-  return pathname.endsWith("/") ? pathname : `${pathname}/`;
+  return sharedNormalizePath(pathname);
 }
 
 export function pathFromSlug(slug: string): string {
