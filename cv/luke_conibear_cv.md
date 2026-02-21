@@ -17,7 +17,7 @@ Generalist engineer working across software engineering, data engineering, appli
 
 ### Senior Software Engineer, Tomorrow.io | 2022--present
 
-- Promoted to Senior Software Engineer within the first year.
+- Promoted to Senior Software Engineer after 1 year.
 - Primary contributor to a department-wide cloud cost optimization program, delivering a 25% spend reduction in 2025 through information-content compression (`xbitinfo`), spot/reserved capacity strategy, KEDA scale-to-zero, rightsizing, lower cross-cloud/cross-region transfer, and stricter data-retention policies.
 - Designed, deployed, and maintained 100+ production microservices and data pipelines in Python, Rust, and Go for ML and physics-based forecasting workflows ([YouTube](https://youtu.be/eRYOcRVB004?si=4RpDk_J68lM2IjD8)).
 - Core contributor in Severity-1 incident response; identified recurring failure modes and led preventive fixes that reduced MTTR by 35% from 2024 to 2025.
