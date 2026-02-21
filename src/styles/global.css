@@ -246,6 +246,10 @@ a:hover {
   color: inherit;
 }
 
+.home-links {
+  margin: 0 0 1rem;
+}
+
 .profile-inline {
   float: right;
   width: 130px;
@@ -262,6 +266,21 @@ a:hover {
   width: 100%;
   min-height: 680px;
   border: 0;
+}
+
+.cv-preview {
+  margin: 0 0 1rem;
+}
+
+.cv-preview > summary {
+  cursor: pointer;
+  margin: 0 0 0.75rem;
+}
+
+.cv-frame {
+  width: 100%;
+  min-height: 900px;
+  border: 1px solid #d9d9d9;
 }
 
 @media (max-width: 960px) {
@@ -290,5 +309,9 @@ a:hover {
     margin: 0 auto 1rem;
     max-width: min(220px, 70%);
     width: 100%;
+  }
+
+  .cv-frame {
+    min-height: 620px;
   }
 }
