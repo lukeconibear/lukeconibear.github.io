@@ -25,7 +25,9 @@ const sectionPages =
   currentSection && currentSection !== "home"
     ? pages.filter(
         (page) =>
-          page.section === currentSection && page.path !== normalizePath(`/${currentSection}`)
+          page.section === currentSection &&
+          page.path !== normalizePath(`/${currentSection}`) &&
+          !page.slug.startsWith(`${currentSection}/roundups/`)
       )
     : [];
 const hasSidebar = sectionPages.length > 0;

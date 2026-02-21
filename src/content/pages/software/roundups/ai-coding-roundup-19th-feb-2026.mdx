@@ -1,0 +1,66 @@
+---
+title: "AI Coding Roundup - 19th Feb 2026"
+section: "software"
+description: "The signals from the noise: practical notes on using AI coding tools."
+---
+
+# AI coding roundup
+
+The **signals** from the **noise**  
+_19th Feb 2026_
+
+## First, a PSA
+
+- A lot of online stuff is like customising excel (btw it’s an [esport](https://excel-esports.com/))
+- The purpose of these tools is that anyone can code now
+- Sure, you can run 12 excels at the same time overnight with custom macros
+- But the point isn’t to get better at excel, it’s to use it to [solve important **business** problems](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
+  - e.g., if you [ship](https://www.seangoedecke.com/getting-the-main-thing-right/) a key project that creates shareholder value early then it likely won’t matter how (whether you filled out your Jira tickets, have high test coverage, had 90 agents in parallel, etc.)
+- The default settings and best model (currently probably opus 4.6) is just fine (i.e., most of the way there)
+
+## Stuff
+
+- New best models
+  - $$$: [Opus 4.6](https://www.anthropic.com/news/claude-opus-4-6)
+  - $$: [Sonnet 4.6](https://www.anthropic.com/news/claude-sonnet-4-6) or [Codex 5.3](https://openai.com/index/introducing-gpt-5-3-codex/)
+- Auto AI code review (very useful)
+  - e.g., GitHub Copilot with `.github/workflows/copilot-instructions.md`
+  - AIs are pumping out lots of code so need to sample it enough
+  - Give evidence that this PR solves the problem e.g., screenshot from a staging test
+  - This reduces the burden on human reviewers
+  - Also ensure your PRs are right and consider making smaller
+
+## Tips
+
+- [Become good at code review](https://www.seangoedecke.com/good-code-reviews/) ([similar](https://google.github.io/eng-practices/review/reviewer/)) - develop verification of whether the code solves the problem
+- [What is taste in software](https://www.seangoedecke.com/taste/) - flexibility, design (i’m exploring this more)
+- [Multi-task with background agents](https://addyo.substack.com/p/conductors-to-orchestrators-the-future) - worth experiment when comfortable
+- [Use plan mode](https://boristane.com/blog/how-i-use-claude-code/) - can get better results for complex stuff
+- [Ideas on how to use LLMs](https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf) ([similar](https://www.seangoedecke.com/practical-ai-techniques/)) - lots for different teams and roles e.g., k8s debug with screenshots, explain a codebase, cross-language translation, refactoring, make tests, improve existing code, debugging (paste in traceback)
+- [Make skills after LLM/you done it first](https://www.seangoedecke.com/generate-skills-afterwards/)
+- [Performance can degrade when context window >50% full](https://youtu.be/TUjQuC4ugak?si=jPYQQ5Gb_KZ60_xw)
+- [Easily add parallelisation](https://www.cyberdemon.org/2025/02/28/llm-parallelism.html)
+- [Security tips](https://www.seangoedecke.com/ai-security/) - careful with browser use, using stuff from internet, what commands you approve
+- Try and have loops e.g., with tests
+- Ensure every repo has a `AGENTS.md`, that update regularly
+- [Try it as a research assistant](https://www.seangoedecke.com/ai-research-with-codex/) to “deep research” papers for ideas to implement
+- Take the time to learn and try out stuff
+- Chat with colleagues about how they use it
+
+## Opinions
+
+- [ICs now agent managers](https://molochinations.substack.com/p/ai-killed-the-individual-contributor) ([similar](https://www.pathtostaff.com/p/death-of-the-coding-machine-the-archetypes)) - popular i.e., architects now
+- [As implementation cheaper, do tasks currently unable to](https://x.com/levie/status/2004654686629163154) - nice - what never had time to do?
+- [Advice for junior and senior developers](https://addyosmani.com/blog/next-two-years/) ([similar](https://www.pathtostaff.com/p/how-to-stay-valuable-when-ai-writes)) - learn, adapt, and focus on what agents can’t do (understanding, creativity, design, trade offs, business context, domain knowledge, communication (both with agents and humans), etc.)
+- [What to do while for agents](https://jennywanger.com/articles/waiting-is-the-new-interruption/) - I often think about the problem/solution, what it’s doing, or multitask other stuff e.g., read, email, slack, sometimes fire off another agent (plan to experiment more with this)
+- [Downsides of vibe coding](https://www.fast.ai/posts/2026-01-28-dark-flow/) - I’m often more jumbled / not in flow
+- [How measure productivity](https://www.thepragmaticcto.com/p/lines-of-code-are-back-and-its-worse) - many metrics miss the point i.e., solve important business problems
+- [Mid 2025 study found devs less productive with AI](https://margaretstorey.com/blog/2026/02/09/cognitive-debt/), recent [anthropic study](https://www.seangoedecke.com/how-does-ai-impact-skill-formation/) found 25% (not 10x) but learnt less - I guess might be different now tools are better
+- [What speed ups are realistic](https://leaddev.com/culture/vibe-coding-hype-cycles-why-ai-isnt-10x-answer) - i’m interested in results for real world tasks, who knows, i guess we’ll see in speed of real things being shipped, GDP, etc.
+- [Careful with cognitive debt](https://margaretstorey.com/blog/2026/02/09/cognitive-debt/) ([similar](https://rushabh.substack.com/p/cognitive-debt)) - really try and understand stuff
+- [Context switching is tiring](https://simonwillison.net/2026/Feb/9/ai-intensifies-work/) - yep
+- [Avoid skill atrophy](https://addyo.substack.com/p/avoiding-skill-atrophy-in-the-age) - I use the LLMs as a [1-to-1 tutor](https://www.seangoedecke.com/learning-from-llms/) for me (very valuable!)
+- Me
+  - I find using agents fun. I don’t really miss coding by hand
+  - Though it’s challenging keeping up, context switching, and adapting to big changes / uncertainties
+  - I liked this [tweet](https://x.com/esrtweet/status/2023978360351682848)
