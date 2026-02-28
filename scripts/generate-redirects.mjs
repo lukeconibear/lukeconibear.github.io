@@ -30,7 +30,33 @@ function slugFromFilePath(filePath) {
   return withoutExtension;
 }
 
+function isSafeUrl(url) {
+  if (!url) return false;
+  const trimmedUrl = url.trim();
+
+  // Allow protocol-relative and absolute paths
+  if (trimmedUrl.startsWith("//") || trimmedUrl.startsWith("/")) {
+    return true;
+  }
+
+  try {
+    const parsedUrl = new URL(trimmedUrl);
+    const safeProtocols = ["http:", "https:"];
+    return safeProtocols.includes(parsedUrl.protocol);
+  } catch (e) {
+    // If URL constructor fails, check for malicious protocols
+    if (/^[a-z][a-z0-9+.-]*:/i.test(trimmedUrl)) {
+      return false; // Contains a protocol but URL() failed, likely unsafe
+    }
+    // No protocol, assumed to be a safe relative path
+    return true;
+  }
+}
+
 function redirectDocument(fromPath, toPath) {
+  if (!isSafeUrl(toPath)) {
+    throw new Error(`Unsafe redirect URL detected: ${toPath} for path ${fromPath}`);
+  }
   const safeToPath = escapeHtml(toPath);
   const safeFromPath = escapeHtml(fromPath);
   return `<!doctype html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <meta http-equiv="refresh" content="0; url=${safeToPath}" />\n    <link rel="canonical" href="${safeToPath}" />\n    <title>Redirecting...</title>\n  </head>\n  <body>\n    <p>Redirecting to <a href="${safeToPath}">${safeToPath}</a>.</p>\n    ${GENERATED_MARKER}\n    <p>Legacy path: <code>${safeFromPath}</code></p>\n  </body>\n</html>\n`;
