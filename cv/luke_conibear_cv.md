@@ -17,13 +17,13 @@ Generalist engineer working across software engineering, data engineering, appli
 
 ### Senior Software Engineer, Tomorrow.io, US (Remote) | 2022--present
 
-- Promoted to Senior Software Engineer after 1 year.
 - Primary contributor to a department-wide cloud cost efficiency initiative, delivering a 25% spend reduction in 2025 through information-content compression (`xbitinfo`), spot/reserved capacity strategy, KEDA scale-to-zero, rightsizing, lower cross-cloud/cross-region transfer, and stricter data-retention policies.
 - Designed, deployed, and maintained production microservices and data pipelines in Python, Rust, and Go for ML and physics-based forecasting workflows, operating within a highly asynchronous distributed team ([YouTube](https://youtu.be/eRYOcRVB004?si=4RpDk_J68lM2IjD8)).
 - Core contributor in Severity-1 incident response; identified recurring failure modes and led preventive fixes that reduced MTTR by 35% from 2024 to 2025.
 - Led design and delivery of multi-cloud MLOps infrastructure across Azure ML, AWS SageMaker, and GCP Vertex AI.
-- Led refactoring of legacy applications to improve production reliability, maintainability, and operational simplicity.
+- Led refactoring of legacy applications to improve operational reliability, maintainability, and simplicity.
 - Led department-wide adoption of AI-assisted engineering workflows, integrating code review standards, clear documentation, and CI/CD improvements to increase delivery speed and code quality.
+- Maintain event-driven distributed system (Go) that coordinates multi-cloud weather data pipelines (GCP, AWS, Azure) using PostgreSQL-backed dependency tracking to dispatch processing jobs when file inputs are met.
 
 ### Research Software Engineer Machine Learning, University of Leeds, UK (Remote) | 2021--2022
 
@@ -50,6 +50,5 @@ Generalist engineer working across software engineering, data engineering, appli
 
 - **AI-native:** Cursor, Codex, GitHub Copilot.
 - **Languages:** Python (scientific & ML focus), Rust, Go, Bash.
-- **Cloud & ML:** Azure (ML, storage), GCP (Vertex AI, GCS), AWS (SageMaker, S3), GPUs.
-- **Infra & Ops:** Kubernetes (AKS, GKE), Docker, Terraform, Argo, GitHub Actions.
-- **Misc:** Git (GitHub), Jira, DataDog, DoIT, PagerDuty.
+- **Cloud:** Azure (ML, AKS, storage, event grid), GCP (Vertex AI, GKE, GCS, Pub/Sub), AWS (SageMaker, S3).
+- **Platform & Ops:** Git (GitHub), Kubernetes, Docker, Terraform, Argo, GitHub Actions, GPUs, DataDog, PagerDuty, DoIT, Jira.
