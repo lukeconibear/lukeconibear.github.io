@@ -1,4 +1,6 @@
 ---
+import { getSafeUrl } from "../shared/safeurl";
+
 type Props = {
   src: string;
   title: string;
@@ -6,13 +8,14 @@ type Props = {
 };
 
 const { src, title, linkLabel = "Open the full notebook page" } = Astro.props;
+const safeSrc = getSafeUrl(src);
 ---
 
-<a href={src}>{linkLabel}</a>
+<a href={safeSrc}>{linkLabel}</a>
 
 <div class="notebook-frame">
   <iframe
-    src={src}
+    src={safeSrc}
     title={title}
     loading="lazy"
     sandbox="allow-scripts allow-popups"
