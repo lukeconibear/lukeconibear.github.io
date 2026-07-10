@@ -11,7 +11,7 @@ header-includes:
 
 ## Overview
 
-Generalist engineer working across software engineering, data engineering, applied AI/ML/data science, and atmospheric science to build production systems.
+Generalist engineer specialising in simplifying complex scientific software systems at the intersection of software engineering, AI, cloud infrastructure, and atmospheric science.
 
 ## Experience
 
@@ -21,9 +21,9 @@ Generalist engineer working across software engineering, data engineering, appli
 - Designed, deployed, and maintained production microservices and data pipelines in Python, Rust, and Go for ML and physics-based forecasting workflows, operating within a highly asynchronous distributed team ([YouTube](https://youtu.be/eRYOcRVB004?si=4RpDk_J68lM2IjD8)).
 - Core contributor in Severity-1 incident response; identified recurring failure modes and led preventive fixes that reduced MTTR by 35% from 2024 to 2025.
 - Led design and delivery of multi-cloud MLOps infrastructure across Azure ML, AWS SageMaker, and GCP Vertex AI.
-- Led refactoring of legacy applications to improve operational reliability, maintainability, and simplicity.
+- Led simplification and modernisation of legacy forecasting applications, improving reliability, maintainability, and operational resilience.
 - Led department-wide adoption of AI-assisted engineering workflows, integrating code review standards, clear documentation, and CI/CD improvements to increase delivery speed and code quality.
-- Maintain event-driven distributed system (Go) that coordinates multi-cloud weather data pipelines (GCP, AWS, Azure) using PostgreSQL-backed dependency tracking to dispatch processing jobs when file inputs are met.
+- Own and evolve an event-driven distributed system (Go) coordinating multi-cloud weather data pipelines across AWS, Azure, and GCP using PostgreSQL-backed dependency tracking.
 
 ### Research Software Engineer Machine Learning, University of Leeds, UK (Remote) | 2021--2022
 
