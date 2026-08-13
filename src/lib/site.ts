@@ -38,8 +38,8 @@ export function pathFromSlug(slug: string): string {
 
 export function mapEntryToPage(entry: CollectionEntry<"pages">): SitePage {
   return {
-    slug: entry.slug,
-    path: pathFromSlug(entry.slug),
+    slug: entry.id,
+    path: pathFromSlug(entry.id),
     title: entry.data.title,
     description: entry.data.description,
     summary: entry.data.summary,

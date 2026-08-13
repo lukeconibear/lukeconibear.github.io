@@ -10,11 +10,11 @@ type Props = {
 export async function getStaticPaths() {
   const entries = await getCollection("pages");
   const routableEntries = entries.filter(
-    (entry: CollectionEntry<"pages">) => entry.slug !== "index"
+    (entry: CollectionEntry<"pages">) => entry.id !== "index"
   );
 
   return routableEntries.map((entry: CollectionEntry<"pages">) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: { entry }
   }));
 }
