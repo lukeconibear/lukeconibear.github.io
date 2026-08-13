@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>
+   Numerical Atmospheric Models FAQ | Luke Conibear
+  </title>
+  <meta content="Frequently asked questions about atmospheric models." name="description">
+  <meta content="default-src 'none'; base-uri 'none'; form-action 'none'; img-src 'self'; style-src 'self'" http-equiv="Content-Security-Policy">
+    <meta name="referrer" content="no-referrer">
+  <link href="/styles.css" rel="stylesheet">
+ </head>
+ <body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+   <div class="header-main">
+    <a class="brand" href="/">Luke Conibear</a>
+    <nav aria-label="Primary" class="top-nav">
+     <a class="" href="/software/">Software</a>
+     <a aria-current="page" class="active" href="/atmospheric_science/">Atmospheric science</a>
+    </nav>
+   </div>
+  </header>
+  <main class="page-grid" id="content">
+   <aside aria-label="Section pages" class="section-nav">
+    <ul>
+     <li>
+      <a aria-current="page" class="active" href="/atmospheric_science/models_faq/">Numerical Atmospheric Models FAQ</a>
+     </li>
+     <li>
+      <a class="" href="/atmospheric_science/key_problems/">Key Areas of Air Pollution Research</a>
+     </li>
+     <li>
+      <a class="" href="/atmospheric_science/emulator/">Emulation of complex air quality models</a>
+     </li>
+     <li>
+      <a class="" href="/atmospheric_science/publications/">Publications</a>
+     </li>
+     <li>
+      <a class="" href="/atmospheric_science/news/">News</a>
+     </li>
+    </ul>
+   </aside>
+   <section class="page-content">
+    <article class="content-shell">
+     <h1 id="numerical-atmospheric-models-faq">
+      Numerical Atmospheric Models FAQ
+     </h1>
+     <p>
+      Here, I&rsquo;m mainly referring to numerical atmospheric models that are used for simulating air quality, weather, and climate.
+     </p>
+     <h2 id="whats-inside-climate-models">
+      What&rsquo;s inside climate models?
+     </h2>
+     <p>
+      Paul Ullrich explains climate models
+      <a href="https://youtube.com/playlist?list=PL_cuIb7hx5lihu3Wq605u6kVGltXgEfDt">here</a>. Guy Brasseur gives an overview of atmospheric chemistry modelling
+      <a href="https://youtu.be/t-6ntWF3B8c">here</a>
+      and
+      <a href="https://youtu.be/tc7vGe1efrA">here</a>. Tim Palmer explains how to deal with uncertainty
+      <a href="https://youtu.be/ed4p7JYMYKs">here</a>.
+     </p>
+     <h2 id="are-any-models-and-their-output-openly-available">
+      Are any models (and their output) openly available?
+     </h2>
+     <p>
+      Yes.
+     </p>
+     <p>
+      Some examples of models:
+     </p>
+     <ul>
+      <li>
+       <a href="https://github.com/wrf-model/WRF">Weather Research and Forecasting (WRF) model</a>
+      </li>
+      <li>
+       <a href="https://github.com/geoschem/geos-chem">Goddard Earth Observing System (GEOS) Chem model</a>
+      </li>
+      <li>
+       <a href="https://github.com/ESCOMP/CESM">Community Earth System Model (CESM)</a>
+      </li>
+      <li>
+       <a href="https://github.com/E3SM-Project/E3SM">Energy Exascale Earth System model</a>
+      </li>
+     </ul>
+     <p>
+      And some output data:
+     </p>
+     <ul>
+      <li>
+       <a href="https://esgf-data.dkrz.de/search/cmip6-dkrz/">Model output</a>
+       from all the Coupled Model Intercomparison Project (CMIP) 6 models used in the IPCC 6th Assessment Report
+      </li>
+      <li>
+       <a href="https://search.earthdata.nasa.gov/search">NASA Earth Data</a>
+      </li>
+     </ul>
+     <h2 id="what-are-the-well-known-models">
+      What are the well-known models?
+     </h2>
+     <ul>
+      <li>
+       <a href="https://www.ecmwf.int/en/research/modelling-and-prediction">ECMWF, Integrated Forecasting System (IFS)</a>
+      </li>
+      <li>
+       <a href="https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/index">UK Met Office, Unified Model (UM)</a>
+      </li>
+      <li>
+       <a href="https://www.cesm.ucar.edu/models/">NCAR, Community Earth System Model (CESM)</a>
+      </li>
+      <li>
+       <a href="https://www.giss.nasa.gov/projects/gcm/">NASA, Goddard Institute for Space Studies (GISS) model</a>
+      </li>
+     </ul>
+     <h2 id="are-the-models-accurate">
+      Are the models accurate?
+     </h2>
+     <p>
+      It&rsquo;s helpful to separate the core model, scenario, and phenomena.
+     </p>
+     <p>
+      The scenarios are possible future decisions and actions. As this future knowledge is unknowable in advance, their use is limited. Some phenomena are not well suited for long-term prediction. However, independent of these, the skill of different core models varies a lot.
+     </p>
+     <p>
+      For the core model, the fundamentals are similar, in that to predict the weather they need to accurately simulate atmospheric dynamics, physics, chemistry, etc. These predictions are then constantly evaluated against reality (at least for short-term phenomena), so the model skill can be determined.
+     </p>
+     <p>
+      Many of the best models from top institutions perform very well (e.g., ECMWF, UK Met Office, NCAR, NASA). For weather, the accuracy of &lt;10 day forecasts has improved a lot over the last 40 years (<a href="https://www.nature.com/articles/nature14956">paper</a>). For climate, the accuracy of broad general effects, such as global temperature anomalies, is not too bad (e.g.,
+      <a href="https://www.pnas.org/node/900558.full">paper</a>). However, this same paper points out well that the models struggle with specifics (e.g., regional effects, extremes, etc.) and that there are many ways the models can substantially improve.
+     </p>
+     <p>
+      <em>Overall, this continual error correction and stringent testing against reality has gone on for decades for weather models, and is why I think that in general they&rsquo;re pretty good scientific tools.</em>
+     </p>
+     <h2 id="can-we-find-out-how-sensitive-the-climate-is-to-emissions-without-using-scenarios">
+      Can we find out how sensitive the climate is to emissions without using scenarios?
+     </h2>
+     <p>
+      Yes.
+     </p>
+     <p>
+      We can remove the dependency on future knowledge by looking at climate sensitivity. This is an emergent metric that estimates how much surface warming there would be from a doubling of CO2 emissions (i.e., how sensitive is the climate to emissions). This is then split into a transient climate response (TCR) showing short-term response and an equilibrium climate sensitivity (ECS) showing long-term response.
+     </p>
+     <p>
+      The climate sensitivity turns out to be a skewed probability distribution with a thin tail at higher temperatures. Recent estimates (<a href="https://www.carbonbrief.org/guest-post-why-low-end-climate-sensitivity-can-now-be-ruled-out">IPCC AR6</a>) find the TCR mean is 1.8 degrees and the ECS mean is 3 degrees. This is probably the best guide for decisions we currently have. Tim Palmer explains climate sensitivity and how to use it to make decisions
+      <a href="https://youtu.be/qXNaNXwWvmk">here</a>.
+     </p>
+    </article>
+   </section>
+  </main>
+ </body>
+</html>

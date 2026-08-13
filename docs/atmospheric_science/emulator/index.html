@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>
+   Emulation of complex air quality models | Luke Conibear
+  </title>
+  <meta content="Methods for emulating complex air quality models." name="description">
+  <meta content="default-src 'none'; base-uri 'none'; form-action 'none'; img-src 'self'; style-src 'self'" http-equiv="Content-Security-Policy">
+    <meta name="referrer" content="no-referrer">
+  <link href="/styles.css" rel="stylesheet">
+ </head>
+ <body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+   <div class="header-main">
+    <a class="brand" href="/">Luke Conibear</a>
+    <nav aria-label="Primary" class="top-nav">
+     <a class="" href="/software/">Software</a>
+     <a aria-current="page" class="active" href="/atmospheric_science/">Atmospheric science</a>
+    </nav>
+   </div>
+  </header>
+  <main class="page-grid" id="content">
+   <aside aria-label="Section pages" class="section-nav">
+    <ul>
+     <li>
+      <a class="" href="/atmospheric_science/models_faq/">Numerical Atmospheric Models FAQ</a>
+     </li>
+     <li>
+      <a class="" href="/atmospheric_science/key_problems/">Key Areas of Air Pollution Research</a>
+     </li>
+     <li>
+      <a aria-current="page" class="active" href="/atmospheric_science/emulator/">Emulation of complex air quality models</a>
+     </li>
+     <li>
+      <a class="" href="/atmospheric_science/publications/">Publications</a>
+     </li>
+     <li>
+      <a class="" href="/atmospheric_science/news/">News</a>
+     </li>
+    </ul>
+   </aside>
+   <section class="page-content">
+    <article class="content-shell">
+     <h1 id="emulation-of-complex-air-quality-models---methods">
+      Emulation of complex air quality models - Methods
+     </h1>
+     <p>
+      <img alt="Emulator architecture" src="/images/emulator_github_repo.png">
+     </p>
+     <p>
+      <em>Image sources
+       <a href="https://www.nasa.gov/content/a-portrait-of-global-winds/">1</a>,
+       <a href="https://www.aidanscannell.com/post/gaussian-process-regression/">2</a>, and
+       <a href="http://6degreesoffreedom.co/circle-random-sampling/">3</a>.</em>
+     </p>
+     <h2 id="problem">
+      Problem
+     </h2>
+     <p>
+      Numerical atmospheric models are useful to simulate air quality, weather, and climate. However, these models are slow and have high computational costs. Some compromises to meet these constraints are to:
+     </p>
+     <ul>
+      <li>
+       Reduce the model accuracy.
+       <ul>
+        <li>
+         By reducing the model complexity e.g., use simpler representations of mechanisms, decrease the (space/time) resolutions, replace analytical solutions with parameterisations.
+        </li>
+       </ul>
+      </li>
+      <li>
+       Reduce the model precision.
+       <ul>
+        <li>
+         By using
+         <a href="https://www.nature.com/articles/526032a">reduced precision computer chips</a>.
+        </li>
+       </ul>
+      </li>
+      <li>
+       Reduce the number of experiments.
+      </li>
+      <li>
+       Use a bigger computer.
+      </li>
+     </ul>
+     <p>
+      Though, these compromises are not ideal (or sometimes even possible).
+     </p>
+     <h2 id="alternative-approach">
+      Alternative approach
+     </h2>
+     <p>
+      Another approach is to use emulators. Emulators are machine learning models that act as proxies of these numerical atmospheric models. They are trained on data from model simulations and learn statistical associations between inputs and outputs. They are much cheaper to run, enabling many more experiments to be undertaken. These emulators are often designed using Gaussian process regressors, due to their high prediction accuracy on test data.
+      <a href="http://www.gaussianprocess.org/gpml/chapters/RW.pdf">Rasmussen & Williams (2006)</a>
+      do a great job of explaining them. They&rsquo;ve been used in the atmospheric sciences to explore uncertainties, sensitivities, and for prediction problems.
+     </p>
+     <p>
+      The general approach is split into simulation and emulation. First, the inputs and outputs of the prediction problem are determined. Then simulations are designed, executed, and evaluated. Then emulators are designed, optimised, evaluated, and used for prediction.
+     </p>
+     <h3 id="application">
+      Application
+     </h3>
+     <p>
+      We developed emulators to predict air quality and public health in China. The summary of our approach is:
+     </p>
+     <ol>
+      <li>
+       <p>
+        We simulated air quality using
+        <a href="https://wrfchem-leeds.github.io/WRFotron/">WRFChem</a>.
+a. Our inputs were 5 anthropogenic emission sectors (residential, industrial, land transport, agriculture, and power generation).
+b. Our outputs were fine particulate matter (PM$_2.5$) and ozone (O$_3$) concentrations.
+c. We used a maxi-min
+        <a href="https://en.wikipedia.org/wiki/Latin_hypercube_sampling">Latin hypercube</a>
+        space-filling design to select the scalings to apply to the inputs (<a href="https://pythonhosted.org/pyDOE/randomized.html">pyDOE</a>).
+d. There were 50 years of training simulations and 5 separate years of test simulations (independent Latin hypercube designs).
+       </p>
+       <ul>
+        <li>
+         This step takes a while, even on a
+         <a href="https://arcdocs.leeds.ac.uk/welcome.html">high-performance computer</a>.
+        </li>
+       </ul>
+       <p>
+        e. We performed a control run of the simulator and evaluated it against measurements to ensure it accurately predicted our outputs.
+       </p>
+      </li>
+      <li>
+       <p>
+        We emulated air quality using Gaussian process regressors (<a href="https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html?highlight=gaussian%20process#sklearn.gaussian_process.GaussianProcessRegressor">scikit-learn</a>).
+a. Our design included:
+       </p>
+       <ul>
+        <li>
+         Preprocessing the inputs with a power transform (Yeo-Johnson) to make them more Gaussian-like (<a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PowerTransformer.html">scikit-learn</a>).
+        </li>
+        <li>
+         We used a Matern kernel.
+        </li>
+        <li>
+         We optimised the hyperparameters of the model using genetic programming (<a href="http://epistasislab.github.io/tpot/">TPOT</a>).
+        </li>
+        <li>
+         We developed 1 emulator per grid cell from the simulator (30,556 in total).
+        </li>
+       </ul>
+       <p>
+        b. The emulators were trained on the 50 years of simulator data.
+       </p>
+       <ul>
+        <li>
+         This work was also done in parallel on a high-performance computer, using
+         <a href="https://dask.org/">Dask</a>
+         (<a href="https://pangeo.io/setup_guides/hpc.html">instructions from Pangeo</a>).
+        </li>
+       </ul>
+       <p>
+        c. The emulators evaluated to a R$^2$ of 0.999 for both outputs on the unseen test data.
+       </p>
+      </li>
+     </ol>
+     <h3 id="results">
+      Results
+     </h3>
+     <p>
+      The emulators were used to predict a wide range of possible emission scenarios (32,768 in total).
+     </p>
+     <h3 id="further-information">
+      Further information
+     </h3>
+     <ul>
+      <li>
+       Short-term air quality prediction.
+       <ul>
+        <li>
+         <a href="https://github.com/lukeconibear/emulator">Code</a>.
+        </li>
+        <li>
+         Paper - Emulator development
+         <ul>
+          <li>
+           <strong>Conibear, L.</strong>
+           Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2021). Statistical emulation of winter ambient fine particulate matter concentrations from emission changes in China, GeoHealth,
+           <a href="https://doi.org/10.1029/2021GH000391">DOI</a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+      <li>
+       Long-term air quality and public health prediction
+       <ul>
+        <li>
+         <a href="https://github.com/lukeconibear/emulator_annual">Code</a>.
+        </li>
+        <li>
+         Paper - Emulator development
+         <ul>
+          <li>
+           <strong>Conibear, L.</strong>, Reddington, C. L., Silver, B. J., Chen, Y., Knote, C., Arnold, S. R., Spracklen, D. V. (2022). Sensitivity of Air Pollution Exposure and Disease Burden to Emission Changes in China using Machine Learning Emulation, GeoHealth,
+           <a href="https://doi.org/10.1029/2021GH000570">DOI</a>,
+           <a href="https://github.com/lukeconibear/emulator_annual">GitHub</a>.
+          </li>
+         </ul>
+        </li>
+        <li>
+         Paper - Emulator application to recent trends
+         <ul>
+          <li>
+           <strong>Conibear, L.</strong>, Reddington, C. L., Silver, B. J., Chen, Y., Arnold, S. R., Spracklen, D. V. (2022). Emission Sector Impacts on Air Quality and Public Health in China from 2010-2020, GeoHealth,
+           <a href="https://doi.org/10.1029/2021GH000567">DOI</a>.
+          </li>
+         </ul>
+        </li>
+        <li>
+         Paper - Emulator application to future climate scenarios
+         <ul>
+          <li>
+           <strong>Conibear, L.</strong>, Reddington, C. L., Silver, B. J., Arnold, S. R., Turnock, S., T., Klimont, Z., Spracklen, D. V. (2022). The Contribution of Emission Sources to the Future Air Pollution Disease Burden in China, Environmental Research Letters,
+           <a href="https://doi.org/10.1088/1748-9326/ac6f6f">DOI</a>.
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </article>
+   </section>
+  </main>
+ </body>
+</html>

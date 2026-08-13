@@ -183,10 +183,4 @@ docs/jupyter_execute
 n.db
 docs/book/templates
 
-# Node / Astro
-node_modules/
-dist/
-.astro/
-npm-debug.log*
-
 .DS_store
