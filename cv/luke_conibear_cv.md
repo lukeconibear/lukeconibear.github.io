@@ -27,7 +27,7 @@ Generalist engineer specialising in simplifying complex scientific software syst
 - Led the design and delivery of MLOps infrastructure spanning Azure ML, AWS SageMaker, and GCP Vertex AI.
 - Led simplification and modernisation of legacy forecasting applications, improving reliability, maintainability, and operational resilience.
 - Led department-wide adoption of AI-assisted engineering practices including development, code review, skills, automations, and a knowledge agent.
-- Maintain an event-driven Go system coordinating multi-cloud weather-data pipelines across AWS, Azure, and GCP, using PostgreSQL-backed dependency tracking.
+- Maintain an event-driven distributed system (Go) coordinating multi-cloud weather-data pipelines across AWS, Azure, and GCP, using PostgreSQL-backed dependency tracking.
 
 ### Research Software Engineer (Machine Learning), University of Leeds, UK (Remote) | 2021--2022
 
