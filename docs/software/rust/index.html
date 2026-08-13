@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>
+   Rust | Luke Conibear
+  </title>
+  <meta content="Rust resources and projects." name="description">
+  <meta content="default-src 'none'; base-uri 'none'; form-action 'none'; img-src 'self'; style-src 'self'" http-equiv="Content-Security-Policy">
+    <meta name="referrer" content="no-referrer">
+  <link href="/styles.css" rel="stylesheet">
+ </head>
+ <body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+   <div class="header-main">
+    <a class="brand" href="/">Luke Conibear</a>
+    <nav aria-label="Primary" class="top-nav">
+     <a aria-current="page" class="active" href="/software/">Software</a>
+     <a class="" href="/atmospheric_science/">Atmospheric science</a>
+    </nav>
+   </div>
+  </header>
+  <main class="page-grid" id="content">
+   <aside aria-label="Section pages" class="section-nav">
+    <ul>
+     <li>
+      <a class="" href="/software/ai-coding/">AI coding</a>
+     </li>
+     <li>
+      <a class="" href="/software/data_science/">Data science</a>
+     </li>
+     <li>
+      <a class="" href="/software/software_engineering/">Software Engineering</a>
+     </li>
+     <li>
+      <a class="" href="/software/python/">Python</a>
+     </li>
+     <li>
+      <a aria-current="page" class="active" href="/software/rust/">Rust</a>
+     </li>
+     <li>
+      <a class="" href="/software/go/">Go</a>
+     </li>
+    </ul>
+   </aside>
+   <section class="page-content">
+    <article class="content-shell">
+     <h1 id="rust">
+      Rust
+     </h1>
+     <h2 id="resources">
+      Resources
+     </h2>
+     <ul>
+      <li>
+       <a href="https://doc.rust-lang.org/book/title-page.html">Book: The Rust Programming Language</a>
+      </li>
+      <li>
+       <a href="https://rustlings.cool/">Exercises: Rustlings</a>
+      </li>
+      <li>
+       <a href="https://youtube.com/playlist?list=PLEIv4NBmh-GsWGE9mY3sF9c5lgh5Z_jLr&si=_LiA31caoUJvowTQ">Videos: From Python to Rust</a>
+      </li>
+      <li>
+       <a href="https://cheats.rs/">Rust Language Cheat Sheet</a>
+      </li>
+      <li>
+       <a href="https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/the-stack-and-the-heap.html">The stack and the heap</a>
+      </li>
+      <li>
+       <a href="https://www.youtube.com/@jonhoo">Videos: Jon Gjengset</a>
+      </li>
+      <li>
+       <a href="https://rust-for-rustaceans.com/">Book: Rust for Rustaceans by Jon Gjengset</a>
+      </li>
+      <li>
+       <a href="https://www.lurklurk.org/effective-rust/">Book: Effective Rust</a>
+      </li>
+      <li>
+       <a href="https://rust-unofficial.github.io/patterns/">Book: Rust Design patterns</a>
+      </li>
+      <li>
+       <a href="https://nnethercote.github.io/perf-book/introduction.html">Book: Rust Performance</a>
+      </li>
+      <li>
+       <a href="https://rust-lang.github.io/api-guidelines/">Book: Rust API Guidelines</a>
+      </li>
+      <li>
+       <a href="https://google.github.io/comprehensive-rust/">Rust course from Google</a>
+      </li>
+     </ul>
+     <h2 id="organisation">
+      Organisation
+     </h2>
+     <pre><code class="language-text">- Cargo.lock
+- Cargo.toml
+- src
+  - lib.rs (normal code, unit tests, and run function)
+  - main.rs (calls run function)
+- tests
+  - integration_test.rs (for run function from lib.rs)</code></pre>
+     <h2 id="python-extensions">
+      Python extensions
+     </h2>
+     <ul>
+      <li>
+       Make Rust modules for Python bottlenecks
+       <ul>
+        <li>
+         <a href="https://github.com/PyO3/pyo3">pyo3</a>
+        </li>
+        <li>
+         <a href="https://github.com/PyO3/maturin">maturin</a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h2 id="arrays">
+      Arrays
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/PyO3/rust-numpy">rust-numpy</a>
+      </li>
+      <li>
+       <a href="https://github.com/rust-ndarray/ndarray">ndarray</a>
+      </li>
+      <li>
+       Pre-allocate memory in Python before using rust calls
+      </li>
+     </ul>
+     <h2 id="multi-threading">
+      Multi-threading
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/rayon-rs/rayon">rayon</a>
+      </li>
+      <li>
+       <code>par_bridge().try_for_each</code>
+       enables error from one of threads to be propagated back e.g., for columns
+      </li>
+      <li>
+       <code>par_azip</code>
+       is similar for arrays
+      </li>
+     </ul>
+     <h2 id="error-handling">
+      Error handling
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/dtolnay/anyhow">anyhow</a>
+      </li>
+      <li>
+       <a href="https://github.com/dtolnay/thiserror">thiserror</a>
+      </li>
+      <li>
+       Pattern match range of Rust errors to Python ones, so these are returned to the Python user
+      </li>
+     </ul>
+     <h2 id="cloud">
+      Cloud
+     </h2>
+     <ul>
+      <li>
+       Read cloud files
+       <ul>
+        <li>
+         <a href="https://github.com/apache/arrow-rs">arrow-rs</a>
+         (<code>object_store</code>)
+        </li>
+        <li>
+         Also
+         <ul>
+          <li>
+           <a href="https://github.com/CarlKCarlK/cloud-file">cloud-file</a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h2 id="format">
+      Format
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/rust-lang/rustfmt">rustfmt</a>
+      </li>
+     </ul>
+     <h2 id="lint">
+      Lint
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/rust-lang/rust-clippy">clippy</a>
+      </li>
+     </ul>
+     <h2 id="profile">
+      Profile
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/cmyr/cargo-instruments">cargo-instruments</a>
+      </li>
+     </ul>
+     <h2 id="benchmark">
+      Benchmark
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/bheisler/criterion.rs">criterion.rs</a>
+      </li>
+     </ul>
+     <h2 id="logging">
+      Logging
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/rust-lang/log">log</a>
+      </li>
+     </ul>
+     <h2 id="json">
+      JSON
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/serde-rs/serde">serde</a>
+      </li>
+     </ul>
+     <h2 id="async">
+      async
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/tokio-rs/tokio">tokio</a>
+      </li>
+     </ul>
+     <h2 id="docs">
+      Docs
+     </h2>
+     <ul>
+      <li>
+       <a href="https://doc.rust-lang.org/rustdoc/index.html">rustdoc</a>
+      </li>
+      <li>
+       <code>#![warn(missing_docs)]</code>
+      </li>
+      <li>
+       all public stuff
+      </li>
+      <li>
+       create simple examples
+      </li>
+      <li>
+       <code>#![doc = include_str!("../README.md")]</code>
+      </li>
+      <li>
+       <code>cargo doc --no-deps --open</code>
+      </li>
+      <li>
+       good example:
+       <a href="https://docs.rs/bed-reader/latest/bed_reader/">bed_reader - Rust (docs.rs)</a>
+      </li>
+     </ul>
+     <h2 id="database">
+      Database
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/rusqlite/rusqlite">rusqlite</a>
+      </li>
+      <li>
+       <a href="https://github.com/launchbadge/sqlx">sqlx</a>
+      </li>
+      <li>
+       <a href="https://github.com/sfackler/rust-postgres">rust-postgres</a>
+      </li>
+     </ul>
+     <h2 id="builder-pattern-for-keyword-arguments">
+      Builder pattern for keyword arguments
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/idanarye/rust-typed-builder">rust-typed-builder</a>
+      </li>
+      <li>
+       Also
+       <ul>
+        <li>
+         <a href="https://github.com/colin-kiegel/rust-derive-builder">rust-derive-builder</a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h2 id="plotting">
+      Plotting
+     </h2>
+     <ul>
+      <li>
+       <a href="https://github.com/plotters-rs/plotters">plotters</a>
+      </li>
+     </ul>
+     <h2 id="concatenating-strings">
+      Concatenating strings
+     </h2>
+     <pre><code class="language-rust">let s1 = String::from("tic");
+let s2 = String::from("tac");
+let s3 = String::from("toe");
+
+let s = format!("{s1}-{s2}-{s3}");</code></pre>
+     <h2 id="using-an-enum-to-store-multiple-types">
+      Using an Enum to Store Multiple Types
+     </h2>
+     <pre><code class="language-rust">use std::collections::HashMap;
+use std::hash::Hash;
+
+#[derive(Debug, Eq, PartialEq, Hash)]
+enum Keys {
+    Int(i32),
+    Text(String),
+}
+
+#[derive(Debug)]
+#[allow(dead_code)]
+enum SpreadsheetCell {
+    Int(i32),
+    Float(f64),
+    Text(String),
+}
+
+fn main() {
+    let mut scores = HashMap::new();
+
+    scores.insert(Keys::Text(String::from("Blue")), 10);
+    scores.insert(Keys::Text(String::from("Yellow")), 50);
+    scores.insert(Keys::Int(42), 30);
+
+    println!("{:#?}", scores);
+
+    let row = vec![
+        SpreadsheetCell::Int(3),
+        SpreadsheetCell::Text(String::from("blue")),
+        SpreadsheetCell::Float(10.12),
+    ];
+
+    println!("{:#?}", row);
+}</code></pre>
+    </article>
+   </section>
+  </main>
+ </body>
+</html>
+

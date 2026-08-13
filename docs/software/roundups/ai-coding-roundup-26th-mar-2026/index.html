@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>
+   AI Coding Roundup - 26th Mar 2026 | Luke Conibear
+  </title>
+  <meta content="The signals from the noise: practical notes on using AI coding tools." name="description">
+  <meta content="default-src 'none'; base-uri 'none'; form-action 'none'; img-src 'self'; style-src 'self'" http-equiv="Content-Security-Policy">
+    <meta name="referrer" content="no-referrer">
+  <link href="/styles.css" rel="stylesheet">
+ </head>
+ <body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+   <div class="header-main">
+    <a class="brand" href="/">Luke Conibear</a>
+    <nav aria-label="Primary" class="top-nav">
+     <a aria-current="page" class="active" href="/software/">Software</a>
+     <a class="" href="/atmospheric_science/">Atmospheric science</a>
+    </nav>
+   </div>
+  </header>
+  <main class="page-grid" id="content">
+   <aside aria-label="Section pages" class="section-nav">
+    <ul>
+     <li>
+      <a class="" href="/software/ai-coding/">AI coding</a>
+     </li>
+     <li>
+      <a class="" href="/software/data_science/">Data science</a>
+     </li>
+     <li>
+      <a class="" href="/software/software_engineering/">Software Engineering</a>
+     </li>
+     <li>
+      <a class="" href="/software/python/">Python</a>
+     </li>
+     <li>
+      <a class="" href="/software/rust/">Rust</a>
+     </li>
+     <li>
+      <a class="" href="/software/go/">Go</a>
+     </li>
+    </ul>
+   </aside>
+   <section class="page-content">
+    <article class="content-shell">
+     <h1 id="ai-coding-roundup---26th-mar-2026">
+      AI Coding Roundup - 26th Mar 2026
+     </h1>
+     <p>
+      The signals from the noise.
+     </p>
+     <h2 id="new-stuff">
+      New stuff
+     </h2>
+     <ul>
+      <li>
+       <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/">Gemini 3.1 pro</a>
+       beats opus 4.6 in many benchmarks and is half the price
+      </li>
+      <li>
+       <a href="https://www.anthropic.com/news/claude-code-security">Claude code security scanning</a>
+       with auto-fixes, similar for
+       <a href="https://openai.com/index/codex-security-now-in-research-preview/">codex</a>
+       (research preview)
+      </li>
+      <li>
+       <a href="https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai">Reliability issues</a>
+      </li>
+      <li>
+       <a href="https://cursor.com/blog/automations">Cursor automations</a>
+       (also for
+       <a href="https://developers.openai.com/codex/app/automations/">codex</a>) e.g., repo summary, find vulnerability, PR review, etc.
+      </li>
+      <li>
+       <a href="https://openai.com/index/introducing-gpt-5-4/">GPT5.4</a>
+       another benchmark topper (steer is useful)
+      </li>
+      <li>
+       <a href="https://cursor.com/blog/composer-2">composer 2</a>
+       - fast mode has good speed/cost
+      </li>
+     </ul>
+     <h2 id="agents-and-ides">
+      Agents and IDEs
+     </h2>
+     <ul>
+      <li>
+       <a href="https://youtu.be/7Dtu2bilcFs?si=73HRbzmSXqB8uPTK">The end of the (classic) IDE</a>, instead agent orchestration
+      </li>
+      <li>
+       Managing parallel agents (i.e., agent first over editor, like CLI but easier to manage multiple as GUI)
+       <ul>
+        <li>
+         <a href="https://cursor.com/changelog/2-0">Cursor agent view</a>
+         and
+         <a href="https://cursor.com/docs/configuration/worktrees">worktrees</a>, though awkward as applies to local checkout - now
+         <a href="https://cursor.com/glass">glass</a>
+         (agent GUI)
+        </li>
+        <li>
+         <a href="https://openai.com/index/introducing-the-codex-app/">Codex app</a>
+         has nice
+         <a href="https://developers.openai.com/codex/app/worktrees">worktrees</a>
+         as makes PRs without touching local checkout
+        </li>
+        <li>
+         <a href="https://code.claude.com/docs/en/desktop-quickstart">Claude code desktop</a>
+         similar to codex
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h3 id="how-agentic-coding-works">
+      <a href="https://youtu.be/sTdz6PZoAnw?si=ve81ObX9dVS3w3v_">How agentic coding works</a>
+     </h3>
+     <ul>
+      <li>
+       agents combine:
+       <ul>
+        <li>
+         user interface (cli, ide, cloud, background)
+        </li>
+        <li>
+         model (foundation, multimodal tokens (e.g., text, image, audio), reasoning/thinking/effort level (i.e., problem decomposition chatting to itself))
+        </li>
+        <li>
+         harness (loop chat and tools)
+         <ul>
+          <li>
+           each turn of the loop
+           <ul>
+            <li>
+             build context
+             <ul>
+              <li>
+               always: static prefixes - system prompt,
+               <code>AGENTS.md</code>
+               /
+               <code>CLAUDE.md</code>, skill descriptions, MCP servers, etc.
+              </li>
+              <li>
+               all prior turns (prompts, responses, tool results)
+               <ul>
+                <li>
+                 this is the memory being persisted i.e., model is stateless
+                </li>
+               </ul>
+              </li>
+              <li>
+               caching
+               <ul>
+                <li>
+                 across requests: prompt caching
+                 <ul>
+                  <li>
+                   static prefixes after first turn
+                  </li>
+                 </ul>
+                </li>
+                <li>
+                 within a request: key-value (KV) cache
+                 <ul>
+                  <li>
+                   models are autoregressive &mdash; without caching, generating token 100 recomputes key/value attention vectors for tokens 1-99
+                  </li>
+                  <li>
+                   prefill phase: process entire prompt in parallel (compute-bound), builds the KV cache
+                  </li>
+                  <li>
+                   decode phase: generate tokens one at a time using cached KVs (memory bandwidth-bound &mdash; GPU waits reading KVs from VRAM)
+                  </li>
+                 </ul>
+                </li>
+               </ul>
+              </li>
+             </ul>
+            </li>
+            <li>
+             send context (limited by context window, which is limited by KV cache memory) to model
+            </li>
+            <li>
+             model response
+             <ul>
+              <li>
+               probability distribution over next token, sampled to give next action
+              </li>
+              <li>
+               could be tool calls (e.g., read, write, bash, python) or skill use
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h2 id="skills">
+      Skills
+     </h2>
+     <ul>
+      <li>
+       make
+       <a href="https://code.claude.com/docs/en/features-overview#claude-md-vs-rules-vs-skills">skills</a>
+       over rules or commands
+       <ul>
+        <li>
+         rules are global persistent instructions (waste context)
+        </li>
+        <li>
+         commands are manual only
+        </li>
+        <li>
+         <a href="https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf">skills</a>
+         are on-demand, automatic, progressively disclosed (i.e., reads name and description first), modular abilities
+         <ul>
+          <li>
+           can call manually too
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h2 id="subagents">
+      Subagents
+     </h2>
+     <ul>
+      <li>
+       <a href="https://code.claude.com/docs/en/features-overview#compare-similar-features">skills vs subagent</a>
+      </li>
+      <li>
+       <a href="https://code.claude.com/docs/en/sub-agents">subagents</a>
+       (<a href="https://code.claude.com/docs/en/agent-teams#compare-with-subagents">comparison</a>)
+      </li>
+     </ul>
+     <h2 id="single-agent-autonomy">
+      Single-agent autonomy
+     </h2>
+     <ul>
+      <li>
+       <a href="https://ghuntley.com/loop/">ralph loop and loom</a>
+       - infinite loop continuously clearing context rot, persist good stuff in files (need to define)
+       <ul>
+        <li>
+         <a href="https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum#when-to-use-ralph">when to use</a>
+        </li>
+        <li>
+         claude&rsquo;s
+         <a href="https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum">ralph</a>
+         (<a href="https://code.claude.com/docs/en/plugins#when-to-use-plugins-vs-standalone-configuration">plugin</a>)
+        </li>
+       </ul>
+      </li>
+      <li>
+       claude&rsquo;s
+       <a href="https://code.claude.com/docs/en/scheduled-tasks">/loop</a>
+      </li>
+      <li>
+       <a href="https://github.com/karpathy/autoresearch">autoresearch</a>
+       from karpathy for automated research e.g., making AI loss go down
+      </li>
+     </ul>
+     <h2 id="multi-agent-orchestration">
+      Multi-agent orchestration
+     </h2>
+     <ul>
+      <li>
+       challenging - collaborate, coordinate, sync, problem decomposition, verify, resilience, recovery, distributed systems, delegation, review, redirect, latency, accuracy, scalability, throughput, interfaces, safety, reliability
+       <ul>
+        <li>
+         analogies to non-deterministic microservices, a factory line with randomness, managing/directing a team of human devs
+        </li>
+        <li>
+         most important lesson from years of distributed systems: keep everything on a single machine for as long as humanly possible
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="https://cursor.com/blog/self-driving-codebases">Cursor&rsquo;s attempts</a>
+       - recursion, cloud agents
+      </li>
+      <li>
+       <a href="https://code.claude.com/docs/en/agent-teams">Claude agent teams</a>
+       <ul>
+        <li>
+         anthropic used parallel long-running agents to make a
+         <a href="https://www.anthropic.com/engineering/building-c-compiler">c compiler</a>
+         <ul>
+          <li>
+           nice
+           <a href="https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software">reflection</a>
+           from chris lattner
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="http://next.js">cloudflare made next.js copy</a>
+       - faster and smaller
+      </li>
+      <li>
+       <a href="https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04">gas town</a>
+       and
+       <a href="https://steve-yegge.medium.com/welcome-to-the-wasteland-a-thousand-gas-towns-a5eb9bc8dc1f">wasteland</a>
+      </li>
+      <li>
+       <a href="https://youtu.be/8lF7HmQ_RgY?si=lhwNzUbSK8bVbnEX">openclaw</a>
+       (<a href="https://pashpashpash.substack.com/p/my-lobster-lost-450000-this-weekend">example use</a>)
+      </li>
+     </ul>
+     <h2 id="tips">
+      Tips
+     </h2>
+     <ul>
+      <li>
+       <a href="https://www.arthropod.software/p/vibe-coding-our-way-to-disaster">simplicity even more important</a>, specifically things that don&rsquo;t intertwine (simple != easy)
+      </li>
+      <li>
+       recommend reading best practices (mostly transferable) e.g.,
+       <a href="https://code.claude.com/docs/en/best-practices">claude code</a>,
+       <a href="https://cursor.com/blog/agent-best-practices">cursor</a>
+      </li>
+     </ul>
+     <h2 id="cost-recommendations">
+      Cost recommendations
+     </h2>
+     <h3 id="models">
+      Models
+     </h3>
+     <ul>
+      <li>
+       Avoid using expensive models (e.g., Opus) for every task &mdash; match model to task complexity
+      </li>
+      <li>
+       Avoid max mode / extended thinking on routine tasks &mdash; a significant cost multiplier; reserve for genuinely hard problems
+      </li>
+      <li>
+       Avoid fast mode unless essential, and use extra-high effort only with care &mdash; both are significant cost multipliers
+      </li>
+      <li>
+       Use
+       <code>auto</code>
+       / routing models when available &mdash; picks the cheapest capable model; avoid locking to a specific expensive model
+      </li>
+     </ul>
+     <h3 id="context">
+      Context
+     </h3>
+     <ul>
+      <li>
+       Clear the context window regularly &mdash; cost scales with length, can summarize and start fresh
+      </li>
+      <li>
+       Avoid large context when a snippet would do &mdash; use
+       <code>@file</code>
+       references to pull only relevant chunks
+      </li>
+      <li>
+       Use
+       <a href="https://cursor.com/docs/context/ignore-files"><code>.cursorignore</code></a>
+       &mdash; unfiltered large repos inflate every context window
+      </li>
+      <li>
+       Disable idle MCP servers &mdash; tool definitions add to context even when unused; prefer CLI tools (<code>gh</code>,
+       <code>aws</code>,
+       <code>gcloud</code>)
+      </li>
+      <li>
+       Keep
+       <code>AGENTS.md</code>
+       /
+       <code>CLAUDE.md</code>
+       lean &mdash; it loads on every session; keep under ~200 lines and move workflow-specific instructions to skills
+      </li>
+      <li>
+       Batch related changes into one session &mdash; switching between many short sessions re-loads context each time
+      </li>
+     </ul>
+     <h3 id="prompts-and-outputs">
+      Prompts and outputs
+     </h3>
+     <ul>
+      <li>
+       Front-load context in one precise prompt &mdash; vague prompts lead to multiple clarification rounds
+      </li>
+      <li>
+       Give the agent relevant context upfront &mdash; avoids redundant file reads and searches
+      </li>
+      <li>
+       Ask for short answers when that&rsquo;s all you need &mdash; output tokens cost ~3&ndash;5&times; more than input tokens
+      </li>
+      <li>
+       Avoid attaching large screenshots or images unnecessarily &mdash; vision inputs cost more per token than text
+      </li>
+     </ul>
+     <h3 id="agents">
+      Agents
+     </h3>
+     <ul>
+      <li>
+       Avoid multi-agent orchestration unless necessary &mdash; parallel agents multiply cost fast
+      </li>
+      <li>
+       Avoid spawning subagents for many small tasks &mdash; a single focused agent is often cheaper
+      </li>
+      <li>
+       Set a turn or tool-call limit on long-running agents
+      </li>
+      <li>
+       Diagnose failures before retrying &mdash; avoid letting agents loop without fixing the root cause
+      </li>
+      <li>
+       Course-correct early &mdash; stop immediately if heading wrong; use rewind in Cursor
+      </li>
+     </ul>
+     <h3 id="automation">
+      Automation
+     </h3>
+     <ul>
+      <li>
+       Avoid agent review on every commit or PR &mdash; trigger only when justified
+      </li>
+      <li>
+       Avoid automated CI/CD triggers running agents on every push
+      </li>
+      <li>
+       Use a simpler tool when it fits &mdash;
+       <code>grep</code>, a script, or a template is free; reserve agents for genuinely ambiguous work
+      </li>
+     </ul>
+     <h3 id="visibility">
+      Visibility
+     </h3>
+     <ul>
+      <li>
+       Treat AI cost like cloud cost &mdash; make it visible and part of design decisions, not just a billing surprise
+      </li>
+      <li>
+       Check
+       <a href="https://cursor.com/docs/models-and-pricing">model prices</a>
+       and usage regularly
+      </li>
+      <li>
+       Cursor usage dashboard &mdash; spot runaway spend early
+      </li>
+      <li>
+       Review which models and features are consuming most tokens
+      </li>
+     </ul>
+     <h3 id="resources">
+      Resources
+     </h3>
+     <ul>
+      <li>
+       <a href="https://code.claude.com/docs/en/costs#reduce-token-usage">Claude Code costs</a>
+      </li>
+      <li>
+       <a href="https://cursor.com/docs/models-and-pricing">Cursor model pricing</a>
+      </li>
+     </ul>
+     <h2 id="opinions">
+      Opinions
+     </h2>
+     <ul>
+      <li>
+       <a href="https://mitchellh.com/writing/my-ai-adoption-journey">Try always having an agent running</a>
+      </li>
+      <li>
+       <a href="https://martin.kleppmann.com/2025/12/08/ai-formal-verification.html">vericoding seems promising</a>
+       - prove correctness of AI generated code
+      </li>
+      <li>
+       <a href="https://sundaylettersfromsam.substack.com/p/the-hard-part-isnt-doing-the-work">Taste</a>
+       also applies to deciding what to do - like choosing what to read when there&rsquo;s a ~infinite number of books
+       <ul>
+        <li>
+         taste might be
+         <a href="https://x.com/EnoReyes/status/2025994074680111385">automatible</a>
+         too
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="https://evjang.com/2026/02/04/rocks.html">some nice ideas</a>
+       for using ai coding for research - /experiment
+      </li>
+      <li>
+       <a href="https://gwern.net/ai-daydreaming">try and get ai&rsquo;s to come up with ideas</a>
+       - unknown, expensive
+      </li>
+     </ul>
+     <h2 id="free-time">
+      Free time
+     </h2>
+     <ul>
+      <li>
+       Questions?
+      </li>
+      <li>
+       Discussion?
+      </li>
+      <li>
+       Demo requests?
+      </li>
+      <li>
+       Anything anyone wants to share?
+      </li>
+      <li>
+       Anything like me to cover next time?
+      </li>
+     </ul>
+    </article>
+   </section>
+  </main>
+ </body>
+</html>
+

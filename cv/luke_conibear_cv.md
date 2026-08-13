@@ -32,7 +32,7 @@ Generalist engineer specialising in simplifying complex scientific software syst
 ### Research Software Engineer (Machine Learning), University of Leeds, UK (Remote) | 2021--2022
 
 - Developed and taught course ([recording](https://youtu.be/zbt7aa2QIAA)) on machine-learning emulators for numerical atmospheric models.
-- Authored and maintained an open-source course for [High-Performance Python](https://www.lukeconibear.com/swd6_hpp/) and [Machine Learning](https://www.lukeconibear.com/intro_ml/).
+- Authored and maintained an open-source course for [high-performance Python](https://www.lukeconibear.com/swd6_hpp/) and [machine learning](https://www.lukeconibear.com/intro_ml/).
 
 ### Research Fellow, University of Leeds, UK (Remote) | 2018--2021
 

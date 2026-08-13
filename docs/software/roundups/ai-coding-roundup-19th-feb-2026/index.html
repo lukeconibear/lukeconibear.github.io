@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>
+   AI Coding Roundup - 19th Feb 2026 | Luke Conibear
+  </title>
+  <meta content="The signals from the noise: practical notes on using AI coding tools." name="description">
+  <meta content="default-src 'none'; base-uri 'none'; form-action 'none'; img-src 'self'; style-src 'self'" http-equiv="Content-Security-Policy">
+    <meta name="referrer" content="no-referrer">
+  <link href="/styles.css" rel="stylesheet">
+ </head>
+ <body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+   <div class="header-main">
+    <a class="brand" href="/">Luke Conibear</a>
+    <nav aria-label="Primary" class="top-nav">
+     <a aria-current="page" class="active" href="/software/">Software</a>
+     <a class="" href="/atmospheric_science/">Atmospheric science</a>
+    </nav>
+   </div>
+  </header>
+  <main class="page-grid" id="content">
+   <aside aria-label="Section pages" class="section-nav">
+    <ul>
+     <li>
+      <a class="" href="/software/ai-coding/">AI coding</a>
+     </li>
+     <li>
+      <a class="" href="/software/data_science/">Data science</a>
+     </li>
+     <li>
+      <a class="" href="/software/software_engineering/">Software Engineering</a>
+     </li>
+     <li>
+      <a class="" href="/software/python/">Python</a>
+     </li>
+     <li>
+      <a class="" href="/software/rust/">Rust</a>
+     </li>
+     <li>
+      <a class="" href="/software/go/">Go</a>
+     </li>
+    </ul>
+   </aside>
+   <section class="page-content">
+    <article class="content-shell">
+     <h1 id="ai-coding-roundup">
+      AI coding roundup
+     </h1>
+     <p>
+      The
+      <strong>signals</strong>
+      from the
+      <strong>noise</strong>
+      <br>
+      <em>19th Feb 2026</em>
+     </p>
+     <h2 id="first-a-psa">
+      First, a PSA
+     </h2>
+     <ul>
+      <li>
+       A lot of online stuff is like customising excel (btw it&rsquo;s an
+       <a href="https://excel-esports.com/">esport</a>)
+      </li>
+      <li>
+       The purpose of these tools is that anyone can code now
+      </li>
+      <li>
+       Sure, you can run 12 excels at the same time overnight with custom macros
+      </li>
+      <li>
+       But the point isn&rsquo;t to get better at excel, it&rsquo;s to use it to
+       <a href="https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/">solve important
+        <strong>business</strong>
+        problems</a>
+       <ul>
+        <li>
+         e.g., if you
+         <a href="https://www.seangoedecke.com/getting-the-main-thing-right/">ship</a>
+         a key project that creates shareholder value early then it likely won&rsquo;t matter how (whether you filled out your Jira tickets, have high test coverage, had 90 agents in parallel, etc.)
+        </li>
+       </ul>
+      </li>
+      <li>
+       The default settings and best model (currently probably opus 4.6) is just fine (i.e., most of the way there)
+      </li>
+     </ul>
+     <h2 id="stuff">
+      Stuff
+     </h2>
+     <ul>
+      <li>
+       New best models
+       <ul>
+        <li>
+         $$$:
+         <a href="https://www.anthropic.com/news/claude-opus-4-6">Opus 4.6</a>
+        </li>
+        <li>
+         $$:
+         <a href="https://www.anthropic.com/news/claude-sonnet-4-6">Sonnet 4.6</a>
+         or
+         <a href="https://openai.com/index/introducing-gpt-5-3-codex/">Codex 5.3</a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       Auto AI code review (very useful)
+       <ul>
+        <li>
+         e.g., GitHub Copilot with
+         <code>.github/workflows/copilot-instructions.md</code>
+        </li>
+        <li>
+         AIs are pumping out lots of code so need to sample it enough
+        </li>
+        <li>
+         Give evidence that this PR solves the problem e.g., screenshot from a staging test
+        </li>
+        <li>
+         This reduces the burden on human reviewers
+        </li>
+        <li>
+         Also ensure your PRs are right and consider making smaller
+        </li>
+       </ul>
+      </li>
+     </ul>
+     <h2 id="tips">
+      Tips
+     </h2>
+     <ul>
+      <li>
+       <a href="https://www.seangoedecke.com/good-code-reviews/">Become good at code review</a>
+       (<a href="https://google.github.io/eng-practices/review/reviewer/">similar</a>) - develop verification of whether the code solves the problem
+      </li>
+      <li>
+       <a href="https://www.seangoedecke.com/taste/">What is taste in software</a>
+       - flexibility, design (i&rsquo;m exploring this more)
+      </li>
+      <li>
+       <a href="https://addyo.substack.com/p/conductors-to-orchestrators-the-future">Multi-task with background agents</a>
+       - worth experiment when comfortable
+      </li>
+      <li>
+       <a href="https://boristane.com/blog/how-i-use-claude-code/">Use plan mode</a>
+       - can get better results for complex stuff
+      </li>
+      <li>
+       <a href="https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf">Ideas on how to use LLMs</a>
+       (<a href="https://www.seangoedecke.com/practical-ai-techniques/">similar</a>) - lots for different teams and roles e.g., k8s debug with screenshots, explain a codebase, cross-language translation, refactoring, make tests, improve existing code, debugging (paste in traceback)
+      </li>
+      <li>
+       <a href="https://www.seangoedecke.com/generate-skills-afterwards/">Make skills after LLM/you done it first</a>
+      </li>
+      <li>
+       <a href="https://youtu.be/TUjQuC4ugak?si=jPYQQ5Gb_KZ60_xw">Performance can degrade when context window &gt;50% full</a>
+      </li>
+      <li>
+       <a href="https://www.cyberdemon.org/2025/02/28/llm-parallelism.html">Easily add parallelisation</a>
+      </li>
+      <li>
+       <a href="https://www.seangoedecke.com/ai-security/">Security tips</a>
+       - careful with browser use, using stuff from internet, what commands you approve
+      </li>
+      <li>
+       Try and have loops e.g., with tests
+      </li>
+      <li>
+       Ensure every repo has a
+       <code>AGENTS.md</code>, that update regularly
+      </li>
+      <li>
+       <a href="https://www.seangoedecke.com/ai-research-with-codex/">Try it as a research assistant</a>
+       to &ldquo;deep research&rdquo; papers for ideas to implement
+      </li>
+      <li>
+       Take the time to learn and try out stuff
+      </li>
+      <li>
+       Chat with colleagues about how they use it
+      </li>
+     </ul>
+     <h2 id="opinions">
+      Opinions
+     </h2>
+     <ul>
+      <li>
+       <a href="https://molochinations.substack.com/p/ai-killed-the-individual-contributor">ICs now agent managers</a>
+       (<a href="https://www.pathtostaff.com/p/death-of-the-coding-machine-the-archetypes">similar</a>) - popular i.e., architects now
+      </li>
+      <li>
+       <a href="https://x.com/levie/status/2004654686629163154">As implementation cheaper, do tasks currently unable to</a>
+       - nice - what never had time to do?
+      </li>
+      <li>
+       <a href="https://addyosmani.com/blog/next-two-years/">Advice for junior and senior developers</a>
+       (<a href="https://www.pathtostaff.com/p/how-to-stay-valuable-when-ai-writes">similar</a>) - learn, adapt, and focus on what agents can&rsquo;t do (understanding, creativity, design, trade offs, business context, domain knowledge, communication (both with agents and humans), etc.)
+      </li>
+      <li>
+       <a href="https://jennywanger.com/articles/waiting-is-the-new-interruption/">What to do while for agents</a>
+       - I often think about the problem/solution, what it&rsquo;s doing, or multitask other stuff e.g., read, email, slack, sometimes fire off another agent (plan to experiment more with this)
+      </li>
+      <li>
+       <a href="https://www.fast.ai/posts/2026-01-28-dark-flow/">Downsides of vibe coding</a>
+       - I&rsquo;m often more jumbled / not in flow
+      </li>
+      <li>
+       <a href="https://www.thepragmaticcto.com/p/lines-of-code-are-back-and-its-worse">How measure productivity</a>
+       - many metrics miss the point i.e., solve important business problems
+      </li>
+      <li>
+       <a href="https://margaretstorey.com/blog/2026/02/09/cognitive-debt/">Mid 2025 study found devs less productive with AI</a>, recent
+       <a href="https://www.seangoedecke.com/how-does-ai-impact-skill-formation/">anthropic study</a>
+       found 25% (not 10x) but learnt less - I guess might be different now tools are better
+      </li>
+      <li>
+       <a href="https://leaddev.com/culture/vibe-coding-hype-cycles-why-ai-isnt-10x-answer">What speed ups are realistic</a>
+       - i&rsquo;m interested in results for real world tasks, who knows, i guess we&rsquo;ll see in speed of real things being shipped, GDP, etc.
+      </li>
+      <li>
+       <a href="https://margaretstorey.com/blog/2026/02/09/cognitive-debt/">Careful with cognitive debt</a>
+       (<a href="https://rushabh.substack.com/p/cognitive-debt">similar</a>) - really try and understand stuff
+      </li>
+      <li>
+       <a href="https://simonwillison.net/2026/Feb/9/ai-intensifies-work/">Context switching is tiring</a>
+       - yep
+      </li>
+      <li>
+       <a href="https://addyo.substack.com/p/avoiding-skill-atrophy-in-the-age">Avoid skill atrophy</a>
+       - I use the LLMs as a
+       <a href="https://www.seangoedecke.com/learning-from-llms/">1-to-1 tutor</a>
+       for me (very valuable!)
+      </li>
+      <li>
+       Me
+       <ul>
+        <li>
+         I find using agents fun. I don&rsquo;t really miss coding by hand
+        </li>
+        <li>
+         Though it&rsquo;s challenging keeping up, context switching, and adapting to big changes / uncertainties
+        </li>
+        <li>
+         I liked this
+         <a href="https://x.com/esrtweet/status/2023978360351682848">tweet</a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </article>
+   </section>
+  </main>
+ </body>
+</html>
+
